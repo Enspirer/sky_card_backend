@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LanguageController;
 
+
 /*
  * Global Routes
  * Routes that are used between both frontend and backend.
@@ -9,6 +10,8 @@ use App\Http\Controllers\LanguageController;
 
 // Switch between the included languages
 Route::get('lang/{lang}', [LanguageController::class, 'swap']);
+
+
 
 /*
  * Frontend Routes

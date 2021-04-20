@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76aee6ee6127082e47d1a5ee4c9075ab",
+    "content-hash": "6ae0477c68991101d196b1d6b158a7fe",
     "packages": [
         {
             "name": "albertcht/invisible-recaptcha",
@@ -5029,6 +5029,53 @@
                 "environment"
             ],
             "time": "2020-06-02T14:08:54+00:00"
+        },
+        {
+            "name": "wapnen/google-cloud-vision-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wapnen/google-cloud-vision-php.git",
+                "reference": "82f17190cdfb4466fbc654d7d9827581a58d695e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wapnen/google-cloud-vision-php/zipball/82f17190cdfb4466fbc654d7d9827581a58d695e",
+                "reference": "82f17190cdfb4466fbc654d7d9827581a58d695e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "default-branch": true,
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "GoogleCloudVision\\": "GoogleCloudVision/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wapnen Gowok",
+                    "email": "wapneng@gmail.com"
+                }
+            ],
+            "description": "A simple php library for the google cloud vision API ",
+            "keywords": [
+                "Computer Vision",
+                "google cloud vision api",
+                "machine learning",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/wapnen/google-cloud-vision-php/issues",
+                "source": "https://github.com/wapnen/google-cloud-vision-php/tree/master"
+            },
+            "time": "2019-02-26T15:01:29+00:00"
         }
     ],
     "packages-dev": [
@@ -9329,6 +9376,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "wapnen/google-cloud-vision-php": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
@@ -9336,5 +9384,6 @@
     "platform": {
         "php": "^7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
