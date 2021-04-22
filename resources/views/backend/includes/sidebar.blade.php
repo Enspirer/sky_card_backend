@@ -11,9 +11,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{active_class(Route::is('admin/dashboard'))}}" href="{{ route('admin.dashboard') }}">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
-                    @lang('menus.backend.sidebar.dashboard')
+                <a class="nav-link {{active_class(Route::is('admin/cards'))}}" href="{{ route('admin.cards.index') }}">
+                    <i class="nav-icon fas fa-id-card"></i>
+                    Cards
                 </a>
             </li>
 
