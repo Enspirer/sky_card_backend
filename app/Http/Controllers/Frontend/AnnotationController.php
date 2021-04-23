@@ -39,10 +39,12 @@ class AnnotationController extends Controller
 
         $contact_num_st  = self::ScaningContactNumber_step1($getCetails);
         $email = self::ScaningEmail($getCetails);
+        $website = self::ScaningWebsite($getCetails);
 
         $outArray = [
           'phone_number' => $contact_num_st,
           'email' => $email,
+          'website'=> $website
         ];
 
         dd($outArray);
@@ -73,12 +75,15 @@ class AnnotationController extends Controller
             $new_str = str_replace(' ', '', $string);
              preg_match_all('/(\d{3}|\(\d{3}\)|\d{3}-)?\d{4}[.\s]?\d{2}[.\s]?\d{2}[.\s]?\d{3}/', $new_str, $newt);
 
-             echo $string;
+             if(count($newt[0]) == 0)
+             {
+                 $removedash = str_replace('-', '', $string);
 
-
-            dd($newt);
-
-
+                 preg_match_all('/[-\s]?[0–9]{4}/',$string,$details);
+                 return $details[0];
+             }else{
+                 return $newt[0];
+             }
 
         }else{
             return $matches[0];
@@ -95,6 +100,12 @@ class AnnotationController extends Controller
         $pattern = '/[a-z0-9_\-\+\.]+@[a-z0-9\-]+\.([a-z]{2,4})(?:\.[a-z]{2})?/i';
         preg_match_all($pattern, $string, $matches);
         return $matches[0];
+    }
+
+    public static function ScaningWebsite($string)
+    {
+        preg_match_all('(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-&?=%.]+', $string, $mataches);
+        return $mataches[0];
     }
 
     public static function GetText($response)

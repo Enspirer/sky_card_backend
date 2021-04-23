@@ -7,9 +7,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use App\Models\Auth\User;
+use App\Repositories\Frontend\Auth\UserRepository;
 
 class UserController extends Controller
 {
+    protected $userRepository;
+
+    public function __construct(UserRepository $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+
+
+
+
     public function api_login(Request $request)
     {
         $request->validate([
@@ -40,20 +51,19 @@ class UserController extends Controller
 
     public function api_sign_up(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string',
-            'email' => 'required|string|email|unique:users',
-            'password' => 'required|string|confirmed'
-        ]);
-        $user = new User([
-            'name' => $request->name,
+        $user = $this->userRepository->create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => $request->password,
         ]);
-        $user->save();
+
+        $tokenResult = $user->createToken('Personal Access Token');
+
         return response()->json([
-            'message' => 'Successfully created user!'
-        ], 201);
+            'access_token' => $tokenResult->accessToken,
+            'token_type' => 'Bearer'
+        ]);
     }
 
     public function logout(Request $request)
