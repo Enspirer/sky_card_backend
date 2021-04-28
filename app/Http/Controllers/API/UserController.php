@@ -18,9 +18,6 @@ class UserController extends Controller
         $this->userRepository = $userRepository;
     }
 
-
-
-
     public function api_login(Request $request)
     {
         $request->validate([
@@ -57,9 +54,7 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ]);
-
         $tokenResult = $user->createToken('Personal Access Token');
-
         return response()->json([
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer'
@@ -79,8 +74,19 @@ class UserController extends Controller
      *
      * @return [json] user object
      */
-    public function user(Request $request)
+    public function userDetails(Request $request)
     {
-        return response()->json($request->user());
+
+        $auth_details = auth()->user();
+
+        $userOutputArray = [
+            'full_name' => $auth_details->full_name,
+            'email' => $auth_details->email,
+            'active' =>$auth_details->active,
+            'profile_picture' => $auth_details->picture
+        ];
+        return response()->json($userOutputArray);
     }
 }
+
+

@@ -23,10 +23,11 @@ Route::group(['prefix' => 'auth'], function () {
     Route::post('login', [UserController::class, 'api_login']);
     Route::post('signup', [UserController::class, 'api_sign_up']);
 
+    Route::post('userDetails',  [UserController::class,'userDetails']);
+
+
     Route::group(['middleware' => 'auth:api'], function() {
-
-        Route::get('logout', 'AuthController@logout');
-        Route::get('user', 'AuthController@user');
-
+        Route::post('userDetails',  [UserController::class,'userDetails']);
+        Route::get('logout', [UserController::class,'logout']);
     });
 });
