@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\CardController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,12 +23,10 @@ Route::group(['prefix' => 'auth'], function () {
 
     Route::post('login', [UserController::class, 'api_login']);
     Route::post('signup', [UserController::class, 'api_sign_up']);
-
     Route::post('userDetails',  [UserController::class,'userDetails']);
-
-
     Route::group(['middleware' => 'auth:api'], function() {
         Route::post('userDetails',  [UserController::class,'userDetails']);
+        Route::post('upload_card',  [CardController::class,'post_image']);
         Route::get('logout', [UserController::class,'logout']);
     });
 });

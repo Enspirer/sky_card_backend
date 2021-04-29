@@ -76,9 +76,7 @@ class UserController extends Controller
      */
     public function userDetails(Request $request)
     {
-
         $auth_details = auth()->user();
-
         $userOutputArray = [
             'full_name' => $auth_details->full_name,
             'email' => $auth_details->email,
