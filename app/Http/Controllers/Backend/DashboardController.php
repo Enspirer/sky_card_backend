@@ -19,7 +19,6 @@ class DashboardController extends Controller
     {
         $aiDetails =AIScannedCards::select(DB::raw('DATE(created_at) as date'), DB::raw('count(*) as calls'))
             ->groupBy('date')
-            ->where('created_at', '>=', Carbon::now()->subWeeks(1))
             ->get();
 
         $aicalls = count(AIScannedCards::all());

@@ -55,12 +55,76 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card" style="padding: 10px;">
-                        <h4>External API Calls</h4>
+                        <h4>Total Cards</h4>
                         <h2>0012</h2>
                     </div>
                 </div>
             </div>
 
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Card ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Uploaded Time</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
+
+
 @endsection

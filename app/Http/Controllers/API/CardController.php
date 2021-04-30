@@ -19,6 +19,7 @@ class CardController extends Controller
             $image = $request->upload_file;
 
         $file = base64_decode($request['upload_file']);
+
         $folderName = '/uploads/files/temp_cards/';
         $safeName = time().'.'.'png';
         $destinationPath = public_path() . $folderName;
