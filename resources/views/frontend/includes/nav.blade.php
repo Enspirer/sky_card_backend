@@ -30,7 +30,6 @@
                                 <a class="navigation-link reg" href="{{route('frontend.auth.login')}}">Register/Log In</a>
                             </li>
                         @endauth
-
                     </ul>
                 </div>
             </div>

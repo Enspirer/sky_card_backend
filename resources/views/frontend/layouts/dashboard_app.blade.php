@@ -13,7 +13,7 @@
     </head>
 
     @include('frontend.includes.nav')
-    
+
     <body>
         @include('includes.partials.read-only')
         @include('includes.partials.logged-in-as')
@@ -21,7 +21,6 @@
         @yield('content')
 
         @stack('before-scripts')
-        @include('frontend.includes.footer')
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
