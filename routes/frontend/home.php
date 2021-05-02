@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\AnnotationController;
+use App\Http\Controllers\Frontend\CompanyController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -27,6 +28,10 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');
+
+        // Company Controller
+        Route::get('companies', [CompanyController::class, 'index'])->name('companies');
+
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
