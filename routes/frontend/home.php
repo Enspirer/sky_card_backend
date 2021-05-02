@@ -33,8 +33,10 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');
         Route::get('companies/create', [CompanyController::class, 'create'])->name('companies.create');
         Route::post('companies/store', [CompanyController::class, 'store'])->name('companies.store');
-        Route::get('companies/dashboard/{id}', [CompanyController::class, 'dashboard'])->name('companies.dashboard');
-        Route::get('companies/business_card_creator/{id}', [CompanyController::class, 'create_business_card'])->name('companies.create_business_card');
+        Route::get('companiesq/dashboard/{id}', [CompanyController::class, 'dashboard'])->name('companies.dashboard');
+        Route::get('companiesq/business_card_creator/{id}/step1', [CompanyController::class, 'create_business_card'])->name('companies.create_business_card');
+        Route::get('companiesq/business_card_creator/{id}/step2', [CompanyController::class, 'create_business_card'])->name('companies.create_business_card.step2');
+        Route::get('companiesq/business_card_creator/{id}/step3', [CompanyController::class, 'create_business_card'])->name('companies.create_business_card.step3');
 
 
         // User Profile Specific
