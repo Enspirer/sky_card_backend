@@ -23,9 +23,20 @@ class CompanyController extends Controller
         ]);
     }
 
+    public function create_business_card()
+    {
+        return view('frontend.user.companies.business_card_builder');
+    }
+
     public function dashboard($id)
     {
-        dd($id);
+        $companyDetails = Company::where('id',$id)
+            ->where('user_id',auth()->user()->id)
+            ->first();
+
+        return view('frontend.user.companies.company_dashboard',[
+            'companyDetails' => $companyDetails
+        ]);
     }
 
     public function create()
