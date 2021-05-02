@@ -4,8 +4,8 @@
             <div class="thumb-lg member-thumb mx-auto">
                 <img src="{{url('img/frontend/box2.jpg')}}" class="rounded-circle img-thumbnail" style="object-fit: contain;height: 80px;width: 80px;" alt="profile-image"></div>
             <div class="">
-                <h4>Enspirer PVT Ltd</h4>
-                <p class="text-muted">IT Company <span>| </span><span><a href="#" class="text-pink">www.enspirer.com</a></span></p>
+                <h4>{{$pb_company_title}}</h4>
+                <p class="text-muted">{{$pb_company_category}} <span>| </span><span><a href="#" class="text-pink">{{$pb_company_website}}</a></span></p>
             </div>
             <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">View Company</button>
             <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Dashboard</button>

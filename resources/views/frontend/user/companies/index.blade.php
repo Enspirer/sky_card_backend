@@ -89,10 +89,29 @@
                             </div>
                             </a>
                         </div>
-                        @include('frontend.user.companies.sections.company_card_item')
+                        @foreach($get_companies as $getcompany)
+x                                @include('frontend.user.companies.sections.company_card_item',[
+                            'pb_company_id' => $getcompany->id,
+                            'pb_company_title' => $getcompany->brand_name,
+                            'pb_company_category' => $getcompany->category,
+                            'pb_company_website' => $getcompany->website
+                            ])
+                        @endforeach
                     </div>
                 </div>
                 <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                    <div class="tab-pane tabs-animation fade active show" id="tab-content-0" role="tabpanel">
+                        <div class="row">
+                            @foreach($df_get_companies as $getcompany_df)
+                                @include('frontend.user.companies.sections.company_card_item_draft',[
+                                                           'df_company_id' => $getcompany_df->id,
+                                                           'df_company_title' => $getcompany_df->brand_name,
+                                                           'df_company_category' => $getcompany_df->category,
+                                                           'df_company_website' => $getcompany_df->website
+                                                           ])
+                                @endforeach
+                        </div>
+                    </div>
 
                 </div>
             </div>
