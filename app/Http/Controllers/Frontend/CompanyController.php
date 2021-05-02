@@ -11,4 +11,9 @@ class CompanyController extends Controller
     {
         return view('frontend.user.companies.index');
     }
+
+    public function create()
+    {
+        return view('frontend.user.companies.creator');
+    }
 }
