@@ -10,13 +10,22 @@ class CompanyController extends Controller
 {
     public function index()
     {
-        $get_companies = Company::where('status',1)->get();
-        $get_companies_df = Company::where('status',0)->get();
+        $get_companies = Company::where('status',1)
+            ->where('user_id',auth()->user()->id)
+            ->get();
+        $get_companies_df = Company::where('status',0)
+            ->where('user_id',auth()->user()->id)
+            ->get();
 
         return view('frontend.user.companies.index',[
             'get_companies' => $get_companies,
             'df_get_companies' => $get_companies_df
         ]);
+    }
+
+    public function dashboard($id)
+    {
+        dd($id);
     }
 
     public function create()
