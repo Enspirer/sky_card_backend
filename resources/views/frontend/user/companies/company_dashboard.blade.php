@@ -3,10 +3,6 @@
 @section('title', app_name() . ' | ' . __('navs.frontend.dashboard') )
 <link href="{{url('light_theme/dashboard/assets/css/profile.css')}}" rel="stylesheet">
 
-
-
-
-
 @section('content')
     <div class="app-main__outer">
         <div class="app-main__inner">
