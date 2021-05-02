@@ -7,8 +7,8 @@
                 <h4>{{$df_company_title}}</h4>
                 <p class="text-muted">{{$df_company_category}} <span>| </span><span><a href="#" class="text-pink">{{$df_company_website}}</a></span></p>
             </div>
-            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">View Company</button>
-            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Dashboard</button>
+            <a href="" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">View Company</a>
+            <a href="{{route('frontend.user.companies.dashboard',$df_company_id)}}" style="color: white;" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Dashboard</a>
             <div class="mt-4">
                 <div class="row">
                     <div class="col-4">
