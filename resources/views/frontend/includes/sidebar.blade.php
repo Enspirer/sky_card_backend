@@ -3,13 +3,13 @@
         <ul class="vertical-nav-menu">
             <li class="app-sidebar__heading"></li>
             <li>
-                <a href="index.html" class="mm-active">
+                <a href="{{route('frontend.user.dashboard')}}" class="mm{{ Request::segment(1) == 'dashboard' ? '-active' : null }}">
                     <i class="metismenu-icon pe-7s-rocket"></i>
                     Sky Daily Feeds
                 </a>
             </li>
             <li>
-                <a href="index.html" class="mm">
+                <a href="" class="mm">
                     <i class="metismenu-icon pe-7s-rocket"></i>
                     My Cards
                 </a>
@@ -34,7 +34,7 @@
             </li>
             <li class="app-sidebar__heading">My Companies</li>
             <li>
-                <a href="index.html" class="mm">
+                <a href="{{route('frontend.user.companies')}}" class="mm{{ Request::segment(1) == 'companies' ? '-active' : null }}">
                     <i class="metismenu-icon pe-7s-rocket"></i>
                     Create Company
                 </a>
