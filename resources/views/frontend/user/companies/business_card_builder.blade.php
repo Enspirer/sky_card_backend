@@ -39,7 +39,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <form class="" action="">
+                                    <form class="" action="{{route('frontend.user.companies.create_business_card.store_business_card')}}" method="post">
                                         {{csrf_field()}}
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Your Name</label>
@@ -75,7 +75,7 @@
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Card Type</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="card_type">
                                                         <option value="public">Public Card</option>
                                                         <option value="private">Personal Use</option>
                                                     </select>
@@ -84,7 +84,7 @@
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Email</label>
-                                                    <input name="fax_number" id="examplePassword" placeholder="Email" type="text" class="form-control">
+                                                    <input name="email" id="examplePassword" placeholder="Email" type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
