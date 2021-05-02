@@ -1,35 +1,32 @@
 <div class="col-md-4">
     <div class="text-center card-box">
         <div class="member-card pt-2 pb-2">
-            <div class="thumb-lg member-thumb mx-auto"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <div class="thumb-lg member-thumb mx-auto">
+                <img src="{{url('img/frontend/box2.jpg')}}" class="rounded-circle img-thumbnail" style="object-fit: contain;height: 80px;width: 80px;" alt="profile-image"></div>
             <div class="">
-                <h4>Freddie J. Plourde</h4>
-                <p class="text-muted">@Founder <span>| </span><span><a href="#" class="text-pink">websitename.com</a></span></p>
+                <h4>Enspirer PVT Ltd</h4>
+                <p class="text-muted">IT Company <span>| </span><span><a href="#" class="text-pink">www.enspirer.com</a></span></p>
             </div>
-            <ul class="social-links list-inline">
-                <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
-            </ul>
-            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
+            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">View Company</button>
+            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Dashboard</button>
             <div class="mt-4">
                 <div class="row">
                     <div class="col-4">
                         <div class="mt-3">
-                            <h4>2563</h4>
-                            <p class="mb-0 text-muted">Wallets Balance</p>
+                            <h4>23</h4>
+                            <p class="mb-0 text-muted">Employees</p>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="mt-3">
                             <h4>6952</h4>
-                            <p class="mb-0 text-muted">Income amounts</p>
+                            <p class="mb-0 text-muted">Following</p>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="mt-3">
                             <h4>1125</h4>
-                            <p class="mb-0 text-muted">Total Transactions</p>
+                            <p class="mb-0 text-muted">Reach Count</p>
                         </div>
                     </div>
                 </div>
