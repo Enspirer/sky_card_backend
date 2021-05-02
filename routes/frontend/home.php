@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');
         Route::get('companies/create', [CompanyController::class, 'create'])->name('companies.create');
         Route::post('companies/store', [CompanyController::class, 'store'])->name('companies.store');
+        Route::get('companies/dashboard/{id}', [CompanyController::class, 'dashboard'])->name('companies.dashboard');
 
 
         // User Profile Specific
