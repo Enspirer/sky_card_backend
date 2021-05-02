@@ -43,17 +43,17 @@
                                         {{csrf_field()}}
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Your Name</label>
-                                            <input name="first_name" id="exampleEmail" placeholder="Your Name" type="text" class="form-control">
+                                            <input name="first_name" id="exampleEmail" placeholder="Your Name" type="text" class="form-control" value="{{auth()->user()->first_name}} {{auth()->user()->last_name}}">
                                         </div>
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Address</label>
-                                            <input name="last_name" id="exampleEmail" placeholder="with a Address" type="text" class="form-control">
+                                            <input name="address" id="exampleEmail" placeholder="with a Address" type="text" class="form-control" value="{{$companyDetails->address}}">
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="examplePassword" class="">Phone Number 1</label>
-                                                    <input name="phone_number1" id="examplePassword" placeholder="Phone Number 1" type="text" class="form-control">
+                                                    <input name="phone_number1" id="examplePassword" placeholder="Phone Number 1" type="text" class="form-control" value="{{$companyDetails->phone_number}}">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -68,9 +68,8 @@
                                                     <input name="fax_number" id="examplePassword" placeholder="Fax Number" type="text" class="form-control">
                                                 </div>
                                             </div>
+                                            <input type="hidden" name="company_id" value="{{$companyDetails->id}}">
                                         </div>
-
-
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
@@ -84,13 +83,13 @@
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Email</label>
-                                                    <input name="email" id="examplePassword" placeholder="Email" type="text" class="form-control">
+                                                    <input name="email" id="examplePassword" placeholder="Email" type="text" class="form-control" value="{{auth()->user()->email}}">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Website</label>
-                                                    <input name="website" id="examplePassword" placeholder="Website" type="text" class="form-control">
+                                                    <input name="website" id="examplePassword" placeholder="Website" type="text" class="form-control" value="{{$companyDetails->website}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -98,13 +97,13 @@
                                             <div class="col-md-6">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Job Role</label>
-                                                    <input name="job_role" id="examplePassword" placeholder="Website" type="text" class="form-control">
+                                                    <input name="job_role" id="examplePassword" placeholder="Job Role" type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">City</label>
-                                                    <input name="city" id="examplePassword" placeholder="Website" type="text" class="form-control">
+                                                    <input name="city" id="examplePassword" placeholder="City" type="text" class="form-control">
                                                 </div>
 
                                             </div>
