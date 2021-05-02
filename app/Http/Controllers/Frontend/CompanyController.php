@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cards;
 use App\Models\Company;
 use Illuminate\Http\Request;
 
@@ -58,5 +59,25 @@ class CompanyController extends Controller
         $company->status = 0;
         $company->save();
 
+    }
+
+    public function store_business_card(Request $request)
+    {
+        $cards = new Cards;
+        $cards->name = $request->first_name.' '.$request->last_name;
+        $phone_numberJson = [
+            'phone_number1' => $request->phone_number1,
+            'phone_number2' => $request->phone_number2
+        ];
+        $cards->phone_number = json_encode($phone_numberJson);
+        $cards->fax_number = $request->fax_number;
+        $cards->website = $request->website;
+        $cards->email = $request->email;
+        $cards->job_role = $request->job_role;
+        $cards->card_type = $request->card_type;
+        $cards->city = $request->city;
+        $cards->user_id =$request->user_id;
+        $cards->save();
+        return back();
     }
 }
