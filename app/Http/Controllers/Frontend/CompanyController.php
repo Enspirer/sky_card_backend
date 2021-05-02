@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Cards;
 use App\Models\Company;
+use App\Models\MyCard;
 use Illuminate\Http\Request;
 
 class CompanyController extends Controller
@@ -24,9 +25,14 @@ class CompanyController extends Controller
         ]);
     }
 
-    public function create_business_card()
+    public function create_business_card($id)
     {
-        return view('frontend.user.companies.business_card_builder');
+        $companyDetails = Company::where('id',$id)
+            ->where('user_id',auth()->user()->id)
+            ->first();
+        return view('frontend.user.companies.business_card_builder',[
+            'companyDetails' => $companyDetails
+        ]);
     }
 
     public function dashboard($id)
@@ -63,21 +69,34 @@ class CompanyController extends Controller
 
     public function store_business_card(Request $request)
     {
-        $cards = new Cards;
-        $cards->name = $request->first_name.' '.$request->last_name;
+        $cards = new MyCard;
+        $cards->name = $request->first_name;
+        $cards->user_id =auth()->user()->id;
+        $cards->email = $request->email;
         $phone_numberJson = [
             'phone_number1' => $request->phone_number1,
             'phone_number2' => $request->phone_number2
         ];
         $cards->phone_number = json_encode($phone_numberJson);
-        $cards->fax_number = $request->fax_number;
+        $cards->address = $request->address;
+        $cards->position = $request->job_role;
+        $cards->is_public = $request->card_type;
         $cards->website = $request->website;
-        $cards->email = $request->email;
-        $cards->job_role = $request->job_role;
-        $cards->card_type = $request->card_type;
-        $cards->city = $request->city;
-        $cards->user_id =$request->user_id;
+        $cards->package = 1;
+        $cards->company_id = $request->company_id;
+        $cards->primary_template = 1;
         $cards->save();
-        return back();
+
+
+        return redirect()->route('frontend.user.companies.design_card',[
+            'id' =>$cards->id,
+            'company_id' => $request->company_id
+        ]);
+    }
+
+    public function design_card($id,$company_id)
+    {
+        return view('frontend.user.companies.business_card_designer');
+
     }
 }
