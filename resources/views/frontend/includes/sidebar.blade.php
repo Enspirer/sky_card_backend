@@ -4,44 +4,44 @@
             <li class="app-sidebar__heading"></li>
             <li>
                 <a href="{{route('frontend.user.dashboard')}}" class="mm{{ Request::segment(1) == 'dashboard' ? '-active' : null }}">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="fa fa-newspaper" style="padding-right: 10px;color: dimgrey"></i>
                     Sky Daily Feeds
                 </a>
             </li>
             <li>
                 <a href="" class="mm">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="fa fa-id-card" style="padding-right: 10px;color: dimgrey"></i>
                     My Cards
                 </a>
             </li>
             <li>
                 <a href="index.html" class="mm">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="fa fa-folder" style="padding-right: 10px;color: dimgrey"></i>
                     My Card Holder
                 </a>
             </li>
             <li>
                 <a href="index.html" class="mm">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="fa fa-wallet" style="padding-right: 10px;color: dimgrey"></i>
                     Cards Panel
                 </a>
             </li>
             <li>
                 <a href="index.html" class="mm">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="fa fa-calendar" style="padding-right: 10px;color: dimgrey"></i>
                     My Calender
                 </a>
             </li>
             <li class="app-sidebar__heading">My Companies</li>
             <li>
                 <a href="{{route('frontend.user.companies')}}" class="mm{{ Request::segment(1) == 'companies' ? '-active' : null }}">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="fa fa-plus" style="padding-right: 10px;color: dimgrey"></i>
                     Create Company
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="metismenu-icon pe-7s-diamond"></i>
+                    <i class="fa fa-building" style="padding-right: 10px;color: dimgrey"></i>
                     Enspirer PVT (LTD)
                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                 </a>
@@ -84,7 +84,7 @@
             <li class="app-sidebar__heading">My Workplace</li>
             <li>
                 <a href="#">
-                    <i class="metismenu-icon pe-7s-diamond"></i>
+                    <i class="fa fa-building" style="padding-right: 10px;color: dimgrey"></i>
                     Enspirer PVT (LTD)
                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                 </a>
