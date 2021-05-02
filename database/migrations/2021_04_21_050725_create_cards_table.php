@@ -26,6 +26,7 @@ class CreateCardsTable extends Migration
             $table->text('website')->nullable();
             $table->text('job_role')->nullable();
             $table->text('company_name')->nullable();
+            $table->text('company_id');
             $table->timestamps();
         });
     }

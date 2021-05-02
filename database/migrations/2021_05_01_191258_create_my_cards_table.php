@@ -16,17 +16,18 @@ class CreateMyCardsTable extends Migration
         Schema::create('my_cards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->text('user_id');
             $table->text('card_template');
-            $table->text('social_media_links');
+            $table->text('social_media_links')->nullable();
             $table->text('email');
-            $table->text('phone_number');
-            $table->text('address');
+            $table->text('phone_number')->nullable();
+            $table->text('address')->nullable();
             $table->text('position');
             $table->text('is_public');
             $table->text('website');
             $table->text('package');
+            $table->text('primary_template');
             $table->timestamps();
         });
     }
