@@ -39,45 +39,55 @@
                     Create Company
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-building" style="padding-right: 10px;color: dimgrey"></i>
-                    Enspirer PVT (LTD)
-                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                </a>
-                <ul>
-                    <li>
-                        <a href="elements-buttons-standard.html">
-                            <i class="metismenu-icon"></i>
-                            Dashboard
+
+
+
+            @if(count($get_company) != 0)
+                @foreach($get_company as $sidebar_company)
+                    <li class="mm{{ Request::segment(3) == $sidebar_company->id ? '-active' : null }}">
+                        <a href="{{route('frontend.user.companies.dashboard',$sidebar_company->id)}}">
+                            <i class="fa fa-building" style="padding-right: 10px;color: dimgrey"></i>
+                            {{$sidebar_company->brand_name}}
+                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                         </a>
+                        <ul>
+                            <li>
+                                <a href="{{route('frontend.user.companies.dashboard',$sidebar_company->id)}}">
+                                    <i class="metismenu-icon"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-dropdowns.html">
+                                    <i class="metismenu-icon"></i>
+                                    Inbox
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-icons.html">
+                                    <i class="metismenu-icon"></i>
+                                    Employees
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-badges-labels.html">
+                                    <i class="metismenu-icon"></i>
+                                    Published Post
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-cards.html">
+                                    <i class="metismenu-icon"></i>
+                                    Portfolio
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="elements-dropdowns.html">
-                            <i class="metismenu-icon"></i>
-                            Inbox
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-icons.html">
-                            <i class="metismenu-icon"></i>
-                            Employees
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-badges-labels.html">
-                            <i class="metismenu-icon"></i>
-                            Published Post
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-cards.html">
-                            <i class="metismenu-icon"></i>
-                            Portfolio
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                @endforeach
+            @else
+
+            @endif
+
 
 
             <li>
