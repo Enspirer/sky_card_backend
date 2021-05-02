@@ -31,6 +31,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // Company Controller
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');
+        Route::get('companies/create', [CompanyController::class, 'create'])->name('companies.create');
 
 
         // User Profile Specific
