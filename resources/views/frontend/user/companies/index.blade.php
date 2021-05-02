@@ -55,24 +55,11 @@
 
     <div class="app-main__outer">
         <div class="app-main__inner">
-            <div class="app-page-title">
-                <div class="page-title-wrapper">
-                    <div class="page-title-heading">
-                        <div class="page-title-icon">
-                            <i class="pe-7s-display1 icon-gradient bg-premium-dark">
-                            </i>
-                        </div>
-                        <div>Companies
-                            <div class="page-title-subheading">Wide selection of forms controls, using the Bootstrap 4 code base, but built with React.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page-title-actions">
-
-                    </div>
-                </div>
-            </div>
-
+            @include('frontend.user.dashboard_components.title_bar',[
+                        'title_icon' => 'fa fa-building',
+                        'title_description' => 'You can create your own company page with SkyCards',
+                        'title_name'=>'Create Company']
+                        )
 
             <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                 <li class="nav-item">
@@ -92,23 +79,20 @@
                 <div class="tab-pane tabs-animation fade active show" id="tab-content-0" role="tabpanel">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="main-card mb-3 card" style="padding-top: 100px;padding-bottom: 100px;text-align: center">
-                                <div class="card-body">
-                                    <i class="fa fa-plus" style="font-size: 40px;text-align: center;margin-bottom: 10px;"></i>
-                                    <h5 class="card-title" style="text-align: center">Create Company</h5>
-                                    <p style="text-align: center;line-height: normal">Create your own company<br> with SkyCards</p><br>
-                                </div>
+                            <a href="{{route('frontend.user.companies.create')}}">
+                            <div class="main-card mb-3 card" style="padding-top: 80px;padding-bottom: 80px;text-align: center">
+                                    <div class="card-body">
+                                        <i class="fa fa-plus" style="font-size: 40px;text-align: center;margin-bottom: 10px;"></i>
+                                        <h5 class="card-title" style="text-align: center">Create Company</h5>
+                                        <p style="text-align: center;line-height: normal">Create your own company<br> with SkyCards</p>
+                                    </div>
                             </div>
+                            </a>
                         </div>
                         @include('frontend.user.companies.sections.company_card_item')
                     </div>
                 </div>
-
-
                 <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
-
-                </div>
-                <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
 
                 </div>
             </div>
