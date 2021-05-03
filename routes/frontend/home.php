@@ -40,6 +40,8 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         Route::post('companiesq/business_card_creator/store_business_card', [CompanyController::class, 'store_business_card'])->name('companies.create_business_card.store_business_card');
 
+        Route::get('card-preview/{company_id}/{card_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
+
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');

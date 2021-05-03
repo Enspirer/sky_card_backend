@@ -7,12 +7,8 @@
 
 @section('content')
     <div class="app-main__outer">
+
         <div class="app-main__inner">
-            @include('frontend.user.dashboard_components.title_bar',[
-            'title_icon' => 'fa fa-id-card',
-            'title_description' => 'You can create your own company business card with SkyCards',
-            'title_name'=>'Create Business Card']
-            )
             @include('frontend.user.companies.sections.card_builder_steps_section',['step' => 2])
             <br><br>
             <div class="row">
@@ -21,7 +17,6 @@
                         <div class="card-header-tab card-header">
                             <div class="card-header-title">
                                 <i class="header-icon lnr-bicycle icon-gradient bg-love-kiss"> </i>
-                                Design Your Card (Select Template)
                             </div>
                             <ul class="nav">
                                 <li class="nav-item"><a data-toggle="tab" href="#tab-eg5-0" class="nav-link show active">Design</a></li>
