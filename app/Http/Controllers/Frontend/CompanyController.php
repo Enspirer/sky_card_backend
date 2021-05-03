@@ -65,6 +65,8 @@ class CompanyController extends Controller
         $company->status = 0;
         $company->save();
 
+        return redirect()->route('frontend.user.companies.dashboard',$company->id);
+
     }
 
     public function store_business_card(Request $request)
@@ -98,5 +100,14 @@ class CompanyController extends Controller
     {
         return view('frontend.user.companies.business_card_designer');
 
+    }
+
+
+    public function iframe_preview($card_id,$company_id)
+    {
+        $CompanyDetails = Company::where('id',$company_id)->first();
+        $cardDetails = MyCard::where('id',$card_id)->first();
+
+        return view('frontend.user.companies.sections.design_engine.iframe_card_preview');
     }
 }
