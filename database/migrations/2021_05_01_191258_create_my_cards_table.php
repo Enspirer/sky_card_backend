@@ -17,6 +17,8 @@ class CreateMyCardsTable extends Migration
             $table->bigIncrements('id');
             $table->text('name');
             $table->text('company_id');
+            $table->text('cover_image')->nullable();
+            $table->text('avatar_image')->nullable();
             $table->text('company_name');
             $table->text('description')->nullable();
             $table->text('user_id');
