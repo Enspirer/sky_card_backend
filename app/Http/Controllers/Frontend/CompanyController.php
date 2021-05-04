@@ -64,6 +64,17 @@ class CompanyController extends Controller
         $company->category = $request->category;
         $company->location = $request->location;
         $company->status = 0;
+
+        if($request->file('profile_picture'))
+        {
+            $preview_fileName = time().'.'.$request->profile_picture->getClientOriginalExtension();
+            $fullURLsPreviewFile = $request->profile_picture->move(public_path('files/preview_files'), $preview_fileName);
+            $company->logo_img = $preview_fileName;
+        }else{
+            $company->logo_img = 'no_img.jpg';
+        }
+
+
         $company->save();
 
         return redirect()->route('frontend.user.companies.dashboard',$company->id);
