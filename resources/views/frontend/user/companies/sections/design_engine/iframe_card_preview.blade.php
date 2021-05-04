@@ -58,11 +58,11 @@
         //Website
         $("#sky_temp_website").html("{{$card_details->website}}");
         //profile_picture
-        $('#sky_temp_profile_picture').attr("src", "https://picsum.photos/119");
+        $('#sky_temp_profile_picture').attr("src", "{{url('files/preview_files/')}}/{{$company_details->logo_img}}");
         //Cover Photo
         $("#sky_temp_cover_photo").css('background-image','url("https://picsum.photos/119")');
         //Job Title
-        $("#sky_temp_job_title").html("Hello World");
+        $("#sky_temp_job_title").html("{{$card_details->job_position}}");
 
 
 
