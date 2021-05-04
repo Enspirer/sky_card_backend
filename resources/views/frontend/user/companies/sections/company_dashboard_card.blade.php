@@ -3,7 +3,7 @@
         <div class="card user-card">
             <div class="card-block">
                 <div class="">
-                    <div class="" style="background-image: url('{{url('img/frontend/box2.jpg')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain"></div>
+                    <div class="" style="background-image: url('{{url('files/preview_files')}}/{{$companyDetails->logo_img}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain"></div>
                 </div>
                 <h6 class="f-w-600 m-t-25 m-b-10">{{$companyDetails->brand_name}}</h6>
                 <p class="text-muted">{{$companyDetails->website}} | {{$companyDetails->category}}</p>
