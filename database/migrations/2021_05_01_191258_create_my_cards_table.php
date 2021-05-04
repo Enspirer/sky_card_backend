@@ -22,7 +22,7 @@ class CreateMyCardsTable extends Migration
             $table->text('company_name');
             $table->text('description')->nullable();
             $table->text('user_id');
-            $table->text('card_template');
+            $table->text('card_template')->nullable();
             $table->text('social_media_links')->nullable();
             $table->text('email');
             $table->text('phone_number')->nullable();

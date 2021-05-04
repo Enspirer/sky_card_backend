@@ -36,9 +36,10 @@
                     <div class="row" style="margin-bottom: 30px">
                         <div class="col-md-4">
                             <div class="card">
-                                <div style="border-style: dashed;padding-top: 90px;padding-bottom:90px;text-align: center;color: grey;border-width: 2px;">
+                                <div style="border-style: dashed;padding-top: 90px;padding-bottom:90px;text-align: center;color: grey;border-width: 2px;" data-toggle="modal" data-target="#cover_photo_picker">
                                     Add Cover Photo
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -51,7 +52,7 @@
 
 
 
-                    <button class="btn btn-primary"  data-toggle="modal" data-target=".bd-example-modal-lg">How to make own Template</button>
+                    <button class="btn btn-primary"  data-toggle="modal" data-target=".bd-example-modalmodal-lg">How to make own Template</button>
 
 
 
@@ -107,13 +108,18 @@
 </div>
 
 
+@push('before-scripts')
 <script>
     function select_template(id) {
         document.getElementById('frame_1').src = '{{url('card-preview/'.$cardDetaials->id.'/'.$companyDetails->id)}}/'+id;
+        document.getElementById('template_field').value = id;
     }
 </script>
+@endpush
 
-
+@push('dialog-push')
+@include('frontend.user.companies.sections.design_engine.dialogs.file_manager')
+@endpush
 
 
 <!-- partial -->

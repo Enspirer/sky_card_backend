@@ -35,7 +35,12 @@
                             </div>
                         </div>
                         <div class="d-block text-right card-footer">
-                            <a href="javascript:void(0);" class="btn-wide btn-shadow btn btn-danger">Delete</a>
+                            <form action="{{route('frontend.user.companies.business_card_template_save')}}" method="post">
+                                {{csrf_field()}}
+                                <input type="hidden" id="template_field" name="template_id" value="">
+                                <input type="hidden" id="business_card_id" name="business_card_id" value="{{$cardDetaials->id}}">
+                                <button type="submit" class="btn btn-primary">Save and Next Step</button>
+                            </form>
                         </div>
                     </div>
                 </div>
