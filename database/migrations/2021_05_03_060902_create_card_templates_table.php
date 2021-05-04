@@ -15,6 +15,13 @@ class CreateCardTemplatesTable extends Migration
     {
         Schema::create('card_templates', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('card_body');
+            $table->text('thumb_image');
+            $table->text('user_id');
+            $table->text('is_premium');
+            $table->text('status');
+            $table->text('description')->nullable();
+            $table->text('category');
             $table->timestamps();
         });
     }

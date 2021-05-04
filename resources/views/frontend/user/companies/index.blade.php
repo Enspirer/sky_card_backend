@@ -42,8 +42,7 @@
                             </div>
                             </a>
                         </div>
-                        @foreach($get_companies as $getcompany)
-                            @include('frontend.user.companies.sections.company_card_item',[
+                        @foreach($get_companies as $getcompany)                             @include('frontend.user.companies.sections.company_card_item',[
                             'pb_company_id' => $getcompany->id,
                             'pb_company_title' => $getcompany->brand_name,
                             'pb_company_category' => $getcompany->category,

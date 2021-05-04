@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li>
-                <a href="" class="mm">
+                <a href="{{route('frontend.user.my_cards')}}" class="mm{{ Request::segment(1) == 'my_cards' ? '-active' : null }}">
                     <i class="fa fa-id-card" style="padding-right: 10px;color: dimgrey"></i>
                     My Cards
                 </a>

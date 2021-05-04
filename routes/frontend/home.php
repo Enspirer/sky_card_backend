@@ -7,6 +7,7 @@ use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\AnnotationController;
 use App\Http\Controllers\Frontend\CompanyController;
+use App\Http\Controllers\Frontend\MyCardController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -30,6 +31,8 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('account', [AccountController::class, 'index'])->name('account');
 
         // Company Controller
+        Route::get('my_cards',[MyCardController::class,'index'])->name('my_cards');
+
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');
         Route::get('companies/create', [CompanyController::class, 'create'])->name('companies.create');
         Route::post('companies/store', [CompanyController::class, 'store'])->name('companies.store');
@@ -40,7 +43,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         Route::post('companiesq/business_card_creator/store_business_card', [CompanyController::class, 'store_business_card'])->name('companies.create_business_card.store_business_card');
 
-        Route::get('card-preview/{company_id}/{card_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
+        Route::get('card-preview/{company_id}/{card_id}/{templete_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
 
 
         // User Profile Specific

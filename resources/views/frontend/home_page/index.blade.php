@@ -9,6 +9,7 @@
     @include('frontend.home_page.sections.sky_vip')
     @include('frontend.home_page.sections.contact_organizer_section')
     @include('frontend.home_page.sections.sky_card_app_section')
+
 @endsection
 
 @push('after-scripts')

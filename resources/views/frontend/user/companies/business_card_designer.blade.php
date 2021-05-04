@@ -6,6 +6,7 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 @section('content')
+
     <div class="app-main__outer">
 
         <div class="app-main__inner">
@@ -31,7 +32,6 @@
                                 <div class="tab-pane show" id="tab-eg5-1" role="tabpanel">
                                     @include('frontend.user.companies.sections.design_engine.preview')
                                 </div>
-
                             </div>
                         </div>
                         <div class="d-block text-right card-footer">
@@ -46,5 +46,10 @@
 
     <script src="{{url('light_theme/step_p/script.js')}}"></script>
 
+    @push('dialog-push')
+     @include('frontend.user.companies.sections.design_engine.dialogs.welcome_dialog')
+    @endpush
 
 @endsection
+
+

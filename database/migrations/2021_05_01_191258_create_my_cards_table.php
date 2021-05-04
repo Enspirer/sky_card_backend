@@ -16,6 +16,7 @@ class CreateMyCardsTable extends Migration
         Schema::create('my_cards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
+            $table->text('company_id');
             $table->text('description')->nullable();
             $table->text('user_id');
             $table->text('card_template');
