@@ -32,6 +32,7 @@ class CreateMyCardsTable extends Migration
             $table->text('website');
             $table->text('package');
             $table->text('primary_template');
+            $table->text('slug');
             $table->timestamps();
         });
     }

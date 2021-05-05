@@ -126,9 +126,48 @@
         $("#btn-close").click(function () {
             $("#share").addClass("d-none");
         });
+
+        $("#collapse-btn").click(function () {
+            if (!$(".collapse").hasClass("show")) {
+                $("#down-icon").removeClass("fa-chevron-down");
+                $("#down-icon").addClass("fa-chevron-up");
+            } else {
+                $("#down-icon").addClass("fa-chevron-down");
+                $("#down-icon").removeClass("fa-chevron-up");
+            }
+        });
+
+        $("#collapse-btn2").click(function () {
+            if (!$(".collapse").hasClass("show")) {
+                $("#down-icon2").removeClass("fa-chevron-down");
+                $("#down-icon2").addClass("fa-chevron-up");
+            } else {
+                $("#down-icon2").addClass("fa-chevron-down");
+                $("#down-icon2").removeClass("fa-chevron-up");
+            }
+        });
+
+        $("#collapse-btn3").click(function () {
+            if (!$(".collapse").hasClass("show")) {
+                $("#down-icon3").removeClass("fa-chevron-down");
+                $("#down-icon3").addClass("fa-chevron-up");
+            } else {
+                $("#down-icon3").addClass("fa-chevron-down");
+                $("#down-icon3").removeClass("fa-chevron-up");
+            }
+        });
+
+        $("#collapse-btn4").click(function () {
+            if (!$(".collapse").hasClass("show")) {
+                $("#down-icon4").removeClass("fa-chevron-down");
+                $("#down-icon4").addClass("fa-chevron-up");
+            } else {
+                $("#down-icon4").addClass("fa-chevron-down");
+                $("#down-icon4").removeClass("fa-chevron-up");
+            }
+        });
     });
 </script>
-
 
 <script>
     $( document ).ready(function() {

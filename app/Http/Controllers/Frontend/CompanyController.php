@@ -19,7 +19,6 @@ class CompanyController extends Controller
         $get_companies_df = Company::where('status',0)
             ->where('user_id',auth()->user()->id)
             ->get();
-
         return view('frontend.user.companies.index',[
             'get_companies' => $get_companies,
             'df_get_companies' => $get_companies_df
@@ -41,7 +40,6 @@ class CompanyController extends Controller
         $companyDetails = Company::where('id',$id)
             ->where('user_id',auth()->user()->id)
             ->first();
-
         return view('frontend.user.companies.company_dashboard',[
             'companyDetails' => $companyDetails
         ]);
@@ -102,13 +100,26 @@ class CompanyController extends Controller
         $cards->company_id = $request->company_id;
         $cards->primary_template = 1;
         $cards->company_name = $getCompanyDetails->brand_name;
+        $cards->slug = 'preview_version';
         $cards->save();
+
+
+
+
 
 
         return redirect()->route('frontend.user.companies.design_card',[
             'id' =>$cards->id,
             'company_id' => $request->company_id
         ]);
+    }
+
+
+    public static function generate_slug($name,$id)
+    {
+        $spaces = str_replace(' ', '', $name);
+        $insimple = strtolower($spaces);
+        return $insimple.$id;
     }
 
     public function design_card($id,$company_id)
@@ -182,9 +193,12 @@ class CompanyController extends Controller
         $getMyCardDetails = MyCard::where('id',$request->business_card_id)->first();
         MyCard::where('id',$request->business_card_id)
             ->update([
-                'card_template' => $request->template_id
+                'card_template' => $request->template_id,
+                'slug' =>  self::generate_slug($getMyCardDetails->name,$request->business_card_id)
             ]);
-        return redirect()->route('frontend.user.companies.add_social_links_page',[$request->business_card_id,$getMyCardDetails->id]);
+
+
+        return redirect()->route('frontend.user.companies.add_social_links_page',[$request->business_card_id,$getMyCardDetails->company_id]);
     }
 
     public function publish_your_card()

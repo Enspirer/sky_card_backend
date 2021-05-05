@@ -37,21 +37,18 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');
         Route::get('companies/create', [CompanyController::class, 'create'])->name('companies.create');
         Route::post('companies/store', [CompanyController::class, 'store'])->name('companies.store');
-        Route::get('companiesq/dashboard/{id}', [CompanyController::class, 'dashboard'])->name('companies.dashboard');
 
+        Route::get('companiesq/dashboard/{id}', [CompanyController::class, 'dashboard'])->name('companies.dashboard');
         Route::get('companiesq/business_card_creator/{id}/step1', [CompanyController::class, 'create_business_card'])->name('companies.create_business_card');
         Route::get('companiesq/business_card_creator/{id}/step2/{company_id}', [CompanyController::class, 'design_card'])->name('companies.design_card');
         Route::get('companiesq/business_card_creator/{id}/step3/{company_id}', [CompanyController::class, 'add_social_links_page'])->name('companies.add_social_links_page');
         Route::get('companiesq/business_card_creator/{id}/step4/{company_id}', [CompanyController::class, 'publish_your_card'])->name('companies.publish_your_card');
-
         Route::post('companiesq/business_card_creator/store_business_card', [CompanyController::class, 'store_business_card'])->name('companies.create_business_card.store_business_card');
 
         Route::get('card-preview/{company_id}/{card_id}/{templete_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
+
         Route::post('companiesq/business_card_template', [CompanyController::class, 'business_card_template_save'])->name('companies.business_card_template_save');
-
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
-
-
         Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 
