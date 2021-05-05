@@ -3,91 +3,135 @@
 @section('title', app_name() . ' | ' . __('labels.frontend.auth.login_box_title'))
 
 @section('content')
-    <div class="row justify-content-center align-items-center">
-        <div class="col col-sm-8 align-self-center">
-            <div class="card">
-                <div class="card-header">
-                    <strong>
-                        @lang('labels.frontend.auth.login_box_title')
-                    </strong>
-                </div><!--card-header-->
+    <section id="login-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 p-5">
+                    <div class="card animscroll-init animscroll-animate" data-animscroll="fade-right">
+                        <h1 data-animscroll="fade-up" data-animscroll-delay="100" class="animscroll-init animscroll-animate">Hello there,</h1>
+                        <h6 data-animscroll="fade-up" data-animscroll-delay="200" class="animscroll-init animscroll-animate">Please Sign In to continue</h6>
 
-                <div class="card-body">
-                    {{ html()->form('POST', route('frontend.auth.login.post'))->open() }}
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    {{ html()->label(__('validation.attributes.frontend.email'))->for('email') }}
+                        <div class="btn-group mt-5">
+                            <a data-animscroll="fade-up" data-animscroll-delay="300" class="btn-fb mt-3 animscroll-init animscroll-animate" href="#"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;Continue With Facebook</a>
+                            <a data-animscroll="fade-up" data-animscroll-delay="400" class="btn-google mt-2 animscroll-init animscroll-animate" href="#"><i class="fab fa-google"></i>&nbsp;&nbsp;Continue With Google</a>
+                        </div>
 
-                                    {{ html()->email('email')
-                                        ->class('form-control')
-                                        ->placeholder(__('validation.attributes.frontend.email'))
-                                        ->attribute('maxlength', 191)
-                                        ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                        <div data-animscroll="fade-up" data-animscroll-delay="500" class="separator mt-4 mb-4 animscroll-init animscroll-animate">or</div>
 
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    {{ html()->label(__('validation.attributes.frontend.password'))->for('password') }}
+                        <form class="form" action="">
+                            <input data-animscroll="fade-up" data-animscroll-delay="600" class="input animscroll-init animscroll-animate" type="text" placeholder="Email / Username">
+                            <input data-animscroll="fade-up" data-animscroll-delay="700" class="input mt-2 animscroll-init animscroll-animate" type="password" placeholder="Password">
 
-                                    {{ html()->password('password')
-                                        ->class('form-control')
-                                        ->placeholder(__('validation.attributes.frontend.password'))
-                                        ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <div class="checkbox">
-                                        {{ html()->label(html()->checkbox('remember', true, 1) . ' ' . __('labels.frontend.auth.remember_me'))->for('remember') }}
-                                    </div>
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group clearfix">
-                                    {{ form_submit(__('labels.frontend.auth.login_button')) }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
-
-                        @if(config('access.captcha.login'))
-                            <div class="row">
-                                <div class="col">
-                                    @captcha
-                                    {{ html()->hidden('captcha_status', 'true') }}
-                                </div><!--col-->
-                            </div><!--row-->
-                        @endif
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group text-right">
-                                    <a href="{{ route('frontend.auth.password.reset') }}">@lang('labels.frontend.passwords.forgot_password')</a>
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
-                    {{ html()->form()->close() }}
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="text-center">
-                                @include('frontend.auth.includes.socialite')
+                            <button data-animscroll="fade-up" data-animscroll-delay="800" class="mt-5 animscroll-init animscroll-animate" type="submit">Continue</button>
+                            <div class="row ml-0 mr-0 mt-2 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="900">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <div class="forget ml-auto">
+                                    <a href="#">Forget Password?</a>
+                                </div>
                             </div>
-                        </div><!--col-->
-                    </div><!--row-->
-                </div><!--card body-->
-            </div><!--card-->
-        </div><!-- col-md-8 -->
-    </div><!-- row -->
+                        </form>
+
+                        <div class="not-member mt-4 animscroll-init" data-animscroll="fade-up" data-animscroll-delay="1000">
+                            <p>Not a member yet? <a href="#">Register Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7"><img data-animscroll="fade-left" src="assets/Group 69.png" alt="" class="animscroll-init animscroll-animate"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    {{--<div class="row justify-content-center align-items-center">--}}
+        {{--<div class="col col-sm-8 align-self-center">--}}
+            {{--<div class="card">--}}
+                {{--<div class="card-header">--}}
+                    {{--<strong>--}}
+                        {{--@lang('labels.frontend.auth.login_box_title')--}}
+                    {{--</strong>--}}
+                {{--</div><!--card-header-->--}}
+
+                {{--<div class="card-body">--}}
+                    {{--{{ html()->form('POST', route('frontend.auth.login.post'))->open() }}--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col">--}}
+                                {{--<div class="form-group">--}}
+                                    {{--{{ html()->label(__('validation.attributes.frontend.email'))->for('email') }}--}}
+
+                                    {{--{{ html()->email('email')--}}
+                                        {{--->class('form-control')--}}
+                                        {{--->placeholder(__('validation.attributes.frontend.email'))--}}
+                                        {{--->attribute('maxlength', 191)--}}
+                                        {{--->required() }}--}}
+                                {{--</div><!--form-group-->--}}
+                            {{--</div><!--col-->--}}
+                        {{--</div><!--row-->--}}
+
+                        {{--<div class="row">--}}
+                            {{--<div class="col">--}}
+                                {{--<div class="form-group">--}}
+                                    {{--{{ html()->label(__('validation.attributes.frontend.password'))->for('password') }}--}}
+
+                                    {{--{{ html()->password('password')--}}
+                                        {{--->class('form-control')--}}
+                                        {{--->placeholder(__('validation.attributes.frontend.password'))--}}
+                                        {{--->required() }}--}}
+                                {{--</div><!--form-group-->--}}
+                            {{--</div><!--col-->--}}
+                        {{--</div><!--row-->--}}
+
+                        {{--<div class="row">--}}
+                            {{--<div class="col">--}}
+                                {{--<div class="form-group">--}}
+                                    {{--<div class="checkbox">--}}
+                                        {{--{{ html()->label(html()->checkbox('remember', true, 1) . ' ' . __('labels.frontend.auth.remember_me'))->for('remember') }}--}}
+                                    {{--</div>--}}
+                                {{--</div><!--form-group-->--}}
+                            {{--</div><!--col-->--}}
+                        {{--</div><!--row-->--}}
+
+                        {{--<div class="row">--}}
+                            {{--<div class="col">--}}
+                                {{--<div class="form-group clearfix">--}}
+                                    {{--{{ form_submit(__('labels.frontend.auth.login_button')) }}--}}
+                                {{--</div><!--form-group-->--}}
+                            {{--</div><!--col-->--}}
+                        {{--</div><!--row-->--}}
+
+                        {{--@if(config('access.captcha.login'))--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col">--}}
+                                    {{--@captcha--}}
+                                    {{--{{ html()->hidden('captcha_status', 'true') }}--}}
+                                {{--</div><!--col-->--}}
+                            {{--</div><!--row-->--}}
+                        {{--@endif--}}
+
+                        {{--<div class="row">--}}
+                            {{--<div class="col">--}}
+                                {{--<div class="form-group text-right">--}}
+                                    {{--<a href="{{ route('frontend.auth.password.reset') }}">@lang('labels.frontend.passwords.forgot_password')</a>--}}
+                                {{--</div><!--form-group-->--}}
+                            {{--</div><!--col-->--}}
+                        {{--</div><!--row-->--}}
+                    {{--{{ html()->form()->close() }}--}}
+
+                    {{--<div class="row">--}}
+                        {{--<div class="col">--}}
+                            {{--<div class="text-center">--}}
+                                {{--@include('frontend.auth.includes.socialite')--}}
+                            {{--</div>--}}
+                        {{--</div><!--col-->--}}
+                    {{--</div><!--row-->--}}
+                {{--</div><!--card body-->--}}
+            {{--</div><!--card-->--}}
+        {{--</div><!-- col-md-8 -->--}}
+    {{--</div><!-- row -->--}}
 @endsection
 
 @push('after-scripts')

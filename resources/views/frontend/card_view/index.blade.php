@@ -61,7 +61,6 @@
     </div>
 </div>
 
-<h3><a href="{{route('frontend.user.companies.vcardgenerator',$card_details->id)}}">Engine</a> </h3>
 
 
 <div id="share" class="share d-none" style="width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.90);position: absolute;top: 0;left: 0;z-index: 99999999;overflow-y: scroll;position: fixed;">
@@ -191,6 +190,17 @@
         $("#sky_temp_cover_photo").css('background-image','url({{$card_details->cover_image}})');
         //Job Title
         $("#sky_temp_job_title").html("{{$card_details->job_position}}");
+
+
+
+
+        $('#sky_temp-ca-call').attr("href", "tel:{{$phone_number->phone_number1}}");
+        $('#sky_temp_ca-whatsapp').attr("href", "https://api.whatsapp.com/send?phone={{$phone_number->phone_number1}}");
+        $('#sky_temp_ca_sms').attr("href", "sms:{{$phone_number->phone_number1}}");
+        $('#sky_temp_ca_vcard').attr("href", "{{route('frontend.user.companies.vcardgenerator',$card_details->id)}}");
+
+
+
     });
 </script>
 
