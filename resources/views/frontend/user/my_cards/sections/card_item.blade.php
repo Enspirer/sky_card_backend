@@ -1,9 +1,9 @@
 <div class="col-md-6">
     <div class="padding">
-        <div class="card user-card-full">
+        <div class="card user-card-full" style="height: 320px;">
             <div class="row m-l-0 m-r-0">
                 @if($my_cad->cover_image)
-                    <div class="col-sm-4 bg-c-lite-green user-profile" style="background-image: url('{{$my_cad->cover_image}}')">
+                    <div class="col-sm-4 bg-c-lite-green user-profile" style="background-image: url('{{$my_cad->cover_image}}');height: 341px">
                 @else
                     <div class="col-sm-4 bg-c-lite-green user-profile">
                 @endif
@@ -11,10 +11,8 @@
                         <div class="m-b-25">
                             @if($my_cad->avatar_image)
                                 <div class="" style="background-image: url('{{url('files/preview_files/')}}/{{$my_cad->avatar_image}});height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
-
                             @else
                                 <div class="" style="background-image: url('{{url('files/preview_files/')}}/{{\App\Models\Company::where('id',$my_cad->company_id)->first()->logo_img}}');height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
-
                             @endif
                             {{--<img src="" class="img-radius" alt="User-Profile-Image">--}}
                         </div>
@@ -61,6 +59,17 @@
                                 <h6 class="text-muted f-w-400">{{$my_cad->email}}</h6>
                             </div>
                         </div>
+                        <div class="">
+                            @if($my_cad->card_template)
+
+                            @else
+                                <div class="alert alert-warning fade show" role="alert" style="font-size: 11px;padding-bottom: 8px;margin-bottom: 0px;">
+                                  Card Design not selected <span><a href="{{route('frontend.user.companies.design_card',[$my_cad->id,$my_cad->company_id])}}">Select your design</a></span>
+                                </div>
+
+                            @endif
+
+                        </div>
 
                         <ul class="social-link list-unstyled m-t-40 m-b-10">
                             <li>
@@ -79,8 +88,13 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="{{route('frontend.view_card',$my_cad->slug)}}" class="btn btn-primary">View Card</a>
-                        <a href="" class="btn btn-primary">Share</a>
+
+                        @if($my_cad->card_template)
+                            <a href="{{route('frontend.view_card',$my_cad->slug)}}" class="btn btn-primary">View Card</a>
+                            <a href="" class="btn btn-primary">Share</a>
+                        @else
+                            <a href="" class="btn btn-primary">Edit</a>
+                        @endif
                     </div>
                 </div>
             </div>
