@@ -21,17 +21,17 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card">
-                                            <div style="background-image: url('{{url('files/cover_images/2.jpg')}}');height: 160px;"></div>
+                                            <div onclick="update_cover_photo('2.jpg')" style="background-image: url('{{url('files/cover_images/2.jpg')}}');height: 160px;" ></div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card">
-                                            <div style="background-image: url('{{url('files/cover_images/3.jpg')}}');height: 160px;"></div>
+                                            <div onclick="update_cover_photo('3.jpg')" style="background-image: url('{{url('files/cover_images/3.jpg')}}');height: 160px;"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card">
-                                            <div style="background-image: url('{{url('files/cover_images/4.jpg')}}');height: 160px;"></div>
+                                            <div onclick="update_cover_photo('4.jpg')" style="background-image: url('{{url('files/cover_images/4.jpg')}}');height: 160px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -59,9 +59,10 @@
 
 <script>
     function update_cover_photo(file_name) {
-            $.post('{{route('cover_photo_update')}}', { business_card_id: "{{$companyDetails->id}}", file_name : file_name},
+            $.post('{{route('cover_photo_update')}}', { business_card_id: "{{$cardDetaials->id}}", file_name : file_name},
                 function(returnedData){
-                    console.log(returnedData);
+                    document.getElementById('frame_1').contentDocument.location.reload(true);
+                    $('#cover_photo_picker').modal('hide');
                 });
 
     }

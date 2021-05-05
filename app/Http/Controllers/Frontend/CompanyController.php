@@ -8,7 +8,7 @@ use App\Models\CardTemplate;
 use App\Models\Company;
 use App\Models\MyCard;
 use Illuminate\Http\Request;
-
+use Response;
 class CompanyController extends Controller
 {
     public function index()
@@ -192,11 +192,36 @@ class CompanyController extends Controller
         return view('frontend.user.companies.bussiness_card_publish');
     }
 
-    public function update_cover_photo()
+    public function update_cover_photo(Request $request)
     {
         $mesage = ['finished_message'=> 'Its Working'];
+        MyCard::where('id',$request->business_card_id)
+            ->update(
+                [
+                    'cover_image' => url('files/cover_images/').'/'.$request->file_name
+                ]);
+        return url('files/cover_images/').'/'.$request->file_name;
+    }
 
-        return response()->json($mesage);
+    public function vcardgenerator($card_id)
+    {
+        $cardDetils = MyCard::where('id',$card_id)->first();
+
+
+        $eni = 'BEGIN:VCARD
+VERSION:3.0
+N:;'.$cardDetils->name.';;;
+FN:'.$cardDetils->name.'
+TITLE:'.$cardDetils->position.'
+EMAIL;TYPE=email:'.$cardDetils->email.'
+URL:https://www.skycard.com/c/sanjayasenevirathne/
+END:VCARD';
+        header('Content-Disposition: attachment; filename="sample.vcf"');
+        header('Content-Type: text/plain'); # Don't use application/force-download - it's not a real MIME type, and the Content-Disposition header is sufficient
+        header('Content-Length: ' . strlen($eni));
+        header('Connection: close');
+
+        return $eni;
     }
 
 
