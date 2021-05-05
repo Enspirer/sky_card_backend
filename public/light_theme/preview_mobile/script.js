@@ -18,9 +18,6 @@ function updateIframe() {
   phone.style.height = "667px";
 
   /*Idea by /u/aerosole*/
-  document.getElementById("wrapper").style.perspective = (
-    document.getElementById("iframePerspective").checked ? "1300px" : "none"
-  );
 
 }
 
@@ -40,35 +37,35 @@ document.getElementById("phones").addEventListener("click", function(evt) {
   if(evt.target.value == 1){
     // iphone 6
     width = 375;
-    height = 667; 
+    height = 667;
   }
 
   if(evt.target.value == 2){
     // samsung
     width = 400;
-    height = 640; 
+    height = 640;
   }
 
   if(evt.target.value == 3){
     // microsoft
     width = 320;
-    height = 480;  
+    height = 480;
   }
 
   if(evt.target.value == 4){
     // htc
     width = 360;
-    height = 640; 
+    height = 640;
   }
 
   if(evt.target.value == 5){
     // ipad mini
     width = 768;
-    height = 1024; 
+    height = 1024;
   }
 
     phone.style.width = width + "px";
-    phone.style.height = height + "px"; 
+    phone.style.height = height + "px";
 
 });
 

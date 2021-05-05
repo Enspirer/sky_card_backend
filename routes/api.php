@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\CardController;
+use App\Http\Controllers\Frontend\MyCardController;
+use App\Http\Controllers\Frontend\CompanyController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,6 +19,7 @@ use App\Http\Controllers\API\CardController;
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/
+Route::post('user_updates', [CompanyController::class, 'update_cover_photo'])->name('cover_photo_update');
 
 
 Route::group(['prefix' => 'auth'], function () {

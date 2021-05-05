@@ -2,8 +2,52 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="row">
+                <div class="mb-3">
+                    <div class="card-header">
+                        <ul class="nav nav-justified">
+                            <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-0" class="nav-link active show">Library</a></li>
+                            <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-1" class="nav-link show">Upload</a></li>
+                            <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-2" class="nav-link">URL</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tab-eg7-0" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div style="background-image: url('{{url('files/cover_images/1.jpg')}}');height: 160px;" onclick="update_cover_photo('1.jpg')"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div style="background-image: url('{{url('files/cover_images/2.jpg')}}');height: 160px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div style="background-image: url('{{url('files/cover_images/3.jpg')}}');height: 160px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div style="background-image: url('{{url('files/cover_images/4.jpg')}}');height: 160px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show" id="tab-eg7-1" role="tabpanel">
+                                <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+                                <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+                                <form action="/upload-target" class="dropzone"></form>
+                            </div>
 
+                            <div class="tab-pane" id="tab-eg7-2" role="tabpanel">
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -12,3 +56,13 @@
         </div>
     </div>
 </div>
+
+<script>
+    function update_cover_photo(file_name) {
+            $.post('{{route('cover_photo_update')}}', { business_card_id: "{{$companyDetails->id}}", file_name : file_name},
+                function(returnedData){
+                    console.log(returnedData);
+                });
+
+    }
+</script>

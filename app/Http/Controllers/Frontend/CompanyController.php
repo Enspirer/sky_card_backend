@@ -192,5 +192,12 @@ class CompanyController extends Controller
         return view('frontend.user.companies.bussiness_card_publish');
     }
 
+    public function update_cover_photo()
+    {
+        $mesage = ['finished_message'=> 'Its Working'];
+
+        return response()->json($mesage);
+    }
+
 
 }
