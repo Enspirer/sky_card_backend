@@ -2,10 +2,21 @@
     <div class="padding">
         <div class="card user-card-full">
             <div class="row m-l-0 m-r-0">
-                <div class="col-sm-4 bg-c-lite-green user-profile">
+                @if($my_cad->cover_image)
+                    <div class="col-sm-4 bg-c-lite-green user-profile" style="background-image: url('{{$my_cad->cover_image}}')">
+                @else
+                    <div class="col-sm-4 bg-c-lite-green user-profile">
+                @endif
                     <div class="card-block text-center text-white">
                         <div class="m-b-25">
-                            <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
+                            @if($my_cad->avatar_image)
+                                <div class="" style="background-image: url('{{url('files/preview_files/')}}/{{$my_cad->avatar_image}});height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
+
+                            @else
+                                <div class="" style="background-image: url('{{url('files/preview_files/')}}/{{\App\Models\Company::where('id',$my_cad->company_id)->first()->logo_img}}');height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
+
+                            @endif
+                            {{--<img src="" class="img-radius" alt="User-Profile-Image">--}}
                         </div>
                         <h6 class="f-w-600">{{$my_cad->name}}</h6>
                         <p>{{$my_cad->position}}</p>
@@ -68,6 +79,8 @@
                                 </a>
                             </li>
                         </ul>
+                        <a href="{{route('frontend.view_card',$my_cad->slug)}}" class="btn btn-primary">View Card</a>
+                        <a href="" class="btn btn-primary">Share</a>
                     </div>
                 </div>
             </div>

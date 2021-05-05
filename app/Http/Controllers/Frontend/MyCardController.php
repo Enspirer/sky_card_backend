@@ -24,7 +24,6 @@ class MyCardController extends Controller
         $CompanyDetails = Company::where('id',$cardDetails->company_id)->first();
         $templates = CardTemplate::where('id',$cardDetails->card_template)->first();
 
-
         if($cardDetails){
             $get_fnameLname = explode(" ", $cardDetails->name);
         }else{
