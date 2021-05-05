@@ -19,7 +19,6 @@
     <body>
        @include('includes.partials.read-only')
        @include('includes.partials.logged-in-as')
-       @include('includes.partials.messages')
        @yield('content')
 
        @stack('before-scripts')

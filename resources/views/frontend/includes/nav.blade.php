@@ -6,8 +6,8 @@
                     <ul>
                         <li><a class="navigation-link active" href="{{url('/')}}">Home</a></li>
                         <li><a class="navigation-link" href="#">Sky Cards App</a></li>
-                        <li><a class="navigation-link" href="#">Sky Club</a></li>
-                        <li><a class="navigation-link" href="#">Sky Daily</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.sky_card_club')}}">Sky Club</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.sky_daily')}}">Sky Daily</a></li>
                     </ul>
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div class="col-5">
                 <div class="row">
                     <ul>
-                        <li><a class="navigation-link" href="#">Sky Card Holder</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.card_explorer')}}">Sky Card Holder</a></li>
                         <li><a class="navigation-link" href="#">Contact</a></li>
                         <li><a class="navigation-link" href="#">About</a></li>
                         @auth

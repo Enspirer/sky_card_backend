@@ -4,9 +4,12 @@
 
 @section('content')
     @include('frontend.home_page.sections.top_slider')
+    @include('frontend.home_page.sections.digital_bussiness_card_section')
     @include('frontend.home_page.sections.sky_club_section')
     @include('frontend.home_page.sections.sky_dialy_section')
+
     @include('frontend.home_page.sections.sky_vip')
+
     @include('frontend.home_page.sections.contact_organizer_section')
     @include('frontend.home_page.sections.sky_card_app_section')
 
