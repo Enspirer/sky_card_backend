@@ -16,4 +16,8 @@ class HomeController extends Controller
     {
         return view('frontend.home_page.index');
     }
+
+    public function test_page(){
+        return view('frontend.test_card_preview');
+    }
 }
