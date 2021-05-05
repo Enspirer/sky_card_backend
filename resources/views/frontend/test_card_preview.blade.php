@@ -419,7 +419,7 @@
     </div>
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a style="display: contents;text-decoration: none;" href="sms:94777009990">
+        <a style="display: contents;text-decoration: none;" href="sms:?body=This%20is%20my%20digital%20business%20card:%20https://www.skycards.lk/card_preview">
             <i style="font-size: 50px;color: #fff;" class="far fa-comments"></i>
             <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">SMS</h4>
         </a>
@@ -433,21 +433,21 @@
     </div>
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a style="display: contents;text-decoration: none;" href="#">
+        <a style="display: contents;text-decoration: none;" href="https://www.facebook.com/sharer/sharer.php?u=https://www.skycards.lk/card_preview&amp;quote=This is my digital business card: https://www.skycards.lk/card_preview">
             <i style="font-size: 50px;color: #fff;" class="fab fa-facebook-f"></i>
             <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Facebook</h4>
         </a>
     </div>
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a style="display: contents;text-decoration: none;" href="#">
+        <a style="display: contents;text-decoration: none;" href="http://twitter.com/home?status=This is my digital business card: https://www.skycards.lk/card_preview" target="_blank">
             <i style="font-size: 50px;color: #fff;" class="fab fa-twitter"></i>
             <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Twitter</h4>
         </a>
     </div>
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a style="display: contents;text-decoration: none;" href="#">
+        <a style="display: contents;text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.skycards.lk/card_preview&amp;title=This is my digital business card:&amp;summary=&amp;source=" target="_blank">
             <i style="font-size: 50px;color: #fff;" class="fab fa-linkedin-in"></i>
             <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Linkedin</h4>
         </a>
