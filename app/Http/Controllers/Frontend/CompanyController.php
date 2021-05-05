@@ -119,7 +119,7 @@ class CompanyController extends Controller
     {
         $spaces = str_replace(' ', '', $name);
         $insimple = strtolower($spaces);
-        return $insimple.$id;
+        return $insimple.'-'.$id;
     }
 
     public function design_card($id,$company_id)
