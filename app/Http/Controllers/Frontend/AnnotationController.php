@@ -20,9 +20,6 @@ class AnnotationController extends Controller
         if($request->file('image')){
             //convert image to base64
             $image = base64_encode(file_get_contents($request->file('image')));
-
-            dd($image);
-
             //prepare request
             $request = new AnnotateImageRequest();
             $request->setImage($image);
@@ -31,19 +28,22 @@ class AnnotationController extends Controller
             //send annotation request
             $response = $gcvRequest->annotate();
             $getCetails = Cards::GetText($response);
+        }else{
+            $getCetails = null;
         }
-//        $contact_num_st  = Cards::ScaningContactNumber_step1($getCetails);
-
-        $email = Cards::ScaningEmail($getCetails);
+        $contact_num_st  = Cards::ScaningContactNumber_step1($getCetails);
         $website = Cards::ScaningWebsite($getCetails);
+        $email = Cards::ScaningEmail($getCetails);
+        $address = Cards::ScaningAddress($getCetails);
+        $name =Cards::ScaningName($getCetails);
         $outArray = [
-//          'phone_number' => $contact_num_st,
-          'email' => $email,
-          'website'=> $website
+           'address' => $address,
+           'name' => $name,
+           'email' => $email,
+           'contact_number' => $contact_num_st,
+           'website' => $website
         ];
-
-
-
+        dd($outArray);
     }
 
 

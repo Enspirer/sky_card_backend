@@ -15,6 +15,7 @@ class CardController extends Controller
     {
 
 
+
             //convert image to base64
             $image = $request->upload_file;
 
@@ -36,8 +37,15 @@ class CardController extends Controller
         $getCetails = Cards::GetText($response);
         $contact_num_st  = Cards::ScaningContactNumber_step1($getCetails);
         $email = Cards::ScaningEmail($getCetails);
+        $website = Cards::ScaningWebsite($getCetails);
+        $address = Cards::ScaningAddress($getCetails);
+        $name =Cards::ScaningName($getCetails);
+
+
         $website = null;
         $outArray = [
+            'name' => $name,
+            'address' => $address,
             'phone_number' => $contact_num_st,
             'email' => $email,
             'website'=> $website,

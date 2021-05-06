@@ -5,6 +5,7 @@ use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\CardController;
 use App\Http\Controllers\Frontend\MyCardController;
 use App\Http\Controllers\Frontend\CompanyController;
+use App\Http\Controllers\Frontend\AnnotationController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,6 +21,7 @@ use App\Http\Controllers\Frontend\CompanyController;
     return $request->user();
 });*/
 Route::post('user_updates', [CompanyController::class, 'update_cover_photo'])->name('cover_photo_update');
+Route::post('entype',  [AnnotationController::class,'annotateImage']);
 
 
 Route::group(['prefix' => 'auth'], function () {
