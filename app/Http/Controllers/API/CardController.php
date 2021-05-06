@@ -65,7 +65,7 @@ class CardController extends Controller
         return $output_file;
     }
 
-    public static function save_card(Request $request)
+    public function save_card(Request $request)
     {
         $cardDetails = new Cards;
         $cardDetails->name = $request->name;
@@ -78,6 +78,7 @@ class CardController extends Controller
         ];
         $cardDetails->phone_number = json_encode($phone_numbers);
         $cardDetails->website = $request->website;
+        $cardDetails->email = $request->email;
         $cardDetails->card_image = $request->card_image;
         $cardDetails->card_type = $request->card_type;
         $cardDetails->company_name = $request->company_name;
