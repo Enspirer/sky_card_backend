@@ -30,6 +30,7 @@ Route::group(['prefix' => 'auth'], function () {
     Route::group(['middleware' => 'auth:api'], function() {
         Route::post('userDetails',  [UserController::class,'userDetails']);
         Route::post('upload_card',  [CardController::class,'post_image']);
+        Route::post('save_cards',  [CardController::class,'save_card']);
         Route::get('logout', [UserController::class,'logout']);
     });
 });

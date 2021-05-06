@@ -64,4 +64,28 @@ class CardController extends Controller
 
         return $output_file;
     }
+
+    public static function save_card(Request $request)
+    {
+        $cardDetails = new Cards;
+        $cardDetails->name = $request->name;
+        $cardDetails->job_role = $request->title;
+        $cardDetails->user_id =  auth()->user()->id;
+        $cardDetails->address = $request->address_line1.','.$request->address_line2;
+        $phone_numbers = [
+          'phone_number1' => $request->phone_number1,
+          'phone_number2' => $request->phone_number2
+        ];
+        $cardDetails->phone_number = json_encode($phone_numbers);
+        $cardDetails->website = $request->website;
+        $cardDetails->card_image = $request->card_image;
+        $cardDetails->card_type = $request->card_type;
+        $cardDetails->company_name = $request->company_name;
+        $cardDetails->save();
+
+        return response()->json([
+            'message' => 'Card Saved',
+            'card_id' => $cardDetails->id
+        ]);
+    }
 }

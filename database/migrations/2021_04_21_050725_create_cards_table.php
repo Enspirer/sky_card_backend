@@ -16,6 +16,7 @@ class CreateCardsTable extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
+            $table->text('job_role')->nullable();
             $table->text('user_id')->nullable();
             $table->text('address')->nullable();
             $table->text('phone_number')->nullable();
@@ -24,9 +25,10 @@ class CreateCardsTable extends Migration
             $table->text('email')->nullable();
             $table->text('city')->nullable();
             $table->text('website')->nullable();
-            $table->text('job_role')->nullable();
             $table->text('company_name')->nullable();
-            $table->text('company_id');
+            $table->text('my_card_id')->nullable();
+            $table->text('card_image')->nullable();
+            $table->text('company_id')->nullable();
             $table->timestamps();
         });
     }
