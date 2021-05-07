@@ -17,7 +17,8 @@ class Porfolio extends Model
             $porfolio->uploaded_video_link = $video_link;
         }elseif($video_type == 'Youtube Video')
         {
-            $porfolio->youtube_link = $video_link;
+            preg_match("#(?<=v=)[a-zA-Z0-9-]+(?=&)|(?<=v\/)[^&\n]+|(?<=v=)[^&\n]+|(?<=youtu.be/)[^&\n]+#", $video_link, $matches);
+            $porfolio->youtube_link = $matches[0];
         }
         $porfolio->video_type = $video_type;
         $porfolio->description = $description;

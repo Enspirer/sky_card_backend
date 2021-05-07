@@ -14,7 +14,7 @@
                                 <label>Video Type</label>
                                 <select class="form-control" name="video_type" required>
                                     <option value="Youtube Video">Youtube Video</option>
-                                    <option value="Uploaded Video">Upload Video</option>
+                                    <option value="Uploaded Video" disabled>Upload Video</option>
                                 </select>
                             </div>
                             <div class="form-group">
