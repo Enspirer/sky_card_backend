@@ -30,6 +30,7 @@ class MyCardController extends Controller
             $get_fnameLname = null;
         }
 
+
         $phone_number = json_decode($cardDetails->phone_number);
 
         return view('frontend.card_view.index',[
