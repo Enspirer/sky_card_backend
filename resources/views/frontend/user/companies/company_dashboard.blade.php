@@ -23,14 +23,23 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <a href="{{route('frontend.user.companies.create_business_card',$companyDetails->id)}}">
-                                    <div class="container">
-                                        <div style="border-color: grey;border-style: dashed;border-width: 2px;padding: 50px;text-align: center">
-                                            <h3>Make a business card </h3>
+                                @if($card_details == null)
+                                    <a href="{{route('frontend.user.companies.create_business_card',$companyDetails->id)}}">
+                                        <div class="container">
+                                            <div style="border-color: grey;border-style: dashed;border-width: 2px;padding: 50px;text-align: center">
+                                                <h3>Make a business card </h3>
+                                            </div>
                                         </div>
+                                    </a>
+                                @else
+                                    <div class="container">
+                                        <h4>My Business Card</h4><br>
+                                        @include('frontend.user.companies.sections.dashboard_business_card')
                                     </div>
-                                </a>
 
+
+
+                                @endif
                             </div>
                         </div>
 

@@ -40,8 +40,11 @@ class CompanyController extends Controller
         $companyDetails = Company::where('id',$id)
             ->where('user_id',auth()->user()->id)
             ->first();
+        $cardDetails = MyCard::where('company_id',$companyDetails->id)->first();
+
         return view('frontend.user.companies.company_dashboard',[
-            'companyDetails' => $companyDetails
+            'companyDetails' => $companyDetails,
+            'card_details' => $cardDetails,
         ]);
     }
 
