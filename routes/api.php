@@ -6,6 +6,7 @@ use App\Http\Controllers\API\CardController;
 use App\Http\Controllers\Frontend\MyCardController;
 use App\Http\Controllers\Frontend\CompanyController;
 use App\Http\Controllers\Frontend\AnnotationController;
+use App\Http\Controllers\API\MyCardsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -32,6 +33,7 @@ Route::group(['prefix' => 'auth'], function () {
     Route::group(['middleware' => 'auth:api'], function() {
         Route::post('userDetails',  [UserController::class,'userDetails']);
         Route::post('upload_card',  [CardController::class,'post_image']);
+        Route::post('my_cards',  [MyCardsController::class,'index']);
         Route::post('save_cards',  [CardController::class,'save_card']);
         Route::get('logout', [UserController::class,'logout']);
     });

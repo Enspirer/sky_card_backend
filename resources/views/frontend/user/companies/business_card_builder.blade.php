@@ -89,7 +89,7 @@
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Website</label>
-                                                    <input name="website" id="examplePassword" placeholder="Website" type="text" class="form-control" value="{{$companyDetails->website}}">
+                                                    <input name="website" id="examplePassword" placeholder="Website" type="text" class="form-control" value="{{$companyDetails->website}}" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -97,7 +97,7 @@
                                             <div class="col-md-6">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Job Role</label>
-                                                    <input name="job_role" id="examplePassword" placeholder="Job Role" type="text" class="form-control">
+                                                    <input name="job_role" id="examplePassword" placeholder="Job Role" type="text" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
