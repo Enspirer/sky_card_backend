@@ -58,7 +58,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="elements-dropdowns.html">
+                                <a href="{{route('frontend.user.companies.inbox',[$sidebar_company->id,1,1])}}">
                                     <i class="metismenu-icon"></i>
                                     Inbox
                                 </a>
@@ -76,7 +76,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="elements-cards.html">
+                                <a href="{{route('frontend.user.companies.portfolio',[$sidebar_company->id])}}">
                                     <i class="metismenu-icon"></i>
                                     Portfolio
                                 </a>
