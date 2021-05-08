@@ -10,14 +10,14 @@
     </div>
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a style="display: contents;text-decoration: none;" href="sms:?body=This%20is%20my%20digital%20business%20card:%20https://www.skycards.lk/c/">
+        <a style="display: contents;text-decoration: none;" href="sms:?body=This%20is%20my%20digital%20business%20card:%20https://www.skycards.lk/c/{{$card_details->slug}}">
             <i style="font-size: 50px;color: #fff;" class="far fa-comments"></i>
             <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">SMS</h4>
         </a>
     </div>
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a style="display: contents;text-decoration: none;" href="mailto:?subject=  &amp;body=This is my digital business card: https://www.skycards.lk/c/">
+        <a style="display: contents;text-decoration: none;" href="mailto:?subject=  &amp;body=This is my digital business card: https://www.skycards.lk/c/{{$card_details->slug}}">
             <i style="font-size: 50px;color: #fff;" class="far fa-envelope"></i>
             <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Email</h4>
         </a>
