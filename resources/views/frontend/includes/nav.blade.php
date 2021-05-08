@@ -24,7 +24,7 @@
                                 </div>
                             </a>
                         </div>
-                        <li><a class="navigation-link" href="{{route('frontend.sky_card_club')}}">Sky Club</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.sky_card_club')}}">Sky Connect</a></li>
                         <li><a class="navigation-link" href="{{route('frontend.sky_daily')}}">Sky Daily</a></li>
                     </ul>
                 </div>
