@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class SkyCardProController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('frontend.sky_card_pro.skycard_pro');
+    }
 }

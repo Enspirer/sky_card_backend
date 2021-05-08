@@ -24,6 +24,7 @@ Route::get('/sky_daily', [SkyDailyController::class, 'index'])->name('sky_daily'
 Route::get('/card-explorer', [CardExplorerController::class, 'index'])->name('card_explorer');
 Route::get('/sky-card-club', [SkyCardCloubController::class, 'index'])->name('sky_card_club');
 Route::get('/sky-card-elite', [SkyCardElightController::class,'index'])->name('sky_card_elite');
+Route::get('/sky-card-pro', [SkyCardProController::class,'index'])->name('sky_card_pro');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
 

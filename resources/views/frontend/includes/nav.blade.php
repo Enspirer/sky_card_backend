@@ -11,7 +11,7 @@
                             >
                         </li>
                         <div id="dropd" class="dropd d-none">
-                            <a href="">
+                            <a href="{{route('frontend.sky_card_pro')}}">
                                 <div class="hr-line row m-0 pl-3 pr-3 mb-3 pb-2">
                                     <h6>Sky Cards</h6>
                                     <div class="round orange"><p>Pro</p></div>
