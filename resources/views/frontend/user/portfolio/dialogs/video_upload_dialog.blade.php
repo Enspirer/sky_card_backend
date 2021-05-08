@@ -25,11 +25,14 @@
                             <div  class="form-group">
                                 <label>Caption</label>
                                 <input type="text" class="form-control" value="" name="caption" required>
+                                <input type="hidden" class="form-control" value="Videos" name="content_type">
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
                                 <textarea class="form-control" rows="10" name="description"></textarea>
                             </div>
+                            <input type="hidden" class="form-control" value="Videos" name="content_type">
+
                         </div>
                     </div>
                 </div>
