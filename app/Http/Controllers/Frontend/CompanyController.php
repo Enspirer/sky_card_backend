@@ -7,6 +7,7 @@ use App\Models\Cards;
 use App\Models\CardTemplate;
 use App\Models\Company;
 use App\Models\MyCard;
+use App\Models\Porfolio;
 use Illuminate\Http\Request;
 use Response;
 class CompanyController extends Controller
@@ -173,6 +174,7 @@ class CompanyController extends Controller
         $CompanyDetails = Company::where('id',$company_id)->first();
         $cardDetails = MyCard::where('id',$card_id)->first();
         $templates = CardTemplate::where('id',$template_id)->first();
+        $portfolio = Porfolio::where('company_id',$company_id)->get();
 
         if($cardDetails){
             $get_fnameLname = explode(" ", $cardDetails->name);
@@ -187,7 +189,8 @@ class CompanyController extends Controller
             'card_details' => $cardDetails,
             'tempaltes' => $templates,
             'name_seperation' => $get_fnameLname,
-            'phone_number' => $phone_number
+            'phone_number' => $phone_number,
+            'portfolio'=>$portfolio
         ]);
     }
 

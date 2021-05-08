@@ -5,6 +5,12 @@
 <link href="{{url('light_theme/step_p/style.css')}}" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+<style>
+    .step:first-child{
+        line-height:37px;
+    }
+</style>
+
 @section('content')
     <div class="app-main__outer">
         <div class="app-main__inner">

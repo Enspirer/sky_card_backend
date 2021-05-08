@@ -142,13 +142,6 @@
                         @endif
                 @endforeach
             '');
-
-
-
-
-
-
-
     });
 </script>
 
