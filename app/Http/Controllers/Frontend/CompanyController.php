@@ -164,7 +164,7 @@ class CompanyController extends Controller
            'description' => $request->description
         ]);
 
-        return redirect()->route('frontend.user.companies.publish_your_card',[$request->company_id,$request->card_id]);
+        return redirect()->route('frontend.user.companies.publish_your_card',[$request->card_id,$request->company_id]);
 
     }
 
@@ -207,9 +207,15 @@ class CompanyController extends Controller
         return redirect()->route('frontend.user.companies.add_social_links_page',[$request->business_card_id,$getMyCardDetails->company_id]);
     }
 
-    public function publish_your_card()
+    public function publish_your_card($id,$company_id)
     {
-        return view('frontend.user.companies.bussiness_card_publish');
+        $companyDetails = Company::where('id',$company_id)->first();
+        $cardDetailss = MyCard::where('id',$id)->first();
+
+        return view('frontend.user.companies.bussiness_card_publish',[
+            'companyDetails' => $companyDetails,
+            'cardDetails' => $cardDetailss
+        ]);
     }
 
     public function update_cover_photo(Request $request)

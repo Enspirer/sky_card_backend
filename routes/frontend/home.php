@@ -23,6 +23,7 @@ Route::get('/card-explorer', [CardExplorerController::class, 'index'])->name('ca
 Route::get('/sky-card-club', [SkyCardCloubController::class, 'index'])->name('sky_card_club');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
+Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
@@ -73,7 +74,6 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         Route::post('companiesq/business_card_template', [CompanyController::class, 'business_card_template_save'])->name('companies.business_card_template_save');
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
-        Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 
 
