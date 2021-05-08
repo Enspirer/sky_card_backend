@@ -22,7 +22,26 @@ class CompanyPortfolioController extends Controller
 
     public function store(Request $request)
     {
-        $details = Porfolio::VideoUpload($request->company_id,$request->video_type,$request->video_link,$request->description,$request->caption);
+        if($request->content_type == "Videos")
+        {
+            $details = Porfolio::VideoUpload($request->company_id,$request->video_type,$request->video_link,$request->description,$request->caption);
+
+        }elseif($request->content_type == 'Images'){
+
+            if($request->file('picture'))
+            {
+                $preview_fileName = time().'.'.$request->picture->getClientOriginalExtension();
+                $fullURLsPreviewFile = $request->picture->move(public_path('files/preview_files'), $preview_fileName);
+                $image_url = $preview_fileName;
+            }else{
+                $image_url = null;
+            }
+
+            $details = Porfolio::ImageUpload($request->company_id,'Upload Image',$image_url);
+        }elseif ($request->content_type == 'Website Links')
+        {
+            dd($request);
+        }
         return back();
     }
 }
