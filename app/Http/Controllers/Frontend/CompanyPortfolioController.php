@@ -40,7 +40,7 @@ class CompanyPortfolioController extends Controller
             $details = Porfolio::ImageUpload($request->company_id,'Upload Image',$image_url);
         }elseif ($request->content_type == 'Website Links')
         {
-            dd($request);
+           Porfolio::WebsiteLink($request->company_id,$request->website,$request->caption);
         }
         return back();
     }
