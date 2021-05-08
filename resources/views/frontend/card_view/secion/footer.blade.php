@@ -128,8 +128,20 @@
                     @endif
                 @endforeach
             '');
-        $("#sky_temp_profolio_links_desktop").html("<h2>desktop</h2>");
-        $("#sky_temp_profolio_links").html("<h2>tack</h2>");
+        $("#sky_temp_profolio_links_desktop").html('' +
+                @foreach($portfolio as $web_link)
+                        @if($web_link->content_type == 'Website Links')
+                            '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link->caption}} : &nbsp;</p> <a href="{{$web_link->website_links}}" target="_blank">{{$web_link->website_links}}</a> </div>' +
+                        @endif
+                @endforeach
+            '');
+        $("#sky_temp_profolio_links").html('' +
+                @foreach($portfolio as $web_link_m)
+                        @if($web_link_m->content_type == 'Website Links')
+                            '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link_m->caption}} : &nbsp;</p> <a href="{{$web_link_m->website_links}}" target="_blank">{{$web_link_m->website_links}}</a> </div>' +
+                        @endif
+                @endforeach
+            '');
 
 
 

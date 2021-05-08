@@ -93,7 +93,14 @@
                                 </div>
                                 @foreach($items as $website_link)
                                     @if($website_link->content_type == 'Website Links')
-
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div class="container" style="padding: 100px;text-align: center">
+                                                    <h4 style="text-align: center;">{{$website_link->caption}}</h4>
+                                                    <a style="text-align: center;" href="{{$website_link->website_links}}">{{$website_link->website_links}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     @endif
                                 @endforeach
                             </div>
