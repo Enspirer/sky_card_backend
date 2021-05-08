@@ -64,6 +64,42 @@ $(document).ready(function () {
             $(".contact-details").addClass("d-none");
             card_status = 0;
         }
-
     });
+
+    // ------------- Drop Down -----------------
+    var dopd_btn = 0;
+    $("#dopd-btn").click(function () {
+        if (dopd_btn == 0) {
+            $("#dropd").removeClass("d-none");
+            dopd_btn = 1;
+        } else {
+            $("#dropd").addClass("d-none");
+            dopd_btn = 0;
+        }
+    });
+
+    // --------------- Profile Drop Down --------------
+    var profile_drop = 0;
+    $("#login-user").click(function () {
+        if (profile_drop == 0) {
+            $("#dropdown-login").removeClass("d-none");
+            profile_drop = 1;
+        } else {
+            $("#dropdown-login").addClass("d-none");
+            profile_drop = 0;
+        }
+    });
+
+    // ------------------ Right Fixed -------------
+
+    $(window).scroll(function () {
+        var sc = $(window).scrollTop();
+        if (sc > 1300) {
+            $("#right-holder").addClass("b-259");
+        } else {
+            $("#right-holder").removeClass("b-259");
+        }
+    });
+
+
 });

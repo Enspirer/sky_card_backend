@@ -23,7 +23,6 @@ Route::get('/card-explorer', [CardExplorerController::class, 'index'])->name('ca
 Route::get('/sky-card-club', [SkyCardCloubController::class, 'index'])->name('sky_card_club');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
-Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
@@ -39,6 +38,8 @@ Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('i
  */
 Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
+        Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
+
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
