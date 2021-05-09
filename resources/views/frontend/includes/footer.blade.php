@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up">
-                <img src="assets/logo compressed.png" alt="">
+                <img src="{{url('light_theme/assets/logo compressed.png')}}" alt="">
                 <h3>Sky Card Global</h3>
             </div>
             <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
@@ -31,9 +31,10 @@
                 <h1>Follow Us</h1>
                 <br>
                 <div class="row m-0">
-                    <a href="#"> <i class="fab fa-facebook-square icon-lg"></i> </a>
-                    <a href="#"> <i class="fab fa-instagram icon-lg"></i></a>
-                    <a href="#"> <i class="fab fa-linkedin icon-lg"></i></a>
+                    <a href="https://www.facebook.com/Skycards-104890748078143"> <i class="fab fa-facebook-square icon-lg"></i> </a>
+                    <a href="https://www.instagram.com/skycardsglobal/"> <i class="fab fa-instagram icon-lg"></i></a>
+                    <a href="https://www.linkedin.com/company/77864095/admin/"> <i class="fab fa-linkedin icon-lg"></i></a>
+                    <a href="https://twitter.com/skycards1"> <i class="fab fa-twitter icon-lg"></i></a>
                     <a href="#"> <i class="fab fa-youtube icon-lg"></i></a>
                 </div>
             </div>
