@@ -58,7 +58,8 @@
 
                 @stack('before-scripts')
             </div>
-        <script src="{{url('light_theme/dashboard/assets/scripts/main.js')}}"></script>
+                <script src="{{url('light_theme/dashboard/assets/scripts/main.js')}}"></script>
+        <script src="{{url('light_theme/js/main_dashboard.js')}}"></script>
         @stack('after-scripts')
         @include('includes.partials.ga')
     </body>

@@ -157,6 +157,7 @@ class CompanyController extends Controller
           'twitter_link' => $request->twitter_link,
           'linkedin_link' => $request->linkedin_link,
           'youtube_link' => $request->youtube_link,
+          'is_public' => $request->is_public
         ];
 
         MyCard::where('id',$request->card_id)->update([
