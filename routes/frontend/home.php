@@ -15,6 +15,8 @@ use App\Http\Controllers\Frontend\CompanyInboxController;
 use App\Http\Controllers\Frontend\CompanyPortfolioController;
 use App\Http\Controllers\Frontend\SkyCardElightController;
 use App\Http\Controllers\Frontend\SkyCardProController;
+use App\Http\Controllers\Frontend\PricingController;
+use App\Http\Controllers\Frontend\SkyConnectController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -25,6 +27,8 @@ Route::get('/card-explorer', [CardExplorerController::class, 'index'])->name('ca
 Route::get('/sky-card-club', [SkyCardCloubController::class, 'index'])->name('sky_card_club');
 Route::get('/sky-card-elite', [SkyCardElightController::class,'index'])->name('sky_card_elite');
 Route::get('/sky-card-pro', [SkyCardProController::class,'index'])->name('sky_card_pro');
+Route::get('/sky-card/pricing', [PricingController::class,'index'])->name('sky_card_pricing');
+Route::get('/sky-connect',[SkyConnectController::class,'index'])->name('sky_card_connect');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
 

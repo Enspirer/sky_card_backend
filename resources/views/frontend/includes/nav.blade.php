@@ -24,7 +24,7 @@
                                 </div>
                             </a>
                         </div>
-                        <li><a class="navigation-link" href="{{route('frontend.sky_card_club')}}">Sky Connect</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.sky_card_connect')}}">Sky Connect</a></li>
                         <li><a class="navigation-link" href="{{route('frontend.sky_daily')}}">Sky Daily</a></li>
                     </ul>
                 </div>
@@ -44,9 +44,9 @@
             <div class="col-5">
                 <div class="row">
                     <ul>
-                        <li><a class="navigation-link" href="#">Sky Card Holder</a></li>
-                        <li><a class="navigation-link" href="#">Contact</a></li>
-                        <li><a class="navigation-link" href="#">About</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.sky_card_club')}}">Sky Club</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.sky_card_pricing')}}">Pricing</a></li>
+                        <li><a class="navigation-link" href="#">Contact Us</a></li>
                         @auth
                         <li>
                             <div id="login-user" class="login-user row">
