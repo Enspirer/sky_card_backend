@@ -29,13 +29,12 @@ Route::get('/sky-card-elite', [SkyCardElightController::class,'index'])->name('s
 Route::get('/sky-card-pro', [SkyCardProController::class,'index'])->name('sky_card_pro');
 Route::get('/sky-card-pricing', [PricingController::class,'index'])->name('sky_card_pricing');
 Route::get('/sky-connect',[SkyConnectController::class,'index'])->name('sky_card_connect');
+Route::get('/contact', [ContactController::class, 'index'])->name('sky_card_contact');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
 
 
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
-Route::get('contact', [ContactController::class, 'index'])->name('contact');
-Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
 Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('image_scanning');
 
 

@@ -37,7 +37,7 @@
                     <ul>
                         <li><a class="navigation-link {{ Request::segment(1) === 'sky-card-club' ? 'active' : null }}" href="{{route('frontend.sky_card_club')}}">Sky Club</a></li>
                         <li><a class="navigation-link {{ Request::segment(1) === 'sky-card-pricing' ? 'active' : null }}" href="{{route('frontend.sky_card_pricing')}}">Pricing</a></li>
-                        <li><a class="navigation-link" href="#">Contact Us</a></li>
+                        <li><a class="navigation-link {{ Request::segment(1) === 'contact' ? 'active' : null }}" href="{{route('frontend.sky_card_contact')}}">Contact Us</a></li>
                         @auth
                         <li>
                             <div id="login-user" class="login-user row">
