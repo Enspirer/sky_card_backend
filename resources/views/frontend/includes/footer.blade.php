@@ -8,10 +8,10 @@
             <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
                 <h1>Sky Products</h1>
                 <ul>
-                    <li><a href="#">Sky Card App</a></li>
-                    <li><a href="#">Sky Connect</a></li>
-                    <li><a href="#">Sky Club</a></li>
-                    <li><a href="#">Sky Daily</a></li>
+                    <li><a href="">Sky Card App</a></li>
+                    <li><a href="{{route('frontend.sky_card_contact')}}">Sky Connect</a></li>
+                    <li><a href="{{route('frontend.sky_card_club')}}">Sky Club</a></li>
+                    <li><a href="{{route('frontend.sky_daily')}}">Sky Daily</a></li>
                     <li><a href="#">Sky Promo</a></li>
                 </ul>
             </div>

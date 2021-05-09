@@ -24,7 +24,7 @@
                             </a>
                         </div>
                         <li><a class="navigation-link {{ Request::segment(1) === 'sky-connect' ? 'active' : null }}" href="{{route('frontend.sky_card_connect')}}">Sky Connect</a></li>
-                        <li><a class="navigation-link {{ Request::segment(1) === 'sky_daily' ? 'active' : null }}" href="{{route('frontend.sky_daily')}}">Sky Daily</a></li>
+                        <li><a class="navigation-link {{ Request::segment(1) === 'sky-daily' ? 'active' : null }}" href="{{route('frontend.sky_daily')}}">Sky Daily</a></li>
                     </ul>
                 </div>
             </div>
