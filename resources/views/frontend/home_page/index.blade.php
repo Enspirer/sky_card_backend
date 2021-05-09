@@ -22,37 +22,20 @@
                         <span>Touchless</span> Smart Business cards Solution
                     </h5>
                     <div class="row mt-5">
-                        <div
-                                data-animscroll="fade-up"
-                                data-animscroll-delay="100"
-                                class="mr-3"
-                        >
-                            <a href="#"
-                            >Sky Cards
-                                <div class="orange"><p>pro</p></div></a
-                            >
+                        <div data-animscroll="fade-up" data-animscroll-delay="100" class="mr-3">
+                            <a href="{{route('frontend.sky_card_pro')}}">Sky Cards
+                                <div class="orange"><p>pro</p></div></a>
                             <p>For individuals</p>
                         </div>
-                        <div
-                                data-animscroll="fade-up"
-                                data-animscroll-delay="100"
-                                class=""
-                        >
-                            <a href="#"
-                            >Sky Cards
-                                <div class="blue"><p>Elite</p></div></a
-                            >
+                        <div data-animscroll="fade-up" data-animscroll-delay="100" class="">
+                            <a href="{{route('frontend.sky_card_elite')}}">Sky Cards
+                                <div class="blue"><p>Elite</p></div></a>
                             <p>For corporates</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
-                    <img
-                            data-animscroll="fade-left"
-                            data-animscroll-delay="100"
-                            src="{{url('light_theme/assets/Asset 7icons.png')}}"
-                            alt=""
-                    />
+                    <img data-animscroll="fade-left" data-animscroll-delay="100" src="{{url('light_theme/assets/Asset 7icons.png')}}" alt=""/>
                 </div>
             </div>
         </div>
@@ -63,11 +46,7 @@
             <div class="row">
 
                 <div class="col-6">
-                    <img
-                            data-animscroll="fade-left"
-                            src="{{url('light_theme/assets/Group 330.png')}}"
-                            alt=""
-                    />
+                    <img data-animscroll="fade-left" src="{{url('light_theme/assets/Group 330.png')}}" alt=""/>
                 </div>
 
                 <div class="col-6">
@@ -78,17 +57,10 @@
                         own <span> <b> Premium Design </b></span> <br /><br />Share your
                         card in all platforms.
                     </p>
-                    <br />
-                    <br />
-                    <br />
-                    <a
-                            data-animscroll="fade-up"
-                            data-animscroll-delay="100"
-                            href="#"
-                            type="button"
-                            class="theam-btn"
-                    >Create your Digital Business Card</a
-                    >
+                    <br/>
+                    <br/>
+                    <br/>
+                    <a data-animscroll="fade-up" data-animscroll-delay="100" href="#" type="button" class="theam-btn">Create your Digital Business Card</a>
                 </div>
             </div>
         </div>
@@ -99,11 +71,7 @@
             <div class="container p-4">
                 <div class="row">
                     <div class="col-6">
-                        <img
-                                src="{{url('light_theme/assets/Asset 1skynetwork.png')}}"
-                                style="width: 80%"
-                                data-animscroll="fade-right"
-                        />
+                        <img src="{{url('light_theme/assets/Asset 1skynetwork.png')}}" style="width: 80%" data-animscroll="fade-right"/>
                     </div>
                     <div class="col-6 pl-5" data-animscroll="fade-left">
                         <h1 data-animscroll="fade-up">Sky <span>Connect</span></h1>
@@ -114,28 +82,16 @@
                         <p data-animscroll="fade-up" data-animscroll-delay="200">
                             Connect, communicate and share within the largest network of
                             active websites.
-
                         </p>
-                        <br />
-                        <br />
-                        <br />
-                        <a
-                                data-animscroll="fade-up"
-                                data-animscroll-delay="100"
-                                href="#"
-                                type="button"
-                                class="theam-btn-light"
-                        >Learn More</a
-                        >
+                        <br/>
+                        <br/>
+                        <br/>
+                        <a data-animscroll="fade-up" data-animscroll-delay="100" href="#" type="button" class="theam-btn-light">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div
-                class="light-round"
-                data-animscroll="fade-up"
-                data-animscroll-delay="300"
-        ></div>
+        <div class="light-round" data-animscroll="fade-up" data-animscroll-delay="300"></div>
     </section>
 
     <section id="sky-daily">
@@ -143,46 +99,23 @@
             <div class="row">
                 <div class="col-6" data-animscroll="fade-right">
                     <h1 data-animscroll="fade-up">Sky <span> Promo</span></h1>
-                    <h5 data-animscroll="fade-up">The ultimate marketing solution with <br>
-                        exclusive client database</h5>
-                    <br />
-                    <br />
+                    <h5 data-animscroll="fade-up">The ultimate marketing solution with <br>exclusive client database</h5>
+                    <br/>
+                    <br/>
                     <div class="buttons-daily" style="max-width: 250px">
-                        <a
-                                type="button"
-                                style="width: 100%"
-                                data-animscroll="fade-up"
-                                class="theam-btn-blue"
-                                href="#"
-                        >E-mail marketing solution</a
-                        >
-                        <br />
-
-                        <br />
-                        <a
-                                type="button"
-                                style="width: 100%"
-                                data-animscroll="fade-up"
-                                class="theam-btn-blue"
-                                href="#"
-                        >SMS marketing Solution</a
-                        >
+                        <a type="button" style="width: 100%" data-animscroll="fade-up" class="theam-btn-blue" href="#">E-mail marketing solution</a>
+                        <br/>
+                        <br/>
+                        <a type="button" style="width: 100%" data-animscroll="fade-up" class="theam-btn-blue" href="#">SMS marketing Solution</a>
                     </div>
 
                     <p data-animscroll="fade-up" data-animscroll-delay="200">
                         Promote your business to Registered and authenticated websites and
                         members of largest sky cards community.
                     </p>
-                    <br />
-                    <br />
-                    <a
-                            data-animscroll="fade-up"
-                            data-animscroll-delay="300"
-                            href="#"
-                            class="theam-btn"
-                            type="button"
-                    >Learn More</a
-                    >
+                    <br/>
+                    <br/>
+                    <a data-animscroll="fade-up" data-animscroll-delay="300" href="#" class="theam-btn" type="button">Learn More</a>
                 </div>
                 <div class="col-6" data-animscroll="fade-left">
                     <img src="{{url('light_theme/assets/Group 70.png')}}" style="width: 100%" alt="" />
@@ -192,11 +125,7 @@
     </section>
 
     <section id="sky-vip">
-        <div
-                class="left-blue"
-                data-animscroll="fade-right"
-                data-animscroll-delay="100"
-        ></div>
+        <div class="left-blue" data-animscroll="fade-right" data-animscroll-delay="100"></div>
         <div class="container vip-container">
             <div class="row">
                 <div class="col-6">
@@ -208,44 +137,14 @@
                         </h5>
                         <h4 data-animscroll="fade-up">Exclusive Offers</h4>
                         <div class="button-set">
-                            <a
-                                    data-animscroll="fade-up"
-                                    data-animscroll-delay="100"
-                                    href="#"
-                                    class="theam-btn-light"
-                                    type="button"
-                                    style="padding: 10px 50px"
-                            >Hotels</a
-                            >
-
-                            <a
-                                    data-animscroll="fade-up"
-                                    data-animscroll-delay="200"
-                                    href="#"
-                                    class="theam-btn-light"
-                                    type="button"
-                                    style="padding: 10px 50px"
-                            >Restaurants</a
-                            >
-
-                            <a
-                                    data-animscroll="fade-up"
-                                    data-animscroll-delay="300"
-                                    href="#"
-                                    class="theam-btn-light"
-                                    type="button"
-                            >Clubs</a
-                            >
+                            <a data-animscroll="fade-up" data-animscroll-delay="100" href="#" class="theam-btn-light" type="button" style="padding: 10px 50px">Hotels</a>
+                            <a data-animscroll="fade-up" data-animscroll-delay="200" href="#" class="theam-btn-light" type="button" style="padding: 10px 50px">Restaurants</a>
+                            <a data-animscroll="fade-up" data-animscroll-delay="300" href="#" class="theam-btn-light" type="button">Clubs</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
-                    <img
-                            data-animscroll="fade-left"
-                            style="width: 80%"
-                            src="{{url('light_theme/assets/Layer 2.png')}}"
-                            alt=""
-                    />
+                    <img data-animscroll="fade-left" style="width: 80%" src="{{url('light_theme/assets/Layer 2.png')}}" alt=""/>
                 </div>
             </div>
         </div>
@@ -269,25 +168,14 @@
                         All contacts are stored in a cloud and synchronized across your
                         devices, allowing access from your smartphone, tablet or computer.
                     </p>
-                    <a
-                            data-animscroll="fade-up"
-                            data-animscroll-delay="300"
-                            href="#"
-                            class="theam-btn mt-4"
-                            type="button"
-                    >Learn More</a
-                    >
+                    <a data-animscroll="fade-up" data-animscroll-delay="300" href="#" class="theam-btn mt-4" type="button">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="sky-card-app">
-        <div
-                class="dark-round"
-                data-animscroll="fade-up"
-                data-animscroll-delay="100"
-        >
+        <div class="dark-round" data-animscroll="fade-up" data-animscroll-delay="100">
             <div class="container">
                 <div class="row">
                     <div class="col-1"></div>
@@ -295,7 +183,7 @@
                         <h1 data-animscroll="fade-up" data-animscroll-delay="100">
                             Sky Card App
                         </h1>
-                        <br />
+                        <br/>
                         <h5 data-animscroll="fade-up" data-animscroll-delay="200">
                             Enter business cards into your smartphone
                         </h5>
@@ -306,8 +194,8 @@
                             Use your smartphone to scan business cards and save all the data
                             to your contact list.
                         </p>
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <h5 data-animscroll="fade-up" data-animscroll-delay="100">
                             Share your contacts
                         </h5>
@@ -319,32 +207,16 @@
                             Sending an e-mail with your digital business card now only takes
                             a few seconds.
                         </p>
-                        <br />
+                        <br/>
                         <div class="row">
-                            <div
-                                    class="col-4"
-                                    data-animscroll="fade-up"
-                                    data-animscroll-delay="300"
-                            >
+                            <div class="col-4" data-animscroll="fade-up" data-animscroll-delay="300">
                                 <a href="#">
-                                    <img
-                                            src="{{url('light_theme/assets/Mask Group 6.png')}}"
-                                            style="width: 100%"
-                                            alt=""
-                                    />
+                                    <img src="{{url('light_theme/assets/Mask Group 6.png')}}" style="width: 100%" alt=""/>
                                 </a>
                             </div>
-                            <div
-                                    class="col-4"
-                                    data-animscroll="fade-up"
-                                    data-animscroll-delay="400"
-                            >
+                            <div class="col-4" data-animscroll="fade-up" data-animscroll-delay="400">
                                 <a href="#">
-                                    <img
-                                            src="{{url('light_theme/assets/Mask Group 7.png')}}"
-                                            style="width: 100%"
-                                            alt=""
-                                    />
+                                    <img src="{{url('light_theme/assets/Mask Group 7.png')}}" style="width: 100%" alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -356,11 +228,7 @@
                 </div>
             </div>
         </div>
-        <div
-                class="light-round"
-                data-animscroll="fade-up"
-                data-animscroll-delay="200"
-        ></div>
+        <div class="light-round" data-animscroll="fade-up" data-animscroll-delay="200"></div>
     </section>
 
 @endsection

@@ -1,38 +1,35 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-3" data-animscroll="fade-up">
-                <h1>Heading 1</h1>
-                <p>
-                    Lorem ipsum eos et accusam et justo duo dolores et ea rebum. Stet
-                    clita kasd gubergren, no sea takimata
-                </p>
+            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up">
+                <img src="assets/logo compressed.png" alt="">
+                <h3>Sky Card Global</h3>
             </div>
-            <div class="col-3" data-animscroll="fade-up" data-animscroll-delay="100">
-                <h1>Heading 2</h1>
+            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
+                <h1>Sky Products</h1>
                 <ul>
-                    <li><a href="#">Lorem ipsum link</a></li>
-                    <li><a href="#">Lorem ipsum link</a></li>
-                    <li><a href="#">Lorem ipsum link</a></li>
-                    <li><a href="#">Lorem ipsum link</a></li>
-                    <li><a href="#">Lorem ipsum link</a></li>
+                    <li><a href="#">Sky Card App</a></li>
+                    <li><a href="#">Sky Connect</a></li>
+                    <li><a href="#">Sky Club</a></li>
+                    <li><a href="#">Sky Daily</a></li>
+                    <li><a href="#">Sky Promo</a></li>
                 </ul>
             </div>
-            <div class="col-3" data-animscroll="fade-up" data-animscroll-delay="200">
-                <h1>Heading 2</h1>
+            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="200">
+                <h1>Contact Us</h1>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i>Lorem ipsum address</li>
+                    <!-- <li><i class="fas fa-map-marker-alt"></i>Lorem ipsum address</li> -->
                     <li class="mt-2">
-                        <i class="fas fa-phone-alt"></i>0112 xxxxxxxx
+                        <i class="fas fa-mobile-alt"></i>077 866 9990
                     </li>
                     <li class="mt-2">
-                        <i class="fas fa-envelope"></i>lorem@loremipsum.com
+                        <i class="fas fa-envelope"></i>hello@skycards.lk
                     </li>
                 </ul>
             </div>
-            <div class="col-3" data-animscroll="fade-up" data-animscroll-delay="300">
+            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="300">
                 <h1>Follow Us</h1>
-                <br />
+                <br>
                 <div class="row m-0">
                     <a href="#"> <i class="fab fa-facebook-square icon-lg"></i> </a>
                     <a href="#"> <i class="fab fa-instagram icon-lg"></i></a>
