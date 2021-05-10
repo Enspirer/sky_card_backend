@@ -15,7 +15,7 @@
                     <h3>You can select new Cards idea</h3>
 
                     <!-- Swiper -->
-                    <div class="swiper-container mySwiper swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="cursor: grab; width: 650px;">
+                    <div class="swiper-container mySwiper swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="cursor: grab; width: 100%;">
                         <div class="swiper-wrapper" id="swiper-wrapper-2c5e10d39c101c99210" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-550px, 0px, 0px);">
                            @foreach($cardTempletes as $cardTemp)
                                 <div class="swiper-slide" role="group" aria-label="1 / 9" onclick="select_template({{$cardTemp->id}})" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -225px) rotateX(0deg) rotateY(112.5deg) scale(1); z-index: -1;">
@@ -78,6 +78,20 @@
                             pagination: {
                                 el: ".swiper-pagination",
                             },
+                            breakpoints: {
+                                300: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 6,
+                                },
+                                200: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 40,
+                                },
+                                650: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 1,
+                                }
+                            }
                         });
                     </script>
                 </div>

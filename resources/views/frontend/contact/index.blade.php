@@ -18,7 +18,8 @@
                         <img src="{{url('light_theme/assets/Group 544.png')}}" width="100%" alt="" />
                     </div>
                     <div class="col-6 pr-5">
-                        <form action="#">
+                        <form action="{{route('frontend.contact_us')}}" method="post">
+                            {{csrf_field()}}
                             <div class="form-group">
                                 <label>Your name</label>
                                 <input type="text" class="form-control" placeholder="Your name">

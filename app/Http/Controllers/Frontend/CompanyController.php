@@ -252,4 +252,37 @@ END:VCARD';
     }
 
 
+    public function update_card(Request $request)
+    {
+        $phone_numberJson = [
+            'phone_number1' => $request->phone_numbers1,
+            'phone_number2' => $request->phone_numbers2
+        ];
+
+        $outputArray = [
+            'facebook_link' => $request->facebook_link,
+            'instagram_link' => $request->instagram_link,
+            'twitter_link' => $request->twitter_link,
+            'linkedin_link' => $request->linkedin_link,
+            'youtube_link' => $request->youtube_link,
+            'is_public' => $request->is_public
+        ];
+
+
+        MyCard::where('id',$request->card_id)->update([
+           'name' => $request->name,
+           'company_name' => $request->company_name,
+           'email' => $request->email,
+           'position' => $request->job_role,
+           'address' => $request->address,
+           'phone_number' =>  json_encode($phone_numberJson),
+           'website' => $request->website,
+           'social_media_links' => json_encode($outputArray),
+           'description' => $request->description,
+           'is_public' => $request->is_public,
+        ]);
+        return back();
+    }
+
+
 }

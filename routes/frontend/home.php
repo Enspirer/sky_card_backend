@@ -30,6 +30,7 @@ Route::get('/sky-card-pro', [SkyCardProController::class,'index'])->name('sky_ca
 Route::get('/sky-card-pricing', [PricingController::class,'index'])->name('sky_card_pricing');
 Route::get('/sky-connect',[SkyConnectController::class,'index'])->name('sky_card_connect');
 Route::get('/contact', [ContactController::class, 'index'])->name('sky_card_contact');
+Route::post('/contact_controller',[ContactController::class,'send'])->name('contact_us');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
 
@@ -37,6 +38,7 @@ Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card'
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
 Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('image_scanning');
 
+Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 /*
  * These frontend controllers require the user to be logged in
@@ -45,7 +47,6 @@ Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('i
  */
 Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
-        Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -55,6 +56,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // Company Controller
         Route::get('my_cards',[MyCardController::class,'index'])->name('my_cards');
+        Route::get('my_cards/{card_id}',[MyCardController::class,'edit'])->name('my_cards.edit');
 
         //Company Page
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');
@@ -75,14 +77,13 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         //Company Portfolio
         Route::get('companiesq/portfolio/{id}/', [CompanyPortfolioController::class, 'index'])->name('companies.portfolio');
         Route::post('companiesq/portfolio/store', [CompanyPortfolioController::class, 'store'])->name('companies.portfolio_store');
-
-
-
         Route::get('card-preview/{company_id}/{card_id}/{templete_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
+
+
 
         Route::post('companiesq/business_card_template', [CompanyController::class, 'business_card_template_save'])->name('companies.business_card_template_save');
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
-
+        Route::post('companiesq/update_business_card', [CompanyController::class, 'update_card'])->name('companies.update_card');
 
 
         // User Profile Specific

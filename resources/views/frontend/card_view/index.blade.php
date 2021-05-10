@@ -1,5 +1,6 @@
 @include('frontend.card_view.secion.header')
 
+
 {!! $tempaltes->card_body !!}
 
 

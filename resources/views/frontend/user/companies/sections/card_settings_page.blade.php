@@ -1,14 +1,16 @@
-<form method="post" action="">
+<form method="post" action="{{route('frontend.user.companies.update_card')}}">
     {{csrf_field()}}
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 <label>Name</label>
                 <input type="text" class="form-control" name="name" value="{{$card_details->name}}">
+                <input type="hidden" class="form-control" name="card_id" value="{{$card_details->id}}">
             </div>
             <div class="form-group">
                 <label>Company Name</label>
                 <input type="text" class="form-control" name="company_name" value="{{$card_details->company_name}}">
+                <input type="hidden" class="form-control" name="company_id" value="{{$card_details->company_id}}">
             </div>
             <div class="form-group">
                 <label>Email</label>
@@ -27,11 +29,13 @@
             @if($card_details->phone_number)
 
                     <div class="form-group">
-                        <label>Phone Number</label>
-                        @foreach(json_decode($card_details->phone_number) as $item)
-                        <input type="text" class="form-control" name="phone_numbers[]" value="{{$card_details->$item}}"><br>
-                        @endforeach
+                        <label>Phone Number1</label>
+                        <input type="text" class="form-control" name="phone_numbers1" value="{{json_decode($card_details->phone_number)->phone_number1}}"><br>
                     </div>
+                <div class="form-group">
+                    <label>Phone Number2</label>
+                    <input type="text" class="form-control" name="phone_numbers2" value="{{json_decode($card_details->phone_number)->phone_number2}}"><br>
+                </div>
 
             @else
 
@@ -43,25 +47,45 @@
                 <div class="col-md-6">
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Facebook</label>
-                        <input type="text" name="facebook_link" class="form-control">
+                        @if($card_details->social_media_links==null)
+                            <input type="text" name="facebook_link" value="" class="form-control">
+                        @else
+                            <input type="text" name="facebook_link" value="{{json_decode($card_details->social_media_links)->facebook_link}}" class="form-control">
+                        @endif
                     </div>
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Instagram</label>
-                        <input type="text" name="instagram_link" class="form-control">
+                        @if($card_details->social_media_links==null)
+                            <input type="text" name="instagram_link" value="" class="form-control">
+                        @else
+                            <input type="text" name="instagram_link" value="{{json_decode($card_details->social_media_links)->instagram_link}}" class="form-control">
+                        @endif
                     </div>
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Twitter</label>
-                        <input type="text" name="twitter_link" class="form-control">
+                        @if($card_details->social_media_links==null)
+                            <input type="text" name="twitter_link" value="" class="form-control">
+                        @else
+                            <input type="text" name="twitter_link" value="{{json_decode($card_details->social_media_links)->twitter_link}}" class="form-control">
+                        @endif
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">LinkedIn</label>
-                        <input type="text" name="linkedin_link" class="form-control">
+                        @if($card_details->social_media_links==null)
+                            <input type="text" name="linkedin_link" value="" class="form-control">
+                        @else
+                            <input type="text" name="linkedin_link" value="{{json_decode($card_details->social_media_links)->linkedin_link}}" class="form-control">
+                        @endif
                     </div>
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Youtube</label>
-                        <input type="text" name="youtube_link" class="form-control">
+                        @if($card_details->social_media_links==null)
+                            <input type="text" name="youtube_link" value="" class="form-control">
+                        @else
+                            <input type="text" name="youtube_link" class="form-control" value="{{json_decode($card_details->social_media_links)->youtube_link}}" >
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Website</label>
@@ -82,5 +106,6 @@
             </div>
         </div>
     </div>
+    <button class="btn btn-primary pull-right" type="submit">Save</button>
 
 </form>

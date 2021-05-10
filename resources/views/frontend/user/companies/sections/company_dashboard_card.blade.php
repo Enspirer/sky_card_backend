@@ -3,7 +3,11 @@
         <div class="card user-card">
             <div class="card-block">
                 <div class="">
-                    <div class="" style="background-image: url('{{url('files/preview_files')}}/{{$companyDetails->logo_img}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain"></div>
+                    @if($companyDetails->logo_img == "no_img.jpg")
+                        <div class="" style="background-image: url('https://nichemodels.co/wp-content/uploads/2019/03/user-dummy-pic.png');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain"></div>
+                    @else
+                        <div class="" style="background-image: url('{{url('files/preview_files')}}/{{$companyDetails->logo_img}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain"></div>
+                    @endif
                 </div>
                 <h6 class="f-w-600 m-t-25 m-b-10">{{$companyDetails->brand_name}}</h6>
                 <p class="text-muted">{{$companyDetails->website}} | {{$companyDetails->category}}</p>

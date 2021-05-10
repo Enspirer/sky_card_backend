@@ -27,23 +27,23 @@
                                     <div class="col-md-6">
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Facebook</label>
-                                            <input type="text" name="facebook_link" class="form-control">
+                                            <input type="url" name="facebook_link" class="form-control">
                                         </div>
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Instagram</label>
-                                            <input type="text" name="instagram_link" class="form-control">
+                                            <input type="url" name="instagram_link" class="form-control">
                                         </div>
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Twitter</label>
-                                            <input type="text" name="twitter_link" class="form-control">
+                                            <input type="url" name="twitter_link" class="form-control">
                                         </div>
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">LinkedIn</label>
-                                            <input type="text" name="linkedin_link" class="form-control">
+                                            <input type="url" name="linkedin_link" class="form-control">
                                         </div>
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Youtube</label>
-                                            <input type="text" name="youtube_link" class="form-control">
+                                            <input type="url" name="youtube_link" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-6">

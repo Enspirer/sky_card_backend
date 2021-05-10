@@ -90,8 +90,9 @@
                         </ul>
 
                         @if($my_cad->card_template)
-                            <a href="{{route('frontend.view_card',$my_cad->slug)}}" class="btn btn-primary">View Card</a>
+                            <a href="{{route('frontend.view_card',$my_cad->slug)}}" target="_blank" class="btn btn-primary">View Card</a>
                             <a href="" class="btn btn-primary">Share</a>
+                            <a href="{{route('frontend.user.my_cards.edit',$my_cad->id)}}" class="btn btn-primary">Edit</a>
                         @else
                             <a href="" class="btn btn-primary">Edit</a>
                         @endif
