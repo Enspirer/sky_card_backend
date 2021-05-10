@@ -55,6 +55,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // Company Controller
         Route::get('my_cards',[MyCardController::class,'index'])->name('my_cards');
+        Route::get('my_cards/{card_id}',[MyCardController::class,'edit'])->name('my_cards.edit');
 
         //Company Page
         Route::get('companies', [CompanyController::class, 'index'])->name('companies');

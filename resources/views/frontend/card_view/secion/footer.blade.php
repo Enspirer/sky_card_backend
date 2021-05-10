@@ -110,6 +110,7 @@
 
         $("#sky_temp_porfolio_photos_desktop").html('' +
             '<div class="row">' +
+                @if(count($portfolio) != 0)
                     @foreach($portfolio as $portfo_item)
                         @if($portfo_item->content_type == 'Images')
                             '<div class="col-6">' +
@@ -117,35 +118,44 @@
                             '</div>' +
                         @endif
                     @endforeach
+                @endif
             '</div>');
         $("#sky_temp_porfolio_photos_mobile").html('' +
             '' +
-                @foreach($portfolio as $portfo_item_m)
-                    @if($portfo_item_m->content_type == 'Images')
-                         '<img class="mt-2" src="{{$portfo_item_m->photo_link}}" alt="" width="100%" style="box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);border-radius: 8px;">' +
-                    @endif
-                @endforeach
+                @if(count($portfolio) != 0)
+                    @foreach($portfolio as $portfo_item_m)
+                        @if($portfo_item_m->content_type == 'Images')
+                             '<img class="mt-2" src="{{$portfo_item_m->photo_link}}" alt="" width="100%" style="box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);border-radius: 8px;">' +
+                        @endif
+                    @endforeach
+                @endif
             '');
         $(".sky_temp_porfolio_videos").html('' +
-                @foreach($portfolio as $portfo_item_youyube_video)
-                    @if($portfo_item_youyube_video->content_type == 'Videos')
-                         '<iframe width="100%" height="300px" src="https://www.youtube.com/embed/{{$portfo_item_youyube_video->youtube_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>' +
-                    @endif
-                @endforeach
+                @if(count($portfolio) != 0)
+                    @foreach($portfolio as $portfo_item_youyube_video)
+                        @if($portfo_item_youyube_video->content_type == 'Videos')
+                             '<iframe width="100%" height="300px" src="https://www.youtube.com/embed/{{$portfo_item_youyube_video->youtube_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>' +
+                        @endif
+                    @endforeach
+                @endif
             '');
         $("#sky_temp_profolio_links_desktop").html('' +
-                @foreach($portfolio as $web_link)
-                        @if($web_link->content_type == 'Website Links')
-                            '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link->caption}} : &nbsp;</p> <a href="{{$web_link->website_links}}" target="_blank">{{$web_link->website_links}}</a> </div>' +
-                        @endif
-                @endforeach
+                @if(count($portfolio) != 0)
+                    @foreach($portfolio as $web_link)
+                            @if($web_link->content_type == 'Website Links')
+                                '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link->caption}} : &nbsp;</p> <a href="{{$web_link->website_links}}" target="_blank">{{$web_link->website_links}}</a> </div>' +
+                            @endif
+                    @endforeach
+                @endif
             '');
         $("#sky_temp_profolio_links").html('' +
-                @foreach($portfolio as $web_link_m)
-                        @if($web_link_m->content_type == 'Website Links')
-                            '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link_m->caption}} : &nbsp;</p> <a href="{{$web_link_m->website_links}}" target="_blank">{{$web_link_m->website_links}}</a> </div>' +
-                        @endif
-                @endforeach
+                @if(count($portfolio) != 0)
+                    @foreach($portfolio as $web_link_m)
+                            @if($web_link_m->content_type == 'Website Links')
+                                '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link_m->caption}} : &nbsp;</p> <a href="{{$web_link_m->website_links}}" target="_blank">{{$web_link_m->website_links}}</a> </div>' +
+                            @endif
+                    @endforeach
+                @endif
             '');
     });
 </script>

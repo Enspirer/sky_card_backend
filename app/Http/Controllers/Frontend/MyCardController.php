@@ -19,6 +19,15 @@ class MyCardController extends Controller
         ]);
     }
 
+    public function edit($id)
+    {
+        $cardDetails = MyCard::where('id',$id)->first();
+
+        return view('frontend.user.my_cards.edit',[
+            'cardDetails' => $cardDetails
+        ]);
+    }
+
     public function view_card($slug)
     {
         $cardDetails = MyCard::where('slug',$slug)->first();
