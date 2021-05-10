@@ -90,6 +90,21 @@
         $(".sky_temp_email_address").html("{{$card_details->email}}");
         //Website
         $(".sky_temp_website").html("{{$card_details->website}}");
+
+
+
+
+        $(".sky_temp_facebook_link").attr("href", "https://www.facebook.com/{{json_decode($card_details->social_media_links)->facebook_link}}");
+        $(".sky_temp_twitter_link").attr("href", "https://www.twitter.com/{{json_decode($card_details->social_media_links)->facebook_link}}");
+        $(".sky_temp_linkedin_link").attr("href", "sky_temp_linkedin_link");
+        $(".sky_temp_instargram_link").attr("href", "sky_temp_instargram_link");
+
+
+
+
+
+
+
         //profile_picture
         @if($card_details->avatar_image != null)
 
@@ -118,6 +133,7 @@
         $('.sky_temp-ca-call').attr("href", "tel:{{$phone_number->phone_number1}}");
         $('.sky_temp_ca-whatsapp').attr("href", "https://api.whatsapp.com/send?phone={{$phone_number->phone_number1}}");
         $('.sky_temp_ca_sms').attr("href", "sms:{{$phone_number->phone_number1}}");
+        $('.sky_temp_ca_email').attr("href", "mailto:{{$card_details->email}}");
         $('.sky_temp_ca_vcard').attr("href", "{{route('frontend.user.companies.vcardgenerator',$card_details->id)}}");
 
         $("#sky_temp_porfolio_photos_desktop").html('' +

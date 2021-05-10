@@ -30,6 +30,7 @@ Route::get('/sky-card-pro', [SkyCardProController::class,'index'])->name('sky_ca
 Route::get('/sky-card-pricing', [PricingController::class,'index'])->name('sky_card_pricing');
 Route::get('/sky-connect',[SkyConnectController::class,'index'])->name('sky_card_connect');
 Route::get('/contact', [ContactController::class, 'index'])->name('sky_card_contact');
+Route::post('/contact_controller',[ContactController::class,'send'])->name('contact_us');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
 
