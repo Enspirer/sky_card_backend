@@ -34,7 +34,7 @@
 
 
                     <div class="row" style="margin-bottom: 30px">
-                        <div class="col-md-4">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div style="border-style: dashed;padding-top: 90px;padding-bottom:90px;text-align: center;color: grey;border-width: 2px;" data-toggle="modal" data-target="#cover_photo_picker">
                                     Add Cover Photo
@@ -42,12 +42,6 @@
 
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div style="background: url('https://swiperjs.com/demos/images/nature-3.jpg');height: 200px;background-repeat: no-repeat;background-size: cover;"></div>
-                            </div>
-                        </div>
-
                     </div>
 
 

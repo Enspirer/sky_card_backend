@@ -49,17 +49,17 @@
                                         {{csrf_field()}}
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Your Name</label>
-                                            <input name="first_name" id="exampleEmail" placeholder="Your Name" type="text" class="form-control" value="{{auth()->user()->first_name}} {{auth()->user()->last_name}}">
+                                            <input name="first_name" id="exampleEmail" placeholder="Your Name" type="text" class="form-control" value="{{auth()->user()->first_name}} {{auth()->user()->last_name}}" required>
                                         </div>
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Address</label>
-                                            <input name="address" id="exampleEmail" placeholder="with a Address" type="text" class="form-control" value="{{$companyDetails->address}}">
+                                            <input name="address" id="exampleEmail" placeholder="with a Address" type="text" class="form-control" value="{{$companyDetails->address}}" required>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="examplePassword" class="">Phone Number 1</label>
-                                                    <input name="phone_number1" id="examplePassword" placeholder="Phone Number 1" type="text" class="form-control" value="{{$companyDetails->phone_number}}">
+                                                    <input name="phone_number1" id="examplePassword" placeholder="Phone Number 1" type="text" class="form-control" value="{{$companyDetails->phone_number}}" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -80,7 +80,7 @@
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Card Type</label>
-                                                    <select class="form-control" name="card_type">
+                                                    <select class="form-control" name="card_type" required>
                                                         <option value="public">Public Card</option>
                                                         <option value="private">Personal Use</option>
                                                     </select>
@@ -89,7 +89,7 @@
                                             <div class="col-md-4">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">Email</label>
-                                                    <input name="email" id="examplePassword" placeholder="Email" type="text" class="form-control" value="{{auth()->user()->email}}">
+                                                    <input name="email" id="examplePassword" placeholder="Email" type="text" class="form-control" value="{{auth()->user()->email}}" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -109,7 +109,7 @@
                                             <div class="col-md-6">
                                                 <div class="position-relative form-group">
                                                     <label for="exampleText" class="">City</label>
-                                                    <input name="city" id="examplePassword" placeholder="City" type="text" class="form-control">
+                                                    <input name="city" id="examplePassword" placeholder="City" type="text" class="form-control" required>
                                                 </div>
 
                                             </div>

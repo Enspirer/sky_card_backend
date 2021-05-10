@@ -39,7 +39,10 @@
                             <div class="tab-pane show" id="tab-eg7-1" role="tabpanel">
                                 <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
                                 <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
-                                <form action="/upload-target" class="dropzone"></form>
+                                <form action="{{route('frontend.user.companies.upload_card_cover_photo')}}" class="dropzone">
+                                    {{csrf_field()}}
+                                    <input type="hidden" value="{{$cardDetaials->id}}" name="card_id">
+                                </form>
                             </div>
 
                             <div class="tab-pane" id="tab-eg7-2" role="tabpanel">
@@ -58,6 +61,12 @@
 </div>
 
 <script>
+    Dropzone.on("queuecomplete", function (file) {
+        alert("All files have uploaded ");
+    });
+    
+
+
     function update_cover_photo(file_name) {
             $.post('{{route('cover_photo_update')}}', { business_card_id: "{{$cardDetaials->id}}", file_name : file_name},
                 function(returnedData){

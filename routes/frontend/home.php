@@ -63,6 +63,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('companies/create', [CompanyController::class, 'create'])->name('companies.create');
         Route::post('companies/store', [CompanyController::class, 'store'])->name('companies.store');
         Route::get('companiesq/dashboard/{id}', [CompanyController::class, 'dashboard'])->name('companies.dashboard');
+        Route::post('cardCoverUploader',[CompanyController::class,'upload_card_cover_photo'])->name('companies.upload_card_cover_photo');
 
         //Business Card Creator Wizard
         Route::get('companiesq/business_card_creator/{id}/step1', [CompanyController::class, 'create_business_card'])->name('companies.create_business_card');

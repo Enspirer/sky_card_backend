@@ -301,5 +301,22 @@ END:VCARD';
         }
     }
 
+    public function upload_card_cover_photo(Request $request)
+    {
+        if($request->file('file'))
+        {
+            $preview_fileName = time().'.'.$request->file->getClientOriginalExtension();
+            $fullURLsPreviewFile = $request->file->move(public_path('files/cover_images'), $preview_fileName);
+
+            MyCard::where('id',$request->card_id)->update([
+                'cover_image' => url('files/cover_images/').'/'.$preview_fileName
+            ]);
+
+        }else{
+
+        }
+
+    }
+
 
 }
