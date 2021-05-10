@@ -108,6 +108,29 @@
         </div>
     </section>
 
+
+    <section id="scan">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 data-animscroll="fade-up" class="animscroll-init animscroll-animate">
+                        Scan &amp; Save <br>
+                        <span> Business Cards</span>
+                    </h1>
+                    <p data-animscroll="fade-up" class="animscroll-init animscroll-animate">
+                        Use <span> Sky Card Reader </span> to capture all your business
+                        cards and all the contact information can be quickly and
+                        accurately read and save to your smartphone.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img data-animscroll="fade-left" src="{{url('light_theme/assets/Group 405.png')}}" alt="" class="animscroll-init animscroll-animate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="scan">
         <div class="container">
             <div class="row">
@@ -145,29 +168,6 @@
 
 
 
-    <section id="scan">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <img
-                            data-animscroll="fade-right"
-                            src="{{url('light_theme/assets/Group 330.png')}}"
-                            alt=""
-                    />
-                </div>
-                <div class="col-6 pl-5">
-                    <img data-animscroll="fade-up" src="{{url('light_theme/assets/Group 545.svg')}}" width="10%" style="width: 70%;" class="mt-5" alt="">
-                    <p data-animscroll="fade-up">
-                        Select from our card designs or create your own
-                        <span> Premium Design </span>
-                    </p>
-                    <p data-animscroll="fade-up">
-                        Share your card in all platforms.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
