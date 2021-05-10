@@ -75,14 +75,13 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         //Company Portfolio
         Route::get('companiesq/portfolio/{id}/', [CompanyPortfolioController::class, 'index'])->name('companies.portfolio');
         Route::post('companiesq/portfolio/store', [CompanyPortfolioController::class, 'store'])->name('companies.portfolio_store');
-
-
-
         Route::get('card-preview/{company_id}/{card_id}/{templete_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
+
+
 
         Route::post('companiesq/business_card_template', [CompanyController::class, 'business_card_template_save'])->name('companies.business_card_template_save');
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
-
+        Route::post('companiesq/update_business_card', [CompanyController::class, 'update_card'])->name('companies.update_card');
 
 
         // User Profile Specific
