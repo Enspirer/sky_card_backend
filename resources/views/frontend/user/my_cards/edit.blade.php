@@ -7,9 +7,9 @@
     <div class="app-main__outer">
         <div class="app-main__inner">
             @include('frontend.user.dashboard_components.title_bar',[
-                        'title_icon' => 'fa fa-building',
+                        'title_icon' => 'fa fa-id-card',
                         'title_description' => 'You can create your own company page with SkyCards',
-                        'title_name'=>'Create Company']
+                        'title_name'=>'Edit My Card']
                         )
 
             <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
@@ -20,7 +20,7 @@
                 </li>
                 <li class="nav-item">
                     <a role="tab" class="nav-link show" id="tab-1" data-toggle="tab" href="#tab-content-1" aria-selected="false">
-                        <span>Published Item</span>
+                        <span>Change Template</span>
                     </a>
                 </li>
             </ul>
@@ -29,13 +29,21 @@
             <div class="tab-content">
                 <div class="tab-pane tabs-animation fade active show" id="tab-content-0" role="tabpanel">
                     <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    @include('frontend.user.companies.sections.card_settings_page',['card_details' => $cardDetails])
+
+                                </div>
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
                 <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
                     <div class="tab-pane tabs-animation fade active show" id="tab-content-0" role="tabpanel">
                         <div class="row">
-
                         </div>
                     </div>
 
