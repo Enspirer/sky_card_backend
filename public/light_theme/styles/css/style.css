@@ -770,7 +770,7 @@ nav .dropdown-login .red {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 576px) {
   .des-top {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -791,7 +791,28 @@ nav .dropdown-login .red {
   }
 }
 
-@media screen and (min-width: 720px) {
+@media (max-width: 768px) {
+  .des-top {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .des-top h1 {
+    margin: auto;
+  }
+  .img-top {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 992px) {
   .des-top {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
