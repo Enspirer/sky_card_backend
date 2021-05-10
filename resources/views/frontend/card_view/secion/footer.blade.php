@@ -19,6 +19,9 @@
         crossorigin="anonymous"
 ></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 <script>
     $(document).ready(function () {
         var search_status = 0;
@@ -75,7 +78,11 @@
 
 
 <script>
+
     $( document ).ready(function() {
+
+
+
         //First Name
         $(".sky_temp_first_name").html("{{$name_seperation[0]}}");
         //Last Name
@@ -124,7 +131,10 @@
         //Job Title
         $(".sky_temp_job_title").html("{{$card_details->job_position}}");
 
-        $(".sky_temp_description").html("{{$card_details->description}}");
+
+
+
+
         $('.sky_temp-ca-call').attr("href", "tel:{{$phone_number->phone_number1}}");
         $('.sky_temp_ca-whatsapp').attr("href", "https://api.whatsapp.com/send?phone={{$phone_number->phone_number1}}");
         $('.sky_temp_ca_sms').attr("href", "sms:{{$phone_number->phone_number1}}");
@@ -180,6 +190,13 @@
                     @endforeach
                 @endif
             '');
+        $.get("{{route('getdescription',$card_details->id)}}", function(data, status){
+            if(data.message == 'not_found')
+                $(".sky_temp_description").html('not found');
+            else {
+                $(".sky_temp_description").html(data.message);
+            }
+        });
     });
 </script>
 

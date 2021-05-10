@@ -23,6 +23,9 @@ use App\Http\Controllers\API\MyCardsController;
 });*/
 Route::post('user_updates', [CompanyController::class, 'update_cover_photo'])->name('cover_photo_update');
 Route::post('entype',  [AnnotationController::class,'annotateImage']);
+Route::get('getdescription/{card_id}',  [CompanyController::class,'getdescription'])->name('getdescription');
+
+
 
 
 Route::group(['prefix' => 'auth'], function () {
