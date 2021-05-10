@@ -3,7 +3,7 @@
         <div class="widget-content">
             <div class="widget-content-wrapper">
                 <div class="widget-content-right ml-0 mr-3">
-                    <div class="widget-numbers text-success">00</div>
+                    <div class="widget-numbers text-success">{{$card_details->visitor_count}}</div>
                 </div>
                 <div class="widget-content-left">
                     <div class="widget-heading">Views</div>
