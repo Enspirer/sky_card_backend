@@ -91,17 +91,12 @@
         //Website
         $(".sky_temp_website").html("{{$card_details->website}}");
 
-
-
-
-        $(".sky_temp_facebook_link").attr("href", "https://www.facebook.com/{{json_decode($card_details->social_media_links)->facebook_link}}");
-        $(".sky_temp_twitter_link").attr("href", "https://www.twitter.com/{{json_decode($card_details->social_media_links)->facebook_link}}");
-        $(".sky_temp_linkedin_link").attr("href", "sky_temp_linkedin_link");
-        $(".sky_temp_instargram_link").attr("href", "sky_temp_instargram_link");
-
-
-
-
+        @if($card_details->social_media_links)
+             $(".sky_temp_facebook_link").attr("href", "{{json_decode($card_details->social_media_links)->facebook_link}}");
+            $(".sky_temp_twitter_link").attr("href", "{{json_decode($card_details->social_media_links)->twitter_link}}");
+            $(".sky_temp_linkedin_link").attr("href", "{{json_decode($card_details->social_media_links)->linkedin_link}}");
+            $(".sky_temp_instargram_link").attr("href", "{{json_decode($card_details->social_media_links)->instagram_link}}");
+        @endif
 
 
 
