@@ -91,7 +91,19 @@
         //Website
         $(".sky_temp_website").html("{{$card_details->website}}");
         //profile_picture
-        $('.sky_temp_profile_picture').attr("src", "{{url('files/preview_files/')}}/{{$company_details->logo_img}}");
+        @if($card_details->avatar_image != null)
+
+            $('.sky_temp_profile_picture').attr("src", "{{url('files/preview_files/')}}/{{$card_details->avatar_image}}");
+        @else
+            @if($company_details->logo_img != 'no_img.jpg')
+              $('.sky_temp_profile_picture').attr("src", "{{url('files/preview_files/')}}/{{$company_details->logo_img}}");
+            @else
+              $('.sky_temp_profile_picture').attr("src", "https://nichemodels.co/wp-content/uploads/2019/03/user-dummy-pic.png");
+            @endif
+        @endif
+
+
+
         @if($card_details->cover_image !=null)
         //Cover Photo
         $(".sky_temp_cover_photo").css('background-image','url({{$card_details->cover_image}})');
