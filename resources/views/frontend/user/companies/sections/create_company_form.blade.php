@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="position-relative form-group">
             <label for="exampleEmail11" class="">Brand Category</label>
-            <select class="form-control" name="category">
+            <select class="form-control" name="category" required>
                 <option value="IT Company">IT Company</option>
                 <option value="Shop">Shop</option>
                 <option value="Organization">Organization</option>
@@ -26,17 +26,17 @@
     <div class="col-md-12">
         <div class="position-relative form-group">
             <label for="examplePassword11" class="">Company/Organization/Brand Name</label>
-            <input name="brand_name" id="examplePassword11" placeholder="Brand Name" type="text" class="form-control">
+            <input name="brand_name" id="examplePassword11" placeholder="Brand Name" type="text" class="form-control" required>
         </div>
     </div>
 </div>
 <div class="position-relative form-group">
     <label for="exampleAddress" class="">Address</label>
-    <input name="address" id="exampleAddress" placeholder="1234 Main St" type="text" class="form-control">
+    <input name="address" id="exampleAddress" placeholder="1234 Main St" type="text" class="form-control" required>
 </div>
 <div class="position-relative form-group">
     <label for="exampleAddress2" class="">Location</label>
-    <input name="location" id="exampleAddress2" placeholder="Apartment, studio, or floor" type="text" class="form-control">
+    <input name="location" id="exampleAddress2" placeholder="Apartment, studio, or floor" type="text" class="form-control" required>
 </div>
 
 
@@ -44,7 +44,7 @@
     <div class="col-md-6">
         <div class="position-relative form-group">
             <label for="exampleCity" class="">Phone Number</label>
-            <input name="phone_number" id="exampleCity" type="text" class="form-control">
+            <input name="phone_number" id="exampleCity" type="text" class="form-control" required>
         </div>
     </div>
     <div class="col-md-6">
@@ -56,7 +56,7 @@
     <div class="col-md-12">
         <div class="position-relative form-group">
             <label for="exampleZip" class="">Email</label>
-            <input name="email" id="exampleZip" type="text" class="form-control">
+            <input name="email" id="exampleZip" type="text" class="form-control" required>
         </div>
     </div>
 </div>

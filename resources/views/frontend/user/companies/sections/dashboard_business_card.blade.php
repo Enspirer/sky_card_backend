@@ -7,7 +7,13 @@
                     <div class="card-block text-center text-white">
                         <div class="m-b-25">
                             @if($card_details->avatar_image == null)
-                                <div class="" style="background-image: url('http://localhost:8000/files/preview_files/{{$companyDetails->logo_img}}');height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
+                                @if($companyDetails->logo_img == 'no_img.jpg')
+                                    <div class="" style="background-image: url('https://nichemodels.co/wp-content/uploads/2019/03/user-dummy-pic.png');height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
+
+                                @else
+                                    <div class="" style="background-image: url('http://localhost:8000/files/preview_files/{{$companyDetails->logo_img}}');height: 100px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;width: 100px;margin-left: 30px;"></div>
+
+                                @endif
                             @else
                                 <div class="col-sm-4 bg-c-lite-green user-profile" style="background-image: url('{{$card_details->avatar_image}}');">
                             @endif
