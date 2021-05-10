@@ -11,6 +11,6 @@ class MyCardsController extends Controller
     public function index()
     {
         $myCards = MyCard::where('user_id',auth()->user()->id)->get();
-        return response()->json();
+        return response()->json($myCards);
     }
 }

@@ -7,6 +7,7 @@ use App\Http\Controllers\Frontend\MyCardController;
 use App\Http\Controllers\Frontend\CompanyController;
 use App\Http\Controllers\Frontend\AnnotationController;
 use App\Http\Controllers\API\MyCardsController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
