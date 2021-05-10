@@ -92,8 +92,13 @@
         $(".sky_temp_website").html("{{$card_details->website}}");
         //profile_picture
         $('.sky_temp_profile_picture').attr("src", "{{url('files/preview_files/')}}/{{$company_details->logo_img}}");
+        @if($card_details->cover_image !=null)
         //Cover Photo
         $(".sky_temp_cover_photo").css('background-image','url({{$card_details->cover_image}})');
+        @else
+        $(".sky_temp_cover_photo").css('background-image','url(https://image.freepik.com/free-vector/flower-seamless-pattern-background-elegant-texture-backgrounds_1217-1124.jpg)');
+        @endif
+
         //Job Title
         $(".sky_temp_job_title").html("{{$card_details->job_position}}");
 

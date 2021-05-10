@@ -31,7 +31,7 @@
                                        @include('frontend.user.companies.sections.publish_page_wizard')
                                     </div>
                                     <div class="tab-pane show" id="tab-eg7-1" role="tabpanel">
-                                        @include('frontend.user.companies.sections.card_settings_page')
+                                        @include('frontend.user.companies.sections.card_settings_page',['card_details' => $cardDetails])
                                     </div>
                                     <div class="tab-pane show" id="tab-eg7-2" role="tabpanel">
                                         @include('frontend.user.companies.sections.bussiness_card_offers')

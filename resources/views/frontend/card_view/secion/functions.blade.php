@@ -54,17 +54,44 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Message</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <form action="" method="post">
+                    {{csrf_field()}}
+                    @auth
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" class="form-control" value="{{auth()->user()->first_name}} {{auth()->user()->last_name}}">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" value="{{auth()->user()->email}}">
+                            <input type="hidden" name="user_id" value="{{auth()->user()->user_id}}">
+                        </div>
+                    @else
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+
+                    @endauth
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="10" class="form-control" name="message"></textarea>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary">Send</button>
             </div>
         </div>
     </div>
