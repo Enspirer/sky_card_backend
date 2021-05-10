@@ -33,12 +33,12 @@
             </div>
 
             <!-- -------------- mob -----  -->
-            <div class="mob-menu-btn d-none2 col-md-5 col-sm-4 col-5">
+            <div class="mob-menu-btn d-none2 col-md-5 col-sm-4 col-4">
                 <a href="#"> <i class="fas fa-user"></i></a>
             </div>
 
 
-            <div class="col-2 col-md-2 col-sm-4 d-flex justify-content-center p-0">
+            <div class="col-2 col-md-2 col-sm-4 col-4 d-flex justify-content-center p-0">
                 <img src="{{url('light_theme/assets/logo compressed.png')}}" class="default-logo header-logo" alt="" />
                 <img src="{{url('light_theme/assets/logo compressed.png')}}" class="sticky-logo d-none" alt="" />
             </div>
@@ -90,7 +90,7 @@
             </div>
 
             <!-- -------------- Mob -------------  -->
-            <div class="menu-mob col-5 col-md-5 col-sm-4 d-none2">
+            <div class="menu-mob col-4 col-md-5 col-sm-4 d-none2">
                 <input type="checkbox" id="overlay-input" />
                 <label for="overlay-input" id="overlay-button"><span></span></label>
                 <div id="overlay">
