@@ -31,6 +31,8 @@ class CreateMyCardsTable extends Migration
             $table->text('is_public');
             $table->text('website');
             $table->text('package');
+            $table->text('visitor_count')->nullable();
+            $table->text('call_to_action_count')->nullable();
             $table->text('primary_template');
             $table->text('slug');
             $table->timestamps();

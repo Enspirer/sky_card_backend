@@ -35,6 +35,7 @@ class MyCardController extends Controller
         $templates = CardTemplate::where('id',$cardDetails->card_template)->first();
         $portfolio = Porfolio::where('company_id',$cardDetails->company_id)->get();
 
+        $status = MyCard::visitorcount($cardDetails->id);
         if($cardDetails){
             $get_fnameLname = explode(" ", $cardDetails->name);
         }else{
