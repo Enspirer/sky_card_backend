@@ -176,7 +176,7 @@
                 @if(count($portfolio) != 0)
                     @foreach($portfolio as $web_link)
                             @if($web_link->content_type == 'Website Links')
-                                '<div class="row m-0" style="sans-serif; font-size: 13px"><p>{{$web_link->caption}} : &nbsp;</p> <a href="{{$web_link->website_links}}" target="_blank">{{$web_link->website_links}}</a> </div> <br>' +
+                                '<p>{{$web_link->caption}} : <span><a href="{{$web_link->website_links}}" target="_blank">{{$web_link->website_links}}</a></span></p> <br>' +
                             @endif
                     @endforeach
                 @endif
@@ -185,7 +185,7 @@
                 @if(count($portfolio) != 0)
                     @foreach($portfolio as $web_link_m)
                             @if($web_link_m->content_type == 'Website Links')
-                                '<p>{{$web_link_m->caption}} : &nbsp;</p> <a href="{{$web_link_m->website_links}}" target="_blank">{{$web_link_m->website_links}}</a><br>' +
+                                '<p>{{$web_link_m->caption}} : <span><a href="{{$web_link_m->website_links}}" target="_blank">{{$web_link_m->website_links}}</a></span></p> <br>' +
                             @endif
                     @endforeach
                 @endif
