@@ -1,11 +1,11 @@
 @extends('frontend.layouts.dashboard_app')
 
 @section('title', app_name() . ' | ' . __('navs.frontend.dashboard') )
-
+<link rel="stylesheet" href="{{url('light_theme/preview_mobile/style.css')}}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 @section('content')
-    <link rel="stylesheet" href="{{url('light_theme/preview_mobile/style.css')}}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    
+
+
     <div class="app-main__outer">
         <div class="app-main__inner">
             @include('frontend.user.dashboard_components.title_bar',[
