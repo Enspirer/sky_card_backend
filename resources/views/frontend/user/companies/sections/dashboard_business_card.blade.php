@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         @else
-                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="{{route('frontend.user.my_cards.edit',$card_details->id)}}" class="btn btn-primary">Edit</a>
                             <a href="" class="btn btn-primary">Share My Card</a>
                         @endif
 

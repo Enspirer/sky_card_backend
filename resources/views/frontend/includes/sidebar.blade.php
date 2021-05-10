@@ -15,7 +15,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.html" class="mm">
+                <a href="{{route('frontend.user.my_card_holder.index')}}" class="mm{{ Request::segment(1) == 'my_card_holder' ? '-active' : null }}">
                     <i class="fa fa-folder" style="padding-right: 10px;color: dimgrey"></i>
                     My Card Holder
                 </a>

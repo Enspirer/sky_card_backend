@@ -17,6 +17,7 @@ use App\Http\Controllers\Frontend\SkyCardElightController;
 use App\Http\Controllers\Frontend\SkyCardProController;
 use App\Http\Controllers\Frontend\PricingController;
 use App\Http\Controllers\Frontend\SkyConnectController;
+use App\Http\Controllers\Frontend\MyCardHolderController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -86,6 +87,8 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
         Route::post('companiesq/update_business_card', [CompanyController::class, 'update_card'])->name('companies.update_card');
 
+
+        Route::get('my_card_holder',[MyCardHolderController::class,'my_card_holder'])->name('my_card_holder.index');
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
