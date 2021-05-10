@@ -38,6 +38,7 @@ Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card'
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
 Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('image_scanning');
 
+Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 /*
  * These frontend controllers require the user to be logged in
@@ -46,7 +47,6 @@ Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('i
  */
 Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
-        Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');

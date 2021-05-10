@@ -134,7 +134,7 @@
         $('.sky_temp_ca-whatsapp').attr("href", "https://api.whatsapp.com/send?phone={{$phone_number->phone_number1}}");
         $('.sky_temp_ca_sms').attr("href", "sms:{{$phone_number->phone_number1}}");
         $('.sky_temp_ca_email').attr("href", "mailto:{{$card_details->email}}");
-        $('.sky_temp_ca_vcard').attr("href", "{{route('frontend.user.companies.vcardgenerator',$card_details->id)}}");
+        $('.sky_temp_ca_vcard').attr("href", "{{route('frontend.companies.vcardgenerator',$card_details->id)}}");
 
         $("#sky_temp_porfolio_photos_desktop").html('' +
             '<div class="row">' +
