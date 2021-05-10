@@ -938,7 +938,35 @@ nav .dropdown-login .red {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 576px) {
+  .impression img {
+    margin: auto;
+    display: block;
+  }
+  .impression p {
+    text-align: center !important;
+  }
+  .impression a {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (max-width: 768px) {
+  .impression img {
+    margin: auto;
+    display: block;
+  }
+  .impression p {
+    text-align: center !important;
+  }
+  .impression a {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (max-width: 992px) {
   .impression img {
     margin: auto;
     display: block;
@@ -1017,6 +1045,31 @@ nav .dropdown-login .red {
     background-image: none !important;
     display: none;
   }
+}
+
+@media (max-width: 992px) {
+  #sky-club .connect h1,
+  #sky-club .connect h5,
+  #sky-club .connect p {
+    text-align: center !important;
+  }
+  #sky-club .connect a {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #sky-club .connect h1,
+  #sky-club .connect h5,
+  #sky-club .connect p {
+    text-align: center !important;
+  }
+  #sky-club .connect a {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
   #sky-club .connect h1,
   #sky-club .connect h5,
   #sky-club .connect p {
@@ -1118,7 +1171,32 @@ nav .dropdown-login .red {
   width: 100%;
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 992px) {
+  #sky-daily .desc-daily {
+    padding-bottom: 50px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #sky-daily .desc-daily h1,
+  #sky-daily .desc-daily h5,
+  #sky-daily .desc-daily p {
+    text-align: center;
+  }
+  #sky-daily .desc-daily .buttons-daily {
+    max-width: 100% !important;
+  }
+  #sky-daily .desc-daily a {
+    display: block;
+  }
+  #sky-daily .image-daily {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 760px) {
   #sky-daily .desc-daily {
     padding-bottom: 50px;
     -webkit-box-ordinal-group: 3;
@@ -1169,7 +1247,7 @@ nav .dropdown-login .red {
 }
 
 #sky-daily h1 {
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 32px;
   font-weight: 800;
   font-stretch: normal;
@@ -1325,7 +1403,31 @@ nav .dropdown-login .red {
   width: 100%;
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 576px) {
+  #contract-organizer h1,
+  #contract-organizer h5,
+  #contract-organizer p {
+    text-align: center !important;
+  }
+  #contract-organizer a {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #contract-organizer h1,
+  #contract-organizer h5,
+  #contract-organizer p {
+    text-align: center !important;
+  }
+  #contract-organizer a {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
   #contract-organizer h1,
   #contract-organizer h5,
   #contract-organizer p {
@@ -1381,7 +1483,7 @@ nav .dropdown-login .red {
   position: relative;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 992px) {
   #sky-card-app .dark-round {
     position: relative !important;
     border-radius: 0 !important;
@@ -2864,6 +2966,40 @@ nav .dropdown-login .red {
   background-size: cover;
 }
 
+@media (max-width: 992px) {
+  #pro-header .left-pro h1 {
+    font-size: 42px;
+  }
+  #pro-header .left-pro .round {
+    margin-top: 0;
+  }
+  #pro-header .left-pro h6 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #pro-header .left-pro {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #pro-header .right-img-pro {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #pro-header .right-img-pro img {
+    width: 100%;
+  }
+}
+
 #pro-header .right-img {
   width: 60%;
 }
@@ -2931,6 +3067,18 @@ nav .dropdown-login .red {
 #features-pro {
   background: #003467;
   padding: 100px 0;
+}
+
+@media (max-width: 576px) {
+  #features-pro h2 {
+    font-size: 20px !important;
+  }
+  #features-pro p {
+    font-size: 14px !important;
+  }
+  #features-pro i {
+    font-size: 16px !important;
+  }
 }
 
 #features-pro h1 {
