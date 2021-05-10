@@ -22,9 +22,13 @@ class MyCardController extends Controller
     public function edit($id)
     {
         $cardDetails = MyCard::where('id',$id)->first();
+        $templates = CardTemplate::all();
+        $companyDetails = Company::where('id',$cardDetails->company_id)->first();
 
         return view('frontend.user.my_cards.edit',[
-            'cardDetails' => $cardDetails
+            'cardDetails' => $cardDetails,
+            'templates' => $templates,
+            'companyDetails' =>$companyDetails
         ]);
     }
 
