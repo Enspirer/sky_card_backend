@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <img data-animscroll="fade-left" data-animscroll-delay="100" src="{{url('light_theme/assets/Group 69.png')}}" alt="" class="animscroll-init animscroll-animate">
+                <img data-animscroll="fade-left" data-animscroll-delay="100" src="{{url('light_theme/assets/Asset 7icons.png')}}" alt="" class="animscroll-init animscroll-animate">
             </div>
         </div>
     </div>

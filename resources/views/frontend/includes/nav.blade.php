@@ -36,7 +36,7 @@
             <div class="col-5">
                 <div class="row">
                     <ul>
-                        <li><a class="navigation-link" href="{{route('frontend.card_explorer')}}">Sky Card</a></li>
+                        <li><a class="navigation-link" href="{{route('frontend.card_explorer')}}">Sky Club</a></li>
                         <li><a class="navigation-link" href="#">Pricing</a></li>
                         <li><a class="navigation-link" href="#">Contact</a></li>
                         @auth
