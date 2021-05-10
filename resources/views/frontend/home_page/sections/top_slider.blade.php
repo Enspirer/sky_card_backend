@@ -1,7 +1,7 @@
 <section id="top-slider-new">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+        <div class=" des-top col col-12 col-md-12 col-lg-6 col-sm-12">
                 <h1 data-animscroll="fade-up" class="animscroll-init animscroll-animate">Sky Card <span> App</span></h1>
                 <h5 data-animscroll="fade-up" data-animscroll-delay="100" class="animscroll-init animscroll-animate">
                     <span>Touchless</span> Smart Business cards Solution
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="img-top col col-12 col-md-12 col-lg-6 col-sm-12">
                 <img data-animscroll="fade-left" data-animscroll-delay="100" src="{{url('light_theme/assets/Asset 7icons.png')}}" alt="" class="animscroll-init animscroll-animate">
             </div>
         </div>

@@ -6,7 +6,7 @@
   line-height: 1;
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -15,6 +15,10 @@ a {
 
 a:hover {
   text-decoration: none !important;
+}
+
+.d-none2 {
+  display: none;
 }
 
 .b-259 {
@@ -341,13 +345,195 @@ a:hover {
   padding-right: 60px;
 }
 
+.mob-menu-btn {
+  font-size: 22px;
+  z-index: 9;
+  color: #0066cc;
+}
+
+@media (max-width: 1380px) {
+  .web-menu {
+    display: none !important;
+  }
+  .menu-mob,
+  .mob-menu-btn {
+    display: block !important;
+  }
+}
+
+@media (max-width: 690) {
+  .header-logo {
+    width: 150%;
+  }
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+.menu-mob #overlay-button {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu-mob #overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: #0066cc;
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-mob #overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+
+.menu-mob #overlay-button span:after {
+  top: 10px;
+}
+
+.menu-mob #overlay-button span:before,
+.menu-mob #overlay-button span:after {
+  left: 0;
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: #0066cc;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-mob #overlay-button:hover span,
+.menu-mob #overlay-button:hover span:before,
+.menu-mob #overlay-button:hover span:after {
+  background: #0066cc;
+}
+
+.menu-mob input[type="checkbox"] {
+  display: none;
+}
+
+.menu-mob input[type="checkbox"]:checked ~ #overlay {
+  visibility: visible;
+}
+
+.menu-mob input[type="checkbox"]:checked ~ #overlay-button:hover span,
+.menu-mob input[type="checkbox"]:checked ~ #overlay-button span {
+  background: transparent;
+}
+
+.menu-mob input[type="checkbox"]:checked ~ #overlay-button span:before {
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+
+.menu-mob input[type="checkbox"]:checked ~ #overlay-button span:after {
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.menu-mob #overlay {
+  background: #141414;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-mob #overlay.active {
+  visibility: visible;
+}
+
+.menu-mob #overlay .ul-sub {
+  margin: 10px 20px;
+  height: auto;
+  list-style: none;
+}
+
+.menu-mob #overlay .ul-sub li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.menu-mob #overlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.menu-mob #overlay ul li {
+  padding: 1em;
+}
+
+.menu-mob #overlay ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: Poppins;
+}
+
+.menu-mob #overlay ul li a:hover {
+  color: #333332;
+}
+
 nav {
   width: 100%;
   height: 62px;
   padding: 22.5px 131px 17px 127px;
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
   background-color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding: 20px 10px;
+  }
 }
 
 nav ul {
@@ -415,7 +601,7 @@ nav .dropd {
   left: 120px;
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
 }
 
 nav .dropd .hr-line {
@@ -481,7 +667,7 @@ nav .login-user i {
 
 nav .dropdown-login {
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
   background: #ffffff;
   width: 190px;
   margin-top: 10px;
@@ -521,25 +707,25 @@ nav .dropdown-login .red {
   position: fixed;
   z-index: 10;
   -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
   -webkit-animation-name: animationFade;
-  animation-name: animationFade;
+          animation-name: animationFade;
   -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes animationFade {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, -100, 0);
-    transform: translate3d(0, -100, 0);
+            transform: translate3d(0, -100, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none;
+            transform: none;
   }
 }
 
@@ -547,12 +733,82 @@ nav .dropdown-login .red {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, -100, 0);
-    transform: translate3d(0, -100, 0);
+            transform: translate3d(0, -100, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none;
+            transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .des-top {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .des-top h1 {
+    margin: auto !important;
+    font-size: 37px !important;
+  }
+  .des-top h5 {
+    text-align: center !important;
+  }
+  .img-top {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .top-slider-mt {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .des-top {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .des-top h1 {
+    margin: auto;
+  }
+  .img-top {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .des-top {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .des-top h1 {
+    margin: auto;
+  }
+  .img-top {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -561,6 +817,20 @@ nav .dropdown-login .red {
   background-position: center;
   background-size: cover;
   padding: 50px 0;
+}
+
+@media (max-width: 576px) {
+  #top-slider-new a {
+    padding: 16px 10px 10px !important;
+  }
+  #top-slider-new .top-slider-mt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #top-slider-new img {
@@ -620,8 +890,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 1;
   font-family: Poppins;
   font-size: 10px;
@@ -647,8 +917,41 @@ nav .dropdown-login .red {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 576px) {
+  .impression img {
+    margin: auto;
+    display: block;
+  }
+  .impression p {
+    text-align: center !important;
+  }
+  .impression a {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 #digital-business-card {
   padding: 50px 0;
+}
+
+@media (max-width: 576px) {
+  #digital-business-card .impression {
+    max-width: 90%;
+    margin: auto;
+  }
+  #digital-business-card .impression img {
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    width: 80% !important;
+  }
+  #digital-business-card .impression p {
+    text-align: center;
+  }
+  #digital-business-card .impression a {
+    display: block;
+  }
 }
 
 #digital-business-card img {
@@ -684,6 +987,25 @@ nav .dropdown-login .red {
   color: #1f1f1f;
 }
 
+@media (max-width: 1380px) {
+  #sky-club .dark-round {
+    border-radius: 0 !important;
+    position: relative !important;
+  }
+  #sky-club .light-round {
+    background-image: none !important;
+    display: none;
+  }
+  #sky-club .connect h1,
+  #sky-club .connect h5,
+  #sky-club .connect p {
+    text-align: center !important;
+  }
+  #sky-club .connect a {
+    display: block;
+  }
+}
+
 #sky-club .light-round {
   background-image: linear-gradient(104deg, #1b9dfd 28%, #0066cc 81%);
   width: 100%;
@@ -696,7 +1018,7 @@ nav .dropdown-login .red {
   z-index: 2;
   position: absolute;
   -webkit-box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.3);
   background-color: #003467;
   border-radius: 0 0 488px;
   width: 100%;
@@ -775,6 +1097,56 @@ nav .dropdown-login .red {
   width: 100%;
 }
 
+@media screen and (min-width: 576px) {
+  #sky-daily .desc-daily {
+    padding-bottom: 50px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #sky-daily .desc-daily h1,
+  #sky-daily .desc-daily h5,
+  #sky-daily .desc-daily p {
+    text-align: center;
+  }
+  #sky-daily .desc-daily .buttons-daily {
+    max-width: 100% !important;
+  }
+  #sky-daily .desc-daily a {
+    display: block;
+  }
+  #sky-daily .image-daily {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  #sky-daily .desc-daily {
+    padding-bottom: 50px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #sky-daily .desc-daily h1,
+  #sky-daily .desc-daily h5,
+  #sky-daily .desc-daily p {
+    text-align: center;
+  }
+  #sky-daily .desc-daily .buttons-daily {
+    max-width: 100% !important;
+  }
+  #sky-daily .desc-daily a {
+    display: block;
+  }
+  #sky-daily .image-daily {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 #sky-daily h1 {
   margin-top: 20%;
   font-size: 32px;
@@ -819,6 +1191,52 @@ nav .dropdown-login .red {
   background: #ff8a45;
   position: relative;
   height: 500px;
+}
+
+@media (max-width: 1080px) {
+  #sky-vip {
+    height: 100%;
+  }
+  #sky-vip .left-blue {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #sky-vip .vip-desc {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #sky-vip .vip-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 980px) {
+  #sky-vip .vip-desc {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 50px;
+  }
+  #sky-vip .vip-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  #sky-vip img {
+    margin: auto;
+    display: block;
+  }
+  #sky-vip .vip-desc {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #sky-vip .left-blue {
@@ -886,6 +1304,18 @@ nav .dropdown-login .red {
   width: 100%;
 }
 
+@media screen and (min-width: 576px) {
+  #contract-organizer h1,
+  #contract-organizer h5,
+  #contract-organizer p {
+    text-align: center !important;
+  }
+  #contract-organizer a {
+    margin: auto;
+    display: block;
+  }
+}
+
 #contract-organizer h1 {
   margin-top: 20%;
   font-size: 32px;
@@ -930,6 +1360,46 @@ nav .dropdown-login .red {
   position: relative;
 }
 
+@media (max-width: 1380px) {
+  #sky-card-app .dark-round {
+    position: relative !important;
+    border-radius: 0 !important;
+    padding: 20px !important;
+  }
+  #sky-card-app .light-round {
+    display: none;
+  }
+  #sky-card-app .app-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #sky-card-app .app-desc {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  #sky-card-app .app-desc h1,
+  #sky-card-app .app-desc h5,
+  #sky-card-app .app-desc h6,
+  #sky-card-app .app-desc p {
+    text-align: center !important;
+  }
+  #sky-card-app .app-desc p {
+    max-width: 100% !important;
+  }
+  #sky-card-app .download-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #sky-card-app .light-round {
   background-image: linear-gradient(104deg, #1b9dfd 28%, #0066cc 81%);
   width: 100%;
@@ -943,7 +1413,7 @@ nav .dropdown-login .red {
   padding: 80px;
   position: absolute;
   -webkit-box-shadow: 0 -5px 7.5px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 -5px 7.5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -5px 7.5px 0 rgba(0, 0, 0, 0.3);
   background-color: #f3f3f3;
   bottom: 0;
   border-radius: 488px 0 0 0;
@@ -1004,7 +1474,7 @@ nav .dropdown-login .red {
 #counter .counter-container .counter-card {
   background: #ffffff;
   -webkit-box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
-  box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
+          box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
   padding: 20px 10px;
   margin: 30px;
   top: -114px;
@@ -1087,7 +1557,7 @@ nav .dropdown-login .red {
 #latest-connections .auto-card-connection .card {
   padding: 15px 9.5px;
   -webkit-box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
   background-color: #f6f6f6;
   border-radius: 23px 0 23px 0;
   -webkit-transition: all ease-out 0.4s;
@@ -1169,17 +1639,17 @@ nav .dropdown-login .red {
 .search-left i {
   color: #fff;
   -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   -webkit-box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
-  box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
+          box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
   background-color: #ffffff36;
   padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 30px;
@@ -1281,17 +1751,17 @@ nav .dropdown-login .red {
 .search i {
   color: #fff;
   -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   -webkit-box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
-  box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
+          box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
   background-color: #ffffff36;
   padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 30px;
@@ -1387,13 +1857,13 @@ nav .dropdown-login .red {
 .width-sm {
   width: 200px;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .width-lg {
   width: 85vw;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 #search-result {
@@ -1555,7 +2025,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 #daily .right-content .card-add .name-add-company {
@@ -1657,7 +2127,7 @@ nav .dropdown-login .red {
 #card-holder .left-cards .card {
   padding: 13.5px 12px 12.5px 13.5px;
   -webkit-box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
   background-color: #f6f6f6;
   border-radius: 23px 0;
 }
@@ -1761,8 +2231,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #card-holder .right-holder .image-holder img {
@@ -1792,8 +2262,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -1801,8 +2271,8 @@ nav .dropdown-login .red {
 #card-holder .right-holder .login-register .separator::after {
   content: "";
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border-bottom: 1px solid #1f1f1f;
 }
 
@@ -1875,7 +2345,7 @@ nav .dropdown-login .red {
   background: #003467;
   border-radius: 30px 0 30px 0;
   -webkit-box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
-  box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
+          box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
 }
 
 #counter-connect .counter-card .border-card-right {
@@ -1961,7 +2431,7 @@ nav .dropdown-login .red {
   padding: 30px 50px;
   border-radius: 30px 0 30px 0;
   -webkit-box-shadow: 10px 10px 30px -12px rgba(0, 80, 160, 0.33);
-  box-shadow: 10px 10px 30px -12px rgba(0, 80, 160, 0.33);
+          box-shadow: 10px 10px 30px -12px rgba(0, 80, 160, 0.33);
 }
 
 #login-body .card h1 {
@@ -2034,8 +2504,8 @@ nav .dropdown-login .red {
   display: flex;
   font-family: Poppins;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -2043,8 +2513,8 @@ nav .dropdown-login .red {
 #login-body .card .separator::after {
   content: "";
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border-bottom: 1px solid #1f1f1f;
 }
 
@@ -2295,7 +2765,7 @@ nav .dropdown-login .red {
 #vip-body-top .card {
   height: 100%;
   -webkit-box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.2);
   background-color: #f6f6f6;
   width: 100%;
   border-radius: 23px 0 23px 0;
@@ -2305,7 +2775,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 23px 0 23px 0;
 }
 
@@ -2313,7 +2783,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 260px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 23px 0 23px 0;
 }
 
@@ -2363,8 +2833,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #pro-header {
@@ -2403,8 +2873,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 70px;
   height: 70px;
   background: #ff8a45;
@@ -2622,8 +3092,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 70px;
   height: 70px;
   background: #0066cc;
@@ -2735,7 +3205,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0 7.5px 12.5px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 7.5px 12.5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 7.5px 12.5px 0 rgba(0, 0, 0, 0.25);
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -2779,7 +3249,7 @@ nav .dropdown-login .red {
   background-image: url(../../assets/Group546.png);
   padding: 50px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -2826,15 +3296,15 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
 #contact-header .form-card {
   background-image: linear-gradient(120deg, #ffffff, #d7e4eb 100%);
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
   border-radius: 30px 0 30px 0;
   width: 50%;
   margin: auto;
@@ -2926,7 +3396,7 @@ nav .dropdown-login .red {
   height: 100%;
   border-radius: 30px;
   -webkit-box-shadow: 0 7.5px 12.5px 0 rgba(0, 80, 160, 0.21);
-  box-shadow: 0 7.5px 12.5px 0 rgba(0, 80, 160, 0.21);
+          box-shadow: 0 7.5px 12.5px 0 rgba(0, 80, 160, 0.21);
   padding: 70px 30px 20px 30px;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
@@ -2972,7 +3442,7 @@ nav .dropdown-login .red {
   position: absolute;
   left: calc(50% - 50px);
   -webkit-box-shadow: 0 1px 4.5px 0 rgba(0, 80, 160, 0.21);
-  box-shadow: 0 1px 4.5px 0 rgba(0, 80, 160, 0.21);
+          box-shadow: 0 1px 4.5px 0 rgba(0, 80, 160, 0.21);
   border: solid 0.2px #1f1f1f1f;
   background-color: #ffffff;
   top: -50px;
@@ -2993,7 +3463,7 @@ nav .dropdown-login .red {
 
 #pricing .price-card {
   -webkit-box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.3);
-  box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.3);
+          box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.3);
   background-color: #f3f3f3;
   border-radius: 20px 0 20px 0;
   overflow: hidden;

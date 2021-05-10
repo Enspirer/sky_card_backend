@@ -1,11 +1,11 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 animscroll-init animscroll-animate" data-animscroll="fade-up">
                 <img src="{{url('light_theme/assets/logo compressed.png')}}" alt="">
                 <h3>Sky Card Global</h3>
             </div>
-            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
                 <h1>Sky Products</h1>
                 <ul>
                     <li><a href="{{route('frontend.sky_card_pro')}}">Sky Card Pro</a></li>
@@ -15,7 +15,7 @@
                     <li><a href="#mdo">Sky Promo</a></li>
                 </ul>
             </div>
-            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="200">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="200">
                 <h1>Contact Us</h1>
                 <ul>
                     <!-- <li><i class="fas fa-map-marker-alt"></i>Lorem ipsum address</li> -->
@@ -27,7 +27,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="300">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="300">
                 <h1>Follow Us</h1>
                 <br>
                 <div class="row m-0">

@@ -1,25 +1,28 @@
 <nav class="navbar-top">
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class=" web-menu col-md-5 col-5">
                 <div class="row">
                     <ul>
                         <li><a class="navigation-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}">Home</a></li>
                         <li>
-                            <a id="dopd-btn" class="navigation-link" href="#">Sky Cards App</a
-                            >
+                            <a id="dopd-btn" class="navigation-link" href="#">Sky Cards App</a>
                         </li>
                         <div id="dropd" class="dropd d-none">
                             <a href="{{route('frontend.sky_card_pro')}}">
                                 <div class="hr-line row m-0 pl-3 pr-3 mb-3 pb-2">
                                     <h6>Sky Cards</h6>
-                                    <div class="round orange"><p>Pro</p></div>
+                                    <div class="round orange">
+                                        <p>Pro</p>
+                                    </div>
                                 </div>
                             </a>
                             <a href="{{route('frontend.sky_card_elite')}}">
                                 <div class="row m-0 pl-3 pr-3 mt-3">
                                     <h6>Sky Cards</h6>
-                                    <div class="round blue"><p>Elite</p></div>
+                                    <div class="round blue">
+                                        <p>Elite</p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -28,11 +31,19 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-2 d-flex justify-content-center">
-                <img src="{{url('light_theme/assets/logo compressed.png')}}" class="default-logo header-logo" alt=""/>
-                <img src="{{url('light_theme/assets/logo compressed.png')}}" class="sticky-logo d-none" alt=""/>
+
+            <!-- -------------- mob -----  -->
+            <div class="mob-menu-btn d-none2 col-md-5 col-sm-4 col-5">
+                <a href="#"> <i class="fas fa-user"></i></a>
             </div>
-            <div class="col-5">
+
+
+            <div class="col-2 col-md-2 col-sm-4 d-flex justify-content-center p-0">
+                <img src="{{url('light_theme/assets/logo compressed.png')}}" class="default-logo header-logo" alt="" />
+                <img src="{{url('light_theme/assets/logo compressed.png')}}" class="sticky-logo d-none" alt="" />
+            </div>
+
+            <div class=" web-menu col-md-5 col-5">
                 <div class="row">
                     <ul>
                         <li><a class="navigation-link {{ Request::segment(1) === 'sky-card-club' ? 'active' : null }}" href="{{route('frontend.sky_card_club')}}">Sky Club</a></li>
@@ -46,14 +57,18 @@
                                 <i id="login-icon" class="fas fa-sort-down"></i>
                             </div>
                             <div id="dropdown-login" class="dropdown-login d-none">
-                                <a href="{{route('frontend.user.dashboard')}}">  <div class="row hr-bottum">
+                                <a href="{{route('frontend.user.dashboard')}}">
+                                    <div class="row hr-bottum">
                                         <div class="col-2"><i class="fa fa-tachometer-alt" aria-hidden="true"></i></div>
-                                        <div class="col-10"><h5>Dashboard</h5></div>
+                                        <div class="col-10">
+                                            <h5>Dashboard</h5>
+                                        </div>
                                     </div>
                                 </a>
 
 
-                                <a href="{{route('frontend.auth.logout')}}">  <div class="row hr-bottum mt-3">
+                                <a href="{{route('frontend.auth.logout')}}">
+                                    <div class="row hr-bottum mt-3">
                                         <div class="col-2">
                                             <i class="red fa fa-sign-out" aria-hidden="true"></i>
                                         </div>
@@ -73,6 +88,30 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- -------------- Mob -------------  -->
+            <div class="menu-mob col-5 col-md-5 col-sm-4 d-none2">
+                <input type="checkbox" id="overlay-input" />
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                <div id="overlay">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sky Cards App</a></li>
+                        <ul class="ul-sub">
+                            <li><a href="#">Sky Cards Pro</a></li>
+                            <li><a href="#">Sky Cards Elite</a></li>
+                        </ul>
+
+                        <li><a href="#">Sky Contact</a></li>
+                        <li><a href="#">Sky Daily</a></li>
+                        <li><a href="#">Sky Club</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </nav>

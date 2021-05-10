@@ -16,12 +16,12 @@
     <section id="top-slider-new">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+            <div class=" des-top col col-12 col-md-12 col-lg-6 col-sm-12">
                     <h1 data-animscroll="fade-up">Sky Card <span> App</span></h1>
                     <h5 data-animscroll="fade-up" data-animscroll-delay="100">
                         <span>Touchless</span> Smart Business cards Solution
                     </h5>
-                    <div class="row mt-5">
+                    <div class="row mt-5 top-slider-mt">
                         <div data-animscroll="fade-up" data-animscroll-delay="100" class="mr-3">
                             <a href="{{route('frontend.sky_card_pro')}}">Sky Cards
                                 <div class="orange"><p>pro</p></div></a>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="img-top col col-12 col-md-12 col-lg-6 col-sm-12">
                     <img data-animscroll="fade-left" data-animscroll-delay="100" src="{{url('light_theme/assets/Asset 7icons.png')}}" alt=""/>
                 </div>
             </div>
@@ -45,11 +45,11 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-6">
+            <div class="col col-12 col-md-12 col-lg-6 col-sm-12">
                     <img data-animscroll="fade-left" src="{{url('light_theme/assets/Group 330.png')}}" alt=""/>
                 </div>
 
-                <div class="col-6">
+                <div class="col col-12 col-md-12 col-lg-6 col-sm-12 justify-content-center impression">
                     <img src="{{url('light_theme/assets/Group 545.svg')}}" width="50%" style="width: 60%;" class="mt-5" alt="">
 
                     <p data-animscroll="fade-up" data-animscroll-delay="200">
@@ -70,10 +70,10 @@
         <div class="dark-round" data-animscroll="fade-up">
             <div class="container p-4">
                 <div class="row">
-                    <div class="col-6">
+                <div class="col-12 col col-md-12 col-lg-6 col-sm-12 d-flex justify-content-center">
                         <img src="{{url('light_theme/assets/Asset 1skynetwork.png')}}" style="width: 80%" data-animscroll="fade-right"/>
                     </div>
-                    <div class="col-6 pl-5" data-animscroll="fade-left">
+                    <div class="col-12 col  col-md-12 col-lg-6 col-sm-12 connect" data-animscroll="fade-left">
                         <h1 data-animscroll="fade-up">Sky <span>Connect</span></h1>
                         <h5 data-animscroll="fade-up" data-animscroll-delay="100">
                             The largest<b> Network of websites </b> with <br>
@@ -97,7 +97,7 @@
     <section id="sky-daily">
         <div class="container">
             <div class="row">
-                <div class="col-6" data-animscroll="fade-right">
+            <div class="col-12 col col-md-12 col-lg-6 col-sm-12 desc-daily" data-animscroll="fade-right">
                     <h1 data-animscroll="fade-up">Sky <span> Promo</span></h1>
                     <h5 data-animscroll="fade-up">The ultimate marketing solution with <br>exclusive client database</h5>
                     <br/>
@@ -117,7 +117,7 @@
                     <br/>
                     <a data-animscroll="fade-up" data-animscroll-delay="300" href="#" class="theam-btn" type="button">Learn More</a>
                 </div>
-                <div class="col-6" data-animscroll="fade-left">
+                <div class="col-12 col col-md-12 col-lg-6 col-sm-12 image-daily" data-animscroll="fade-left">
                     <img src="{{url('light_theme/assets/Group 70.png')}}" style="width: 100%" alt="" />
                 </div>
             </div>
@@ -128,7 +128,7 @@
         <div class="left-blue" data-animscroll="fade-right" data-animscroll-delay="100"></div>
         <div class="container vip-container">
             <div class="row">
-                <div class="col-6">
+            <div class="col-12 col col-md-12 col-lg-6 col-sm-12 vip-desc">
                     <div class="details">
                         <h1 data-animscroll="fade-up">Sky <span>Club</span></h1>
                         <h5 data-animscroll="fade-up">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col col-md-12 col-lg-6 col-sm-12 vip-card">
                     <img data-animscroll="fade-left" style="width: 80%" src="{{url('light_theme/assets/Layer 2.png')}}" alt=""/>
                 </div>
             </div>
@@ -153,10 +153,10 @@
     <section id="contract-organizer">
         <div class="container">
             <div class="row">
-                <div class="col-6" data-animscroll="fade-right">
+            <div class="col-12 col col-md-12 col-lg-6 col-sm-12" data-animscroll="fade-right">
                     <img src="{{url('light_theme/assets/Group 702.png')}}" style="width: 100%" alt="" />
                 </div>
-                <div class="col-6 pl-5" data-animscroll="fade-left">
+                <div class="col-12 col pl-5 col-md-12 col-lg-6 col-sm-12" data-animscroll="fade-left">
                     <h1 data-animscroll="fade-up">
                         My Business <br />
                         <span> Card Holder</span>
@@ -179,7 +179,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-1"></div>
-                    <div class="col-7 pl-5" data-animscroll="fade-right">
+                    <div class="col-12 col-md-12 col-lg-7 col-sm-12 pl-5 app-desc" data-animscroll="fade-right">
                         <h1 data-animscroll="fade-up" data-animscroll-delay="100">
                             Sky Card App
                         </h1>
@@ -208,7 +208,7 @@
                             a few seconds.
                         </p>
                         <br/>
-                        <div class="row">
+                        <div class="row download-app">
                             <div class="col-4" data-animscroll="fade-up" data-animscroll-delay="300">
                                 <a href="#">
                                     <img src="{{url('light_theme/assets/Mask Group 6.png')}}" style="width: 100%" alt=""/>
@@ -222,7 +222,8 @@
                         </div>
                     </div>
 
-                    <div class="col-4" data-animscroll="fade-left">
+                 
+            <div class="col-12 col-md-12 col-lg-4 col-sm-12 app-img" data-animscroll="fade-left">
                         <img src="{{url('light_theme/assets/Group 71.png')}}" style="width: 100%" alt="" />
                     </div>
                 </div>
