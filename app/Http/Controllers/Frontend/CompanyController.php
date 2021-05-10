@@ -285,4 +285,21 @@ END:VCARD';
     }
 
 
+    public function getdescription($card_id)
+    {
+        $cardDetails = MyCard::where('id',$card_id)->first();
+
+        if($cardDetails->description)
+        {
+          return response()->json([
+              'message' => $cardDetails->description
+          ]);
+        }else{
+            return response()->json([
+                'message' => 'not_found',
+            ]);
+        }
+    }
+
+
 }
