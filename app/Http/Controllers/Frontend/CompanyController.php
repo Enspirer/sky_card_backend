@@ -7,6 +7,7 @@ use App\Models\Cards;
 use App\Models\CardTemplate;
 use App\Models\Company;
 use App\Models\MyCard;
+use App\Models\Porfolio;
 use Illuminate\Http\Request;
 use Response;
 class CompanyController extends Controller
@@ -156,6 +157,7 @@ class CompanyController extends Controller
           'twitter_link' => $request->twitter_link,
           'linkedin_link' => $request->linkedin_link,
           'youtube_link' => $request->youtube_link,
+          'is_public' => $request->is_public
         ];
 
         MyCard::where('id',$request->card_id)->update([
@@ -163,7 +165,7 @@ class CompanyController extends Controller
            'description' => $request->description
         ]);
 
-        return redirect()->route('frontend.user.companies.publish_your_card',[$request->company_id,$request->card_id]);
+        return redirect()->route('frontend.user.companies.publish_your_card',[$request->card_id,$request->company_id]);
 
     }
 
@@ -173,6 +175,7 @@ class CompanyController extends Controller
         $CompanyDetails = Company::where('id',$company_id)->first();
         $cardDetails = MyCard::where('id',$card_id)->first();
         $templates = CardTemplate::where('id',$template_id)->first();
+        $portfolio = Porfolio::where('company_id',$company_id)->get();
 
         if($cardDetails){
             $get_fnameLname = explode(" ", $cardDetails->name);
@@ -187,7 +190,8 @@ class CompanyController extends Controller
             'card_details' => $cardDetails,
             'tempaltes' => $templates,
             'name_seperation' => $get_fnameLname,
-            'phone_number' => $phone_number
+            'phone_number' => $phone_number,
+            'portfolio'=>$portfolio
         ]);
     }
 
@@ -204,9 +208,15 @@ class CompanyController extends Controller
         return redirect()->route('frontend.user.companies.add_social_links_page',[$request->business_card_id,$getMyCardDetails->company_id]);
     }
 
-    public function publish_your_card()
+    public function publish_your_card($id,$company_id)
     {
-        return view('frontend.user.companies.bussiness_card_publish');
+        $companyDetails = Company::where('id',$company_id)->first();
+        $cardDetailss = MyCard::where('id',$id)->first();
+
+        return view('frontend.user.companies.bussiness_card_publish',[
+            'companyDetails' => $companyDetails,
+            'cardDetails' => $cardDetailss
+        ]);
     }
 
     public function update_cover_photo(Request $request)

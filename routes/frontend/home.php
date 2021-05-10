@@ -13,21 +13,28 @@ use App\Http\Controllers\Frontend\CardExplorerController;
 use App\Http\Controllers\Frontend\SkyCardCloubController;
 use App\Http\Controllers\Frontend\CompanyInboxController;
 use App\Http\Controllers\Frontend\CompanyPortfolioController;
+use App\Http\Controllers\Frontend\SkyCardElightController;
+use App\Http\Controllers\Frontend\SkyCardProController;
+use App\Http\Controllers\Frontend\PricingController;
+use App\Http\Controllers\Frontend\SkyConnectController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/sky_daily', [SkyDailyController::class, 'index'])->name('sky_daily');
+Route::get('/sky-daily', [SkyDailyController::class, 'index'])->name('sky_daily');
 Route::get('/card-explorer', [CardExplorerController::class, 'index'])->name('card_explorer');
 Route::get('/sky-card-club', [SkyCardCloubController::class, 'index'])->name('sky_card_club');
+Route::get('/sky-card-elite', [SkyCardElightController::class,'index'])->name('sky_card_elite');
+Route::get('/sky-card-pro', [SkyCardProController::class,'index'])->name('sky_card_pro');
+Route::get('/sky-card-pricing', [PricingController::class,'index'])->name('sky_card_pricing');
+Route::get('/sky-connect',[SkyConnectController::class,'index'])->name('sky_card_connect');
+Route::get('/contact', [ContactController::class, 'index'])->name('sky_card_contact');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
 
 
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
-Route::get('contact', [ContactController::class, 'index'])->name('contact');
-Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
 Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('image_scanning');
 
 
@@ -38,6 +45,8 @@ Route::post('/annotate', [AnnotationController::class,'annotateImage'])->name('i
  */
 Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
+        Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
+
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -73,7 +82,6 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         Route::post('companiesq/business_card_template', [CompanyController::class, 'business_card_template_save'])->name('companies.business_card_template_save');
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
-        Route::get('companiesq/vcardgenerator/{card_id}', [CompanyController::class, 'vcardgenerator'])->name('companies.vcardgenerator');
 
 
 

@@ -6,7 +6,7 @@
   line-height: 1;
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -346,7 +346,7 @@ nav {
   height: 62px;
   padding: 22.5px 131px 17px 127px;
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
   background-color: #ffffff;
 }
 
@@ -415,7 +415,7 @@ nav .dropd {
   left: 120px;
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
 }
 
 nav .dropd .hr-line {
@@ -481,7 +481,7 @@ nav .login-user i {
 
 nav .dropdown-login {
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
   background: #ffffff;
   width: 190px;
   margin-top: 10px;
@@ -521,25 +521,25 @@ nav .dropdown-login .red {
   position: fixed;
   z-index: 10;
   -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
-          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
   -webkit-animation-name: animationFade;
-          animation-name: animationFade;
+  animation-name: animationFade;
   -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes animationFade {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, -100, 0);
-            transform: translate3d(0, -100, 0);
+    transform: translate3d(0, -100, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
@@ -547,12 +547,12 @@ nav .dropdown-login .red {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, -100, 0);
-            transform: translate3d(0, -100, 0);
+    transform: translate3d(0, -100, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
@@ -620,8 +620,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   line-height: 1;
   font-family: Poppins;
   font-size: 10px;
@@ -696,7 +696,7 @@ nav .dropdown-login .red {
   z-index: 2;
   position: absolute;
   -webkit-box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.3);
   background-color: #003467;
   border-radius: 0 0 488px;
   width: 100%;
@@ -943,7 +943,7 @@ nav .dropdown-login .red {
   padding: 80px;
   position: absolute;
   -webkit-box-shadow: 0 -5px 7.5px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 -5px 7.5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -5px 7.5px 0 rgba(0, 0, 0, 0.3);
   background-color: #f3f3f3;
   bottom: 0;
   border-radius: 488px 0 0 0;
@@ -1004,7 +1004,7 @@ nav .dropdown-login .red {
 #counter .counter-container .counter-card {
   background: #ffffff;
   -webkit-box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
-          box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
+  box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
   padding: 20px 10px;
   margin: 30px;
   top: -114px;
@@ -1087,7 +1087,7 @@ nav .dropdown-login .red {
 #latest-connections .auto-card-connection .card {
   padding: 15px 9.5px;
   -webkit-box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
   background-color: #f6f6f6;
   border-radius: 23px 0 23px 0;
   -webkit-transition: all ease-out 0.4s;
@@ -1169,17 +1169,17 @@ nav .dropdown-login .red {
 .search-left i {
   color: #fff;
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   -webkit-box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
-          box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
+  box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
   background-color: #ffffff36;
   padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 30px;
@@ -1281,17 +1281,17 @@ nav .dropdown-login .red {
 .search i {
   color: #fff;
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   -webkit-box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
-          box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
+  box-shadow: 0 3.5px 7.5px 0 rgba(0, 0, 0, 0.83);
   background-color: #ffffff36;
   padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 30px;
@@ -1387,13 +1387,13 @@ nav .dropdown-login .red {
 .width-sm {
   width: 200px;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .width-lg {
   width: 85vw;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 #search-result {
@@ -1555,7 +1555,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #daily .right-content .card-add .name-add-company {
@@ -1633,9 +1633,8 @@ nav .dropdown-login .red {
 }
 
 #card-holder .left-cards {
-  padding: 100px 20px 100px 0;
-  border-right: 1px solid #707070;
-  width: calc(100% - 450px);
+  padding: 60px 20px 100px 0;
+  width: calc(100% - 350px);
 }
 
 #card-holder .left-cards h1 {
@@ -1658,7 +1657,7 @@ nav .dropdown-login .red {
 #card-holder .left-cards .card {
   padding: 13.5px 12px 12.5px 13.5px;
   -webkit-box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.25);
   background-color: #f6f6f6;
   border-radius: 23px 0;
 }
@@ -1741,6 +1740,8 @@ nav .dropdown-login .red {
   max-width: 350px;
   padding: 100px 20px;
   margin: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7e4eb));
+  background-image: linear-gradient(to bottom, #ffffff, #d7e4eb);
 }
 
 #card-holder .right-holder h1 {
@@ -1760,8 +1761,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #card-holder .right-holder .image-holder img {
@@ -1791,8 +1792,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -1800,8 +1801,8 @@ nav .dropdown-login .red {
 #card-holder .right-holder .login-register .separator::after {
   content: "";
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-bottom: 1px solid #1f1f1f;
 }
 
@@ -1874,17 +1875,17 @@ nav .dropdown-login .red {
   background: #003467;
   border-radius: 30px 0 30px 0;
   -webkit-box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
-          box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
+  box-shadow: 7px 10px 18px -5px rgba(0, 80, 160, 0.3);
 }
 
 #counter-connect .counter-card .border-card-right {
-  padding: 10px 0;
+  padding: 7px 0;
   border-right: 1px solid #707070;
 }
 
 #counter-connect .counter-card .border-card-right h1 {
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   font-stretch: normal;
   font-style: normal;
@@ -1932,7 +1933,7 @@ nav .dropdown-login .red {
 }
 
 #counter-connect .counter-card .orange-card-heading {
-  color: #ffffff !important;
+  color: #ff8a45 !important;
   margin: 19px 0 0 -50px;
   font-size: 22px !important;
   text-align: center;
@@ -1940,9 +1941,9 @@ nav .dropdown-login .red {
 
 #counter-connect .counter-card h4 {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 600;
   margin-left: -50px !important;
-  color: #ffffff;
+  color: #ff8a45;
   text-align: center;
   line-height: 1;
 }
@@ -1960,7 +1961,7 @@ nav .dropdown-login .red {
   padding: 30px 50px;
   border-radius: 30px 0 30px 0;
   -webkit-box-shadow: 10px 10px 30px -12px rgba(0, 80, 160, 0.33);
-          box-shadow: 10px 10px 30px -12px rgba(0, 80, 160, 0.33);
+  box-shadow: 10px 10px 30px -12px rgba(0, 80, 160, 0.33);
 }
 
 #login-body .card h1 {
@@ -2033,8 +2034,8 @@ nav .dropdown-login .red {
   display: flex;
   font-family: Poppins;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -2042,8 +2043,8 @@ nav .dropdown-login .red {
 #login-body .card .separator::after {
   content: "";
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-bottom: 1px solid #1f1f1f;
 }
 
@@ -2294,7 +2295,7 @@ nav .dropdown-login .red {
 #vip-body-top .card {
   height: 100%;
   -webkit-box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4.5px 7.5px 0 rgba(0, 0, 0, 0.2);
   background-color: #f6f6f6;
   width: 100%;
   border-radius: 23px 0 23px 0;
@@ -2304,7 +2305,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 23px 0 23px 0;
 }
 
@@ -2312,7 +2313,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 260px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 23px 0 23px 0;
 }
 
@@ -2362,8 +2363,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #pro-header {
@@ -2402,8 +2403,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 70px;
   height: 70px;
   background: #ff8a45;
@@ -2621,8 +2622,8 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 70px;
   height: 70px;
   background: #0066cc;
@@ -2734,7 +2735,7 @@ nav .dropdown-login .red {
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0 7.5px 12.5px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 7.5px 12.5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 7.5px 12.5px 0 rgba(0, 0, 0, 0.25);
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -2778,7 +2779,7 @@ nav .dropdown-login .red {
   background-image: url(../../assets/Group546.png);
   padding: 50px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -2825,15 +2826,15 @@ nav .dropdown-login .red {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 #contact-header .form-card {
   background-image: linear-gradient(120deg, #ffffff, #d7e4eb 100%);
   -webkit-box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
-          box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
+  box-shadow: 0 3px 7.5px 0 rgba(0, 80, 160, 0.21);
   border-radius: 30px 0 30px 0;
   width: 50%;
   margin: auto;
@@ -2925,7 +2926,7 @@ nav .dropdown-login .red {
   height: 100%;
   border-radius: 30px;
   -webkit-box-shadow: 0 7.5px 12.5px 0 rgba(0, 80, 160, 0.21);
-          box-shadow: 0 7.5px 12.5px 0 rgba(0, 80, 160, 0.21);
+  box-shadow: 0 7.5px 12.5px 0 rgba(0, 80, 160, 0.21);
   padding: 70px 30px 20px 30px;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
@@ -2971,7 +2972,7 @@ nav .dropdown-login .red {
   position: absolute;
   left: calc(50% - 50px);
   -webkit-box-shadow: 0 1px 4.5px 0 rgba(0, 80, 160, 0.21);
-          box-shadow: 0 1px 4.5px 0 rgba(0, 80, 160, 0.21);
+  box-shadow: 0 1px 4.5px 0 rgba(0, 80, 160, 0.21);
   border: solid 0.2px #1f1f1f1f;
   background-color: #ffffff;
   top: -50px;
@@ -2992,7 +2993,7 @@ nav .dropdown-login .red {
 
 #pricing .price-card {
   -webkit-box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.3);
-          box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.3);
+  box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.3);
   background-color: #f3f3f3;
   border-radius: 20px 0 20px 0;
   overflow: hidden;

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\MyCard;
+use App\Models\Porfolio;
 use Illuminate\Http\Request;
 use App\Models\Company;
 use App\Models\CardTemplate;
@@ -23,6 +24,7 @@ class MyCardController extends Controller
         $cardDetails = MyCard::where('slug',$slug)->first();
         $CompanyDetails = Company::where('id',$cardDetails->company_id)->first();
         $templates = CardTemplate::where('id',$cardDetails->card_template)->first();
+        $portfolio = Porfolio::where('company_id',$cardDetails->company_id)->get();
 
         if($cardDetails){
             $get_fnameLname = explode(" ", $cardDetails->name);
@@ -30,10 +32,10 @@ class MyCardController extends Controller
             $get_fnameLname = null;
         }
 
-
         $phone_number = json_decode($cardDetails->phone_number);
 
         return view('frontend.card_view.index',[
+            'portfolio' => $portfolio,
             'company_details' => $CompanyDetails,
             'card_details' => $cardDetails,
             'tempaltes' => $templates,

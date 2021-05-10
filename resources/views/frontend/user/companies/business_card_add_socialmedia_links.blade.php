@@ -47,9 +47,17 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="exampleEmail" class="">About Yourself</label>
-                                        <textarea class="form-control" rows="15" name="description"></textarea>
-
+                                        <div class="form-group">
+                                            <label for="exampleEmail" class="">About Yourself</label>
+                                            <textarea class="form-control" rows="10" name="description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Card Publish Type</label>
+                                            <select class="form-control" name="is_public">
+                                                <option value="public" selected>Public</option>
+                                                <option value="private">My Private Card</option>
+                                            </select>
+                                        </div>
                                     </div>
 
                                 </div>
