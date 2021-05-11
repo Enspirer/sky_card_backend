@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="col col-12 col-md-12 col-lg-6 col-sm-12 justify-content-center impression">
-                    <img src="{{url('light_theme/assets/Group 545.svg')}}" width="50%" style="width: 60%;" class="mt-5" alt="">
+                    <img src="{{url('light_theme/assets/digital_f.png')}}" width="50%" style="width: 60%;" class="mt-5" alt="">
 
                     <p data-animscroll="fade-up" data-animscroll-delay="200">
                         Select from our card designs or create your <br />
@@ -86,7 +86,7 @@
                         <br/>
                         <br/>
                         <br/>
-                        <a data-animscroll="fade-up" data-animscroll-delay="100" href="#" type="button" class="theam-btn-light">Learn More</a>
+                        <a data-animscroll="fade-up" data-animscroll-delay="100" href="{{route('frontend.sky_card_connect')}}" type="button" class="theam-btn-light">Learn More</a>
                     </div>
                 </div>
             </div>
