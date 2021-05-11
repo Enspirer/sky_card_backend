@@ -1,4 +1,4 @@
-<div class="modal fade bd-example-modal-lg" id="cover_photo_picker" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="">
+<div class="modal fade bd-example-modal-lg" data-backdrop="static" data-keyboard="false" id="cover_photo_picker" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
@@ -15,23 +15,23 @@
                             <div class="tab-pane active show" id="tab-eg7-0" role="tabpanel">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <div class="card">
-                                            <div style="background-image: url('{{url('files/cover_images/1.jpg')}}');height: 160px;" onclick="update_cover_photo('1.jpg')"></div>
+                                        <div class="card backimage" id="image1">
+                                            <div style="background-image: url('{{url('files/cover_images/1.jpg')}}');height: 160px;" onclick="update_cover_photo('1.jpg','image1')"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="card">
-                                            <div onclick="update_cover_photo('2.jpg')" style="background-image: url('{{url('files/cover_images/2.jpg')}}');height: 160px;" ></div>
+                                        <div class="card backimage" id="image2">
+                                            <div onclick="update_cover_photo('2.jpg','image2')" style="background-image: url('{{url('files/cover_images/2.jpg')}}');height: 160px;" ></div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="card">
-                                            <div onclick="update_cover_photo('3.jpg')" style="background-image: url('{{url('files/cover_images/3.jpg')}}');height: 160px;"></div>
+                                        <div class="card backimage" id="image3">
+                                            <div onclick="update_cover_photo('3.jpg','image3')" style="background-image: url('{{url('files/cover_images/3.jpg')}}');height: 160px;"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="card">
-                                            <div onclick="update_cover_photo('4.jpg')" style="background-image: url('{{url('files/cover_images/4.jpg')}}');height: 160px;"></div>
+                                        <div class="card backimage" id="image4">
+                                            <div onclick="update_cover_photo('4.jpg','image4')" style="background-image: url('{{url('files/cover_images/4.jpg')}}');height: 160px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                             <div class="tab-pane show" id="tab-eg7-1" role="tabpanel">
                                 <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
                                 <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
-                                <form action="{{route('frontend.user.companies.upload_card_cover_photo')}}" class="dropzone">
+                                <form action="" class="dropzone" id="dropzone">
                                     {{csrf_field()}}
                                     <input type="hidden" value="{{$cardDetaials->id}}" name="card_id">
                                 </form>
@@ -54,25 +54,46 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" onclick="reset_cover_photo()" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    Dropzone.on("queuecomplete", function (file) {
-        alert("All files have uploaded ");
+
+    var myDropzone = new Dropzone("#dropzone", { url: "{{route('frontend.user.companies.upload_card_cover_photo')}}"});
+
+    myDropzone.on("complete", function(file) {
+        alert('ssfs');
     });
-    
 
 
-    function update_cover_photo(file_name) {
+
+    function update_cover_photo(file_name,imageid) {
             $.post('{{route('cover_photo_update')}}', { business_card_id: "{{$cardDetaials->id}}", file_name : file_name},
                 function(returnedData){
+                    var image_thumb = $('#'+imageid);
+                    var all_thumbs = $('.backimage');
+
+                    all_thumbs.css('border-color', 'none');
+                    all_thumbs.css('border-style', 'none');
+                    all_thumbs.css('border-width', '0px');
+
+                    image_thumb.css('border-color', '#ff5722');
+                    image_thumb.css('border-style', 'solid');
+                    image_thumb.css('border-width', '3px');
                     document.getElementById('frame_1').contentDocument.location.reload(true);
                     $('#cover_photo_picker').modal('hide');
                 });
 
+    }
+
+    function reset_cover_photo() {
+        $.post('{{route('cover_photo_update')}}', { business_card_id: "{{$cardDetaials->id}}", file_name : null},
+            function(returnedData){
+                document.getElementById('frame_1').contentDocument.location.reload(true);
+                $('#cover_photo_picker').modal('hide');
+            });
     }
 </script>

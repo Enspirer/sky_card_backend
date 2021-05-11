@@ -222,12 +222,26 @@ class CompanyController extends Controller
     public function update_cover_photo(Request $request)
     {
         $mesage = ['finished_message'=> 'Its Working'];
-        MyCard::where('id',$request->business_card_id)
-            ->update(
-                [
-                    'cover_image' => url('files/cover_images/').'/'.$request->file_name
-                ]);
-        return url('files/cover_images/').'/'.$request->file_name;
+
+        if($request->file_name == null)
+        {
+            MyCard::where('id',$request->business_card_id)
+                ->update(
+                    [
+                        'cover_image' => null
+                    ]);
+            return null;
+
+        }else{
+            MyCard::where('id',$request->business_card_id)
+                ->update(
+                    [
+                        'cover_image' => url('files/cover_images/').'/'.$request->file_name
+                    ]);
+            return url('files/cover_images/').'/'.$request->file_name;
+        }
+
+
     }
 
     public function vcardgenerator($card_id)

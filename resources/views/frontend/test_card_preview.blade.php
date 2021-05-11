@@ -1,1417 +1,492 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+    />
+    <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+    />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
-<div id="web" class="head-gradient" style="position: relative; display: flex; justify-content: center">
-    <div class="container" style="position: absolute; bottom: 0; width: 100%">
-        <div class="btns" style="position: absolute; bottom: 20px; right: 0">
-            <div class="row m-0">
-                <div class="add">
-                    <div class="row m-0">
-                        <i
-                                class="fa fa-user-plus"
-                                style="color: white"
-                                aria-hidden="true"
-                        ></i>
-                        <p style="color: #fff; margin-left: 10px">Add To Contacts</p>
-                    </div>
+<div
+        class="background"
+        id="sky_temp_cover_photo"
+        style="
+        background: linear-gradient(
+          333deg,
+          rgba(0, 22, 72, 1) 0%,
+          rgba(112, 184, 189, 1) 100%
+        );
+        background-image: url('http://thechaptersrilanka.com/2025.png'),linear-gradient(
+          333deg,
+          rgba(0, 22, 72, 1) 0%,
+          rgba(112, 184, 189, 1) 100%
+        );
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 300px;
+      "
+>
+    <div style="background: #fff;width: 100%;height: 54vh;position: absolute;bottom: 0;border-radius: 20px 20px 0 0;margin-top: 5vh;">
+        <div class="row ml-5 mr-1">
+            <img id="sky_temp_profile_picture" src="http://thechaptersrilanka.com/theekshana/sky/assets/logo%20compressed.png" style="position: absolute; top: -45px;left: 30px;filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.089));border-radius: 50%;width: 100px;" alt="">
+            <div class="name row" style="margin-top: 10px;">
+
+                <div class="col-10 name-group" style="padding-left: 100px;padding-right: 0;">
+                    <h6 id="sky_temp_first_name" style="text-align: left;margin: 0;font-family: 'Montserrat', sans-serif;font-size: 16px;font-weight: 700;">Kashun</h6>
+                    <h1 id="sky_temp_last_name" style="text-align: left; margin: 0;font-family: 'Montserrat', sans-serif;font-size: 18px;font-weight: 900;">Ramanayake</h1>
+                    <p id="sky_temp_job_title" style="text-align: left; margin: 0;font-family: 'Montserrat', sans-serif;font-size: 12px;">Director Marketing</p>
                 </div>
 
-                <div class="add ml-5">
-                    <div class="row m-0">
-                        <i
-                                class="fa fa-share-alt"
-                                style="color: white"
-                                aria-hidden="true"
-                        ></i>
-                        <p style="color: #fff; margin-left: 10px">Share Now</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="white-space pb-5"">
-    <div class="container">
-        <div class="row mb-5 pb-5">
-            <div class="col-4" style="padding: 100px 0">
-                <div
+                <div class="col-2"">
+                <a
                         style="
-                position: absolute;
-                width: 100%;
-                top: -80px;
-                box-shadow: 0px 0px 19px -4px rgba(0, 0, 0, 0.75);
-                margin-bottom: 100px;
-                padding-bottom: 40px;
-              "
-                >
-
-
-
-
-                    <div
-                            class="background"
-                            id="sky_temp_cover_photo"
-                            style="
-              background: linear-gradient(
-                333deg,
-                rgba(0, 22, 72, 1) 0%,
-                rgba(112, 184, 189, 1) 100%
-              );
-              background-image: url('https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg'),linear-gradient(
-                333deg,
-                rgba(0, 22, 72, 1) 0%,
-                rgba(112, 184, 189, 1) 100%
-              );
-              background-size: cover;
-              background-position: center;
-              width: 100%;
-              height: 935px;
-            "
-                    >
-
-                        <div class="gradient" style="background: linear-gradient(0deg, rgba(112,184,189,0) 0%, rgba(0,0,0,1) 100%);width: 100%;height: 100px;"></div>
-                        <a id="sky_temp_ca_vcard" href="#">   <i style="color: rgba(255, 255, 255, 0.699);box-shadow: 10px 10px 47px -9px rgba(0,0,0,0.95);position: absolute; right: 20px; top: 20px;font-size: 13px;" class="fas fa-user-plus"></i></a>
-
-
-
-                        <div style="background: #fff;width: 100%;height: 100%; top:150px ; position: absolute;bottom: 0;border-radius: 20px 20px 0 0;">
-                            <div class="row ml-5 mr-1">
-                                <img id="sky_temp_profile_picture" src="assets/Mask Group 23.png" style="position: absolute; top: -55px;left: 40px;filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.089));width: 125px;" alt="">
-                                <div class="name" style="margin-left: 130px;margin-top: 10px;">
-                                    <h6 id="sky_temp_first_name" style="text-align: left;margin: 0;font-family: 'Montserrat', sans-serif;font-size: 14px;">FIRST NAME</h6>
-                                    <h1 id="sky_temp_last_name" style="text-align: left; margin: 0;font-family: 'Montserrat', sans-serif;font-size: 22px;font-weight: 900;">LAST NAME</h1>
-                                    <p id="sky_temp_job_title" style="text-align: left; margin: 0;font-family: 'Montserrat', sans-serif;font-size: 12px;">JOB TITLE</p>
-                                </div>
-                            </div>
-
-                            <div style="margin-top: 40px;" class="ml-4 mr-1">
-                                <div class="row mb-3 ml-1 mr-1">
-                                    <a
-                                            style="
-
-          background: #ecf5f7;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-          display: flex;
-          justify-content: center;
-        "
-                                            href="#"
-                                    ><i style="color: #1b9dfd" class="fas fa-phone m-auto"></i
-                                        ></a>
-                                    <p
-                                            id="sky_temp_phone_number1"
-                                            style="
-        margin: 25px 0 0 20px;
-        line-height: 1;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-      "
-                                    >
-                                        mobile number
-                                    </p>
-                                </div>
-
-                                <div class="row mb-3 ml-1 mr-1">
-                                    <a
-                                            style="
-
-          background: #ecf5f7;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-          display: flex;
-          justify-content: center;
-        "
-                                            href="#"
-                                    ><i style="color: #1b9dfd" class="fas fa-building m-auto"></i
-                                        ></a>
-                                    <p
-                                            id="sky_temp_company_name"
-                                            style="
-        margin: 25px 0 0 20px;
-        line-height: 1;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-      "
-                                    >
-                                        company name
-                                    </p>
-                                </div>
-
-                                <div class="row mb-3 ml-1 mr-1">
-                                    <a
-                                            style="
-
-          background: #ecf5f7;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-          display: flex;
-          justify-content: center;
-        "
-                                            href="#"
-                                    ><i style="color: #1b9dfd" class="fas fa-envelope m-auto"></i
-                                        ></a>
-                                    <p
-                                            id="sky_temp_email_address"
-                                            style="
-        margin: 25px 0 0 20px;
-        line-height: 1;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-      "
-                                    >
-                                        email address
-                                    </p>
-                                </div>
-
-                                <div class="row mb-3 ml-1 mr-1">
-                                    <a
-                                            style="
-
-          background: #ecf5f7;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-          display: flex;
-          justify-content: center;
-        "
-                                            href="#"
-                                    ><i style="color: #1b9dfd" class="fas fa-globe m-auto"></i
-                                        ></a>
-                                    <p
-                                            id="sky_temp_website"
-                                            style="
-        margin: 25px 0 0 20px;
-        line-height: 1;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-      "
-                                    >
-                                        web site
-                                    </p>
-                                </div>
-
-                                <div class="row mb-3 ml-1 mr-1">
-                                    <a
-                                            style="
-
-          background: #ecf5f7;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-          display: flex;
-          justify-content: center;
-        "
-                                            href="#"
-                                    ><i style="color: #1b9dfd" class="fas fa-address-book m-auto"></i
-                                        ></a>
-                                    <p
-                                            id="sky_temp_address"
-                                            style="
-        margin: 25px 0 0 20px;
-        line-height: 1;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-      "
-                                    >
-                                        address
-                                    </p>
-                                </div>
-
-
-                            </div>
-
-
-
-
-
-                            <div class="row ml-3 mr-3 mt-5 pb-5">
-                                <div class="col-6 pr-2">
-
-                                    <a type="button" id="social" style="text-align: center;margin: auto;display: flex;justify-content: center;background: #017B8D; border-radius: 50px;color: #fff;padding: 10px 0;">Share</a>
-                                </div>
-                                <div class="col-6 pl-2">
-                                    <a type="button" data-toggle="modal" data-target="#exampleModalCenter" style="text-align: center;margin: auto;display: flex;justify-content: center;background: #fff;border: 1px solid #017B8D; border-radius: 50px;color: #017B8D;padding: 10px 0;">Sky Chat</a>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="follow pb-5">
-                                <h6
-                                        style="
-              line-height: 1;
-              font-family: 'Montserrat', sans-serif;
-              text-align: center;
-              color: #1b9dfd;
-            "
-                                >
-                                    Follow me
-                                </h6>
-
-                                <div class="row" style="margin: 25px auto 0px auto; max-width: 200px">
-                                    <a
-                                            style="
-                margin: auto;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-              "
-                                            href="#"
-                                    ><i
-                                                style="color: #3b5998; font-size: 25px"
-                                                class="fab fa-facebook-square m-auto"
-                                        ></i
-                                        ></a>
-
-                                    <a
-                                            style="
-                margin: auto;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-              "
-                                            href="#"
-                                    ><i
-                                                style="color: #00acee; font-size: 25px"
-                                                class="fab fa-twitter m-auto"
-                                        ></i
-                                        ></a>
-
-                                    <a
-                                            style="
-                margin: auto;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-              "
-                                            href="#"
-                                    ><i
-                                                style="color: #0072b1; font-size: 25px"
-                                                class="fab fa-linkedin m-auto"
-                                        ></i
-                                        ></a>
-
-                                    <a
-                                            style="
-                margin: auto;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-              "
-                                            href="#"
-                                    ><i
-                                                style="color: #000; font-size: 25px"
-                                                class="fab fa-instagram m-auto"
-                                        ></i
-                                        ></a>
-                                </div>
-                            </div>
-
-                            <div class="powerd pb-5" style="box-shadow: 0px 10px 12px -4px rgb(0 0 0 / 37%);
-    }">
-                                <p
-                                        style="
-              font-family: 'Montserrat', sans-serif;
-              text-align: center;
-              color: #017b8d;
-              font-size: 12px;
-              line-height: 1;
-              margin: 0 0 8px 0;
-            "
-                                >
-                                    Powered by <a href="http://skycards.lk/"> Sky Cards </a>
-                                </p>
-                                <p
-                                        style="
-            margin-top: 17px;
-              font-family: 'Montserrat', sans-serif;
-              text-align: center;
-              color: #ff8a45;
-              font-size: 10px;
-            "
-                                >
-                                    Your Digital Business Card Companion <br>
-                                    <a href="http://skycards.lk/" style="font-weight: 800;text-transform: uppercase;color: #ff8a45;"> Get yours today </a>
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-                </div>
+                      margin: auto;
+                      background: #ecf5f7;
+                      width: 40px;
+                      height: 40px;
+                      text-decoration: none;
+                      border-radius: 50%;
+                      box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
+                      display: flex;
+                      justify-content: center;
+                    "
+                        type="button" id="social"
+                ><i style="color: #1b9dfd" class="fas fa-share-alt m-auto"></i
+                    ></a>
             </div>
 
-            <div class="col-8 pt-5">
-
-                <div class="collaps" style="padding: 0 20px">
-                    <div id="accordion">
-                        <div
-                                class="card"
-                                style="
-                    border: transparent;
-                    box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                    border-radius: 8px;
-                  "
-                        >
-                            <div
-                                    class="card-header p-0"
-                                    id="headingOne"
-                                    style="border: transparent"
-                            >
-                                <h5 class="mb-0">
-                                    <button
-                                            id="collapse-btn"
-                                            class=""
-                                            data-toggle="collapse"
-                                            data-target="#collapseOne"
-                                            aria-expanded="false"
-                                            aria-controls="collapseOne"
-                                            style="
-                          font-family: 'Montserrat', sans-serif;
-                          color: #1b9dfd;
-                          width: 100%;
-                          background: #f7f9f9 !important;
-                          padding: 10px;
-                          outline: none;
-                          border: transparent;
-                          border-radius: 8px;
-                        "
-                                    >
-                                        <div class="row">
-                                            <div
-                                                    class="col-10"
-                                                    style="text-align: left; text-decoration: none"
-                                            >
-                                                <i style="font-size: 14px" class="fas fa-info-circle"></i>
-                                                &nbsp;
-                                                <span style="font-size: 15px; font-weight: 500">
-                              About me
-                            </span>
-                                            </div>
-                                            <div class="col-2">
-                                                <i
-                                                        id="down-icon"
-                                                        class="fa fa-chevron-down ml-auto"
-                                                        style="font-size: 15px"
-                                                        aria-hidden="true"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div
-                                    id="collapseOne"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordion"
-                            >
-                                <div
-                                        class="card-body"
-                                        style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                                >
-                                    <p
-                                            id="sky_temp_description"
-                                            style="font-family: 'Montserrat', sans-serif; font-size: 12px"
-                                    >
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                        aliqua put a bird on it squid single-origin coffee nulla
-                                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                                        beer labore wes anderson cred nesciunt sapiente ea proident.
-                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                        beer farm-to-table, raw denim aesthetic synth nesciunt you
-                                        probably haven't heard of them accusamus labore sustainable
-                                        VHS.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                                class="card mt-2"
-                                style="
-                    border: transparent;
-                    box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                    border-radius: 8px;
-                  "
-                        >
-                            <div
-                                    class="card-header p-0"
-                                    id="headingOne"
-                                    style="border: transparent"
-                            >
-                                <h5 class="mb-0">
-                                    <button
-                                            id="collapse-btn2"
-                                            class=""
-                                            data-toggle="collapse"
-                                            data-target="#collapseTwo"
-                                            aria-expanded="false"
-                                            aria-controls="collapseOne"
-                                            style="
-                          font-family: 'Montserrat', sans-serif;
-                          color: #1b9dfd;
-                          width: 100%;
-                          background: #f7f9f9 !important;
-                          padding: 10px;
-                          outline: none;
-                          border: transparent;
-                          border-radius: 8px;
-                        "
-                                    >
-                                        <div class="row">
-                                            <div
-                                                    class="col-10"
-                                                    style="text-align: left; text-decoration: none"
-                                            >
-                                                <i style="font-size: 14px" class="fas fa-image"></i>
-                                                &nbsp;
-                                                <span style="font-size: 15px; font-weight: 500">
-                              Photos
-                            </span>
-                                            </div>
-                                            <div class="col-2">
-                                                <i
-                                                        id="down-icon2"
-                                                        class="fa fa-chevron-down ml-auto"
-                                                        style="font-size: 15px"
-                                                        aria-hidden="true"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div
-                                    id="collapseTwo"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordion"
-                            >
-                                <div
-                                        class="card-body"
-                                        style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                                >
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <img
-                                                    class="mt-2"
-                                                    src="assets/covernew-02.jpg"
-                                                    alt=""
-                                                    width="100%"
-                                                    style="
-                          box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                          border-radius: 8px;
-                        "
-                                            />
-                                        </div>
-
-                                        <div class="col-6">
-                                            <img
-                                                    class="mt-2"
-                                                    src="assets/covernewSML-02.jpg"
-                                                    alt=""
-                                                    width="100%"
-                                                    style="
-                          box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                          border-radius: 8px;
-                        "
-                                            />
-                                        </div>
-                                        <div class="col-6">
-                                            <img
-                                                    class="mt-2"
-                                                    src="assets/covernew-04.jpg"
-                                                    alt=""
-                                                    width="100%"
-                                                    style="
-                          box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                          border-radius: 8px;
-                        "
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                                class="card mt-2"
-                                style="
-                    border: transparent;
-                    box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                    border-radius: 8px;
-                  "
-                        >
-                            <div
-                                    class="card-header p-0"
-                                    id="headingOne"
-                                    style="border: transparent"
-                            >
-                                <h5 class="mb-0">
-                                    <button
-                                            id="collapse-btn3"
-                                            class=""
-                                            data-toggle="collapse"
-                                            data-target="#collapseThree"
-                                            aria-expanded="false"
-                                            aria-controls="collapseOne"
-                                            style="
-                          font-family: 'Montserrat', sans-serif;
-                          color: #1b9dfd;
-                          width: 100%;
-                          background: #f7f9f9 !important;
-                          padding: 10px;
-                          outline: none;
-                          border: transparent;
-                          border-radius: 8px;
-                        "
-                                    >
-                                        <div class="row">
-                                            <div
-                                                    class="col-10"
-                                                    style="text-align: left; text-decoration: none"
-                                            >
-                                                <i style="font-size: 14px" class="fas fa-video"></i>
-                                                &nbsp;
-                                                <span style="font-size: 15px; font-weight: 500">
-                              Videos
-                            </span>
-                                            </div>
-                                            <div class="col-2">
-                                                <i
-                                                        id="down-icon3"
-                                                        class="fa fa-chevron-down ml-auto"
-                                                        style="font-size: 15px"
-                                                        aria-hidden="true"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div
-                                    id="collapseThree"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordion"
-                            >
-                                <div
-                                        class="card-body"
-                                        style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                                >
-                                    <iframe
-                                            width="100%"
-                                            height="300px"
-                                            src="https://www.youtube.com/embed/ScMzIvxBSi4"
-                                            title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen
-                                    ></iframe>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                                class="card mt-2"
-                                style="
-                    border: transparent;
-                    box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                    border-radius: 8px;
-                  "
-                        >
-                            <div
-                                    class="card-header p-0"
-                                    id="headingOne"
-                                    style="border: transparent"
-                            >
-                                <h5 class="mb-0">
-                                    <button
-                                            id="collapse-btn4"
-                                            class=""
-                                            data-toggle="collapse"
-                                            data-target="#collapseFour"
-                                            aria-expanded="false"
-                                            aria-controls="collapseOne"
-                                            style="
-                          font-family: 'Montserrat', sans-serif;
-                          color: #1b9dfd;
-                          width: 100%;
-                          background: #f7f9f9 !important;
-                          padding: 10px;
-                          outline: none;
-                          border: transparent;
-                          border-radius: 8px;
-                        "
-                                    >
-                                        <div class="row">
-                                            <div
-                                                    class="col-10"
-                                                    style="text-align: left; text-decoration: none"
-                                            >
-                                                <i style="font-size: 14px" class="fas fa-link"></i> &nbsp;
-                                                <span style="font-size: 15px; font-weight: 500">
-                              Links
-                            </span>
-                                            </div>
-                                            <div class="col-2">
-                                                <i
-                                                        id="down-icon4"
-                                                        class="fa fa-chevron-down ml-auto"
-                                                        style="font-size: 15px"
-                                                        aria-hidden="true"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div
-                                    id="collapseFour"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordion"
-                            >
-                                <div
-                                        class="card-body"
-                                        style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                                >
-                                    <div
-                                            class="row m-0"
-                                            style="font-family: 'Montserrat', sans-serif; font-size: 13px"
-                                    >
-                                        <p>Dribble : &nbsp;</p>
-                                        <a href="#" target="_blank">www.dribble.com/firstname</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
         </div>
     </div>
-</div>
 
 
 
+    <div class="row" style="margin: 35px auto 0 auto;">
 
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="mob" class="d-none">
-
-    <div
-            class="background"
-            id="sky_temp_cover_photo"
-            style="
-          background: linear-gradient(
-            333deg,
-            rgba(0, 22, 72, 1) 0%,
-            rgba(112, 184, 189, 1) 100%
-          );
-          background-image: url('https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg'),linear-gradient(
-            333deg,
-            rgba(0, 22, 72, 1) 0%,
-            rgba(112, 184, 189, 1) 100%
-          );
-          background-size: cover;
-          background-position: center;
-          width: 100%;
-          height: 30vh;
-        "
-    >
-
-        <div class="gradient" style="background: linear-gradient(0deg, rgba(112,184,189,0) 0%, rgba(0,0,0,1) 100%);width: 100%;height: 100px;"></div>
-        <a id="sky_temp_ca_vcard" href="#">   <i style="color: rgba(255, 255, 255, 0.699);box-shadow: 10px 10px 47px -9px rgba(0,0,0,0.95);position: absolute; right: 20px; top: 20px;font-size: 13px;" class="fas fa-user-plus"></i></a>
-
-        <div style="background: #fff;width: 100%;height: 74%;position: absolute;bottom: 0;border-radius: 20px 20px 0 0;">
-            <div class="row ml-5 mr-1">
-                <img id="sky_temp_profile_picture" src="assets/Mask Group 23.png" style="position: absolute; top: -55px;left: 40px;filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.089));width: 125px;" alt="">
-                <div class="name" style="margin-left: 130px;margin-top: 10px;">
-                    <h6 id="sky_temp_first_name" style="text-align: left;margin: 0;font-family: 'Montserrat', sans-serif;font-size: 14px;">FIRST NAME</h6>
-                    <h1 id="sky_temp_last_name" style="text-align: left; margin: 0;font-family: 'Montserrat', sans-serif;font-size: 22px;font-weight: 900;">LAST NAME</h1>
-                    <p id="sky_temp_job_title" style="text-align: left; margin: 0;font-family: 'Montserrat', sans-serif;font-size: 12px;">JOB TITLE</p>
-                </div>
-            </div>
-
-            <div style="margin-top: 40px;" class="ml-4 mr-1">
-                <div class="row mb-3 ml-1 mr-1">
-                    <a
-                            style="
-
-            background: #ecf5f7;
-            width: 60px;
-            height: 60px;
+        <a
+                style="
+                margin: auto;
+                background: #0066CC;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                border-radius: 50%;
+                box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
+                display: flex;
+                justify-content: center;
+              "
+                href="tel:94777009990"
+        ><i style="color: #ecf5f7" class="fas fa-phone m-auto"></i
+            ></a>
+        <a href="https://api.whatsapp.com/send?phone=94777009990"
+           style="
+                margin: auto;
+                background: #0066CC;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                border-radius: 50%;
+                box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
+                display: flex;
+                justify-content: center;
+              "
+           type="button"
+        ><i style="color: #ecf5f7;font-size: 20px;" class="fab fa-whatsapp m-auto"></i
+            ></a>
+        <a
+                style="
+                margin: auto;
+                background: #0066CC;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                border-radius: 50%;
+                box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
+                display: flex;
+                justify-content: center;
+              "
+                type="button" data-toggle="modal" data-target="#exampleModalCenter"
+        ><i style="color: #ecf5f7" class="fas fa-comments m-auto"></i
+            ></a>
+        <a
+                style="
+              margin: auto;
+              background: #0066CC;
+              width: 50px;
+              height: 50px;
+              text-decoration: none;
+              border-radius: 50%;
+              box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
+              display: flex;
+              justify-content: center;
+            "
+                href="sms:94777009990"
+        ><i style="color: #ecf5f7" class="fas fa-envelope m-auto"></i
+            ></a>
+        <a
+                style="
+            margin: auto;
+            background: #0066CC;
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
             border-radius: 50%;
             box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
             display: flex;
             justify-content: center;
           "
-                            href="#"
-                    ><i style="color: #1b9dfd" class="fas fa-phone m-auto"></i
-                        ></a>
-                    <p
-                            id="sky_temp_phone_number1"
-                            style="
-          margin: 25px 0 0 20px;
-          line-height: 1;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 14px;
-        "
-                    >
-                        mobile number
-                    </p>
-                </div>
+                href="{{url('easer_card/kashun_ramanayake.vcf')}}"
+        ><i style="color: #ecf5f7" class="fas fa-user-plus m-auto"></i
+            ></a>
+    </div>
 
-                <div class="row mb-3 ml-1 mr-1">
-                    <a
-                            style="
 
-            background: #ecf5f7;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-            display: flex;
-            justify-content: center;
-          "
-                            href="#"
-                    ><i style="color: #1b9dfd" class="fas fa-building m-auto"></i
-                        ></a>
+    <div style="margin-top: 40px;" class="ml-1 mr-1">
+
+
+        <div class="row ml-2 mr-2">
+            <div class="col-12 pl-1 pr-1">
+                <div
+                        class="row m-0"
+                        style="
+                      background: #f7f9f9;
+                      border-radius: 8px;
+                      margin: auto;
+                      display: flex;
+                      padding: 15px 15px;
+                      box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
+                    "
+                >
+                    <i class="fas fa-building" style="color: #1b9dfd"></i>
                     <p
                             id="sky_temp_company_name"
                             style="
-          margin: 25px 0 0 20px;
-          line-height: 1;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 14px;
-        "
+                        margin: 0 0 0 10px;
+                        line-height: 1;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                      "
                     >
-                        company name
+                        SkyCards Global
                     </p>
                 </div>
+            </div>
+        </div>
 
-                <div class="row mb-3 ml-1 mr-1">
-                    <a
+        <div class="row mt-3 ml-2 mr-2">
+            <div class="col-12 pl-1 pr-1">
+                <div
+                        class="row m-0"
+                        style="
+                      background: #f7f9f9;
+                      border-radius: 8px;
+                      margin: auto;
+                      display: flex;
+                      padding: 15px 15px;
+                      box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
+                    "
+                >
+                    <i class="fas fa-mobile" style="color: #1b9dfd"></i>
+                    <p
+                            id="sky_temp_phone_number1"
                             style="
+                        margin: 0 0 0 10px;
+                        line-height: 1;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                      "
+                    >
+                        +94 777 009 990
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            background: #ecf5f7;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-            display: flex;
-            justify-content: center;
-          "
-                            href="#"
-                    ><i style="color: #1b9dfd" class="fas fa-envelope m-auto"></i
-                        ></a>
+        <div class="row mt-3 ml-2 mr-2">
+            <div class="col-12 pl-1 pr-1">
+                <div
+                        class="row m-0"
+                        style="
+                      background: #f7f9f9;
+                      border-radius: 8px;
+                      margin: auto;
+                      display: flex;
+                      padding: 15px 15px;
+                      box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
+                    "
+                >
+                    <i class="fas fa-phone" style="color: #1b9dfd"></i>
+                    <p
+                            id="sky_temp_phone_number1"
+                            style="
+                        margin: 0 0 0 10px;
+                        line-height: 1;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                      "
+                    >
+                        +94 778 669 990
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 ml-2 mr-2">
+            <div class="col-12 pl-1 pr-1">
+                <div
+                        class="row m-0"
+                        style="
+                      background: #f7f9f9;
+                      border-radius: 8px;
+                      margin: auto;
+                      display: flex;
+                      padding: 15px 15px;
+                      box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
+                    "
+                >
+                    <i class="fas fa-envelope" style="color: #1b9dfd"></i>
                     <p
                             id="sky_temp_email_address"
                             style="
-          margin: 25px 0 0 20px;
-          line-height: 1;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 14px;
-        "
+                        margin: 0 0 0 10px;
+                        line-height: 1;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                      "
                     >
-                        email address
+                        dm@skycards.lk
                     </p>
                 </div>
+            </div>
+        </div>
 
-                <div class="row mb-3 ml-1 mr-1">
-                    <a
-                            style="
 
-            background: #ecf5f7;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-            display: flex;
-            justify-content: center;
-          "
-                            href="#"
-                    ><i style="color: #1b9dfd" class="fas fa-globe m-auto"></i
-                        ></a>
+        <div class="row mt-3 ml-2 mr-2">
+            <div class="col-12 pl-1 pr-1">
+                <div
+                        class="row m-0"
+                        style="
+                      background: #f7f9f9;
+                      border-radius: 8px;
+                      margin: auto;
+                      display: flex;
+                      padding: 15px 15px;
+                      box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
+                    "
+                >
+                    <i class="fas fa-globe" style="color: #1b9dfd"></i>
                     <p
                             id="sky_temp_website"
                             style="
-          margin: 25px 0 0 20px;
-          line-height: 1;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 14px;
-        "
+                        margin: 0 0 0 10px;
+                        line-height: 1;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                      "
                     >
-                        web site
+                        www.skycards.lk
                     </p>
                 </div>
-
-                <div class="row mb-3 ml-1 mr-1">
-                    <a
-                            style="
-
-            background: #ecf5f7;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            box-shadow: 10px 13px 36px -16px rgba(0, 0, 0, 0.75);
-            display: flex;
-            justify-content: center;
-          "
-                            href="#"
-                    ><i style="color: #1b9dfd" class="fas fa-address-book m-auto"></i
-                        ></a>
-                    <p
-                            id="sky_temp_address"
-                            style="
-          margin: 25px 0 0 20px;
-          line-height: 1;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 14px;
-        "
-                    >
-                        address
-                    </p>
-                </div>
-
-
             </div>
-
-
-            <br />
-
-            <hr />
-
-            <br />
-
-            <div class="collaps" style="padding: 0 20px">
-                <div id="accordion">
-                    <div
-                            class="card"
-                            style="
-                  border: transparent;
-                  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                  border-radius: 8px;
-                "
-                    >
-                        <div
-                                class="card-header p-0"
-                                id="headingOne"
-                                style="border: transparent"
-                        >
-                            <h5 class="mb-0">
-                                <button
-                                        id="collapse-btn"
-                                        class=""
-                                        data-toggle="collapse"
-                                        data-target="#collapseOne"
-                                        aria-expanded="false"
-                                        aria-controls="collapseOne"
-                                        style="
-                        font-family: 'Montserrat', sans-serif;
-                        color: #1b9dfd;
-                        width: 100%;
-                        background: #f7f9f9 !important;
-                        padding: 10px;
-                        outline: none;
-                        border: transparent;
-                        border-radius: 8px;
-                      "
-                                >
-                                    <div class="row">
-                                        <div
-                                                class="col-10"
-                                                style="text-align: left; text-decoration: none"
-                                        >
-                                            <i style="font-size: 14px" class="fas fa-info-circle"></i>
-                                            &nbsp;
-                                            <span style="font-size: 15px; font-weight: 500">
-                            About me
-                          </span>
-                                        </div>
-                                        <div class="col-2">
-                                            <i
-                                                    id="down-icon"
-                                                    class="fa fa-chevron-down ml-auto"
-                                                    style="font-size: 15px"
-                                                    aria-hidden="true"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div
-                                id="collapseOne"
-                                class="collapse"
-                                aria-labelledby="headingOne"
-                                data-parent="#accordion"
-                        >
-                            <div
-                                    class="card-body"
-                                    style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                            >
-                                <p id="sky_temp_description" style=" font-family: 'Montserrat', sans-serif;font-size: 12px;">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                    accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                    non cupidatat skateboard dolor brunch. Food truck quinoa
-                                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                                    put a bird on it squid single-origin coffee nulla assumenda
-                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably
-                                    haven't heard of them accusamus labore sustainable VHS.
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                            class="card mt-2"
-                            style="
-                  border: transparent;
-                  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                  border-radius: 8px;
-                "
-                    >
-                        <div
-                                class="card-header p-0"
-                                id="headingOne"
-                                style="border: transparent"
-                        >
-                            <h5 class="mb-0">
-                                <button
-                                        id="collapse-btn2"
-                                        class=""
-                                        data-toggle="collapse"
-                                        data-target="#collapseTwo"
-                                        aria-expanded="false"
-                                        aria-controls="collapseOne"
-                                        style="
-                        font-family: 'Montserrat', sans-serif;
-                        color: #1b9dfd;
-                        width: 100%;
-                        background: #f7f9f9 !important;
-                        padding: 10px;
-                        outline: none;
-                        border: transparent;
-                        border-radius: 8px;
-                      "
-                                >
-                                    <div class="row">
-                                        <div
-                                                class="col-10"
-                                                style="text-align: left; text-decoration: none"
-                                        >
-                                            <i style="font-size: 14px" class="fas fa-image"></i>
-                                            &nbsp;
-                                            <span style="font-size: 15px; font-weight: 500">
-                            Photos
-                          </span>
-                                        </div>
-                                        <div class="col-2">
-                                            <i
-                                                    id="down-icon2"
-                                                    class="fa fa-chevron-down ml-auto"
-                                                    style="font-size: 15px"
-                                                    aria-hidden="true"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div
-                                id="collapseTwo"
-                                class="collapse"
-                                aria-labelledby="headingOne"
-                                data-parent="#accordion"
-                        >
-                            <div
-                                    class="card-body"
-                                    style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                            >
-                                <img
-                                        class="mt-2"
-                                        src="assets/covernew-02.jpg"
-                                        alt=""
-                                        width="100%"
-                                        style="
-                        box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                        border-radius: 8px;
-                      "
-                                />
-                                <img
-                                        class="mt-2"
-                                        src="assets/covernewSML-02.jpg"
-                                        alt=""
-                                        width="100%"
-                                        style="
-                        box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                        border-radius: 8px;
-                      "
-                                />
-                                <img
-                                        class="mt-2"
-                                        src="assets/covernew-04.jpg"
-                                        alt=""
-                                        width="100%"
-                                        style="
-                        box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                        border-radius: 8px;
-                      "
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                            class="card mt-2"
-                            style="
-                  border: transparent;
-                  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                  border-radius: 8px;
-                "
-                    >
-                        <div
-                                class="card-header p-0"
-                                id="headingOne"
-                                style="border: transparent"
-                        >
-                            <h5 class="mb-0">
-                                <button
-                                        id="collapse-btn3"
-                                        class=""
-                                        data-toggle="collapse"
-                                        data-target="#collapseThree"
-                                        aria-expanded="false"
-                                        aria-controls="collapseOne"
-                                        style="
-                        font-family: 'Montserrat', sans-serif;
-                        color: #1b9dfd;
-                        width: 100%;
-                        background: #f7f9f9 !important;
-                        padding: 10px;
-                        outline: none;
-                        border: transparent;
-                        border-radius: 8px;
-                      "
-                                >
-                                    <div class="row">
-                                        <div
-                                                class="col-10"
-                                                style="text-align: left; text-decoration: none"
-                                        >
-                                            <i style="font-size: 14px" class="fas fa-video"></i>
-                                            &nbsp;
-                                            <span style="font-size: 15px; font-weight: 500">
-                            Videos
-                          </span>
-                                        </div>
-                                        <div class="col-2">
-                                            <i
-                                                    id="down-icon3"
-                                                    class="fa fa-chevron-down ml-auto"
-                                                    style="font-size: 15px"
-                                                    aria-hidden="true"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div
-                                id="collapseThree"
-                                class="collapse"
-                                aria-labelledby="headingOne"
-                                data-parent="#accordion"
-                        >
-                            <div
-                                    class="card-body"
-                                    style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                            >
-                                <iframe
-                                        width="100%"
-                                        src="https://www.youtube.com/embed/ScMzIvxBSi4"
-                                        title="YouTube video player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen
-                                ></iframe>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                            class="card mt-2"
-                            style="
-                  border: transparent;
-                  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.35);
-                  border-radius: 8px;
-                "
-                    >
-                        <div
-                                class="card-header p-0"
-                                id="headingOne"
-                                style="border: transparent"
-                        >
-                            <h5 class="mb-0">
-                                <button
-                                        id="collapse-btn4"
-                                        class=""
-                                        data-toggle="collapse"
-                                        data-target="#collapseFour"
-                                        aria-expanded="false"
-                                        aria-controls="collapseOne"
-                                        style="
-                        font-family: 'Montserrat', sans-serif;
-                        color: #1b9dfd;
-                        width: 100%;
-                        background: #f7f9f9 !important;
-                        padding: 10px;
-                        outline: none;
-                        border: transparent;
-                        border-radius: 8px;
-                      "
-                                >
-                                    <div class="row">
-                                        <div
-                                                class="col-10"
-                                                style="text-align: left; text-decoration: none"
-                                        >
-                                            <i style="font-size: 14px" class="fas fa-link"></i> &nbsp;
-                                            <span style="font-size: 15px; font-weight: 500">
-                            Links
-                          </span>
-                                        </div>
-                                        <div class="col-2">
-                                            <i
-                                                    id="down-icon4"
-                                                    class="fa fa-chevron-down ml-auto"
-                                                    style="font-size: 15px"
-                                                    aria-hidden="true"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div
-                                id="collapseFour"
-                                class="collapse"
-                                aria-labelledby="headingOne"
-                                data-parent="#accordion"
-                        >
-                            <div
-                                    class="card-body"
-                                    style="background: #f7f9f9; border-top: 1px solid #017a8d18"
-                            >
-                                <div
-                                        class="row m-0"
-                                        style="font-family: 'Montserrat', sans-serif; font-size: 13px"
-                                >
-                                    <p>Dribble : &nbsp;</p>
-                                    <a href="#" target="_blank">www.dribble.com/firstname</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="row ml-3 mr-3 mt-5 pb-5">
-                <div class="col-6 pr-2">
-
-                    <a type="button" id="social" style="text-align: center;margin: auto;display: flex;justify-content: center;background: #017B8D; border-radius: 50px;color: #fff;padding: 10px 0;">Share</a>
-                </div>
-                <div class="col-6 pl-2">
-                    <a type="button" data-toggle="modal" data-target="#exampleModalCenter" style="text-align: center;margin: auto;display: flex;justify-content: center;background: #fff;border: 1px solid #017B8D; border-radius: 50px;color: #017B8D;padding: 10px 0;">Sky Chat</a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="follow pb-5">
-                <h6
-                        style="
-                line-height: 1;
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                color: #1b9dfd;
-              "
-                >
-                    Follow me
-                </h6>
-
-                <div class="row" style="margin: 25px auto 0px auto; max-width: 200px">
-                    <a
-                            style="
-                  margin: auto;
-                  text-decoration: none;
-                  display: flex;
-                  justify-content: center;
-                "
-                            href="#"
-                    ><i
-                                style="color: #3b5998; font-size: 25px"
-                                class="fab fa-facebook-square m-auto"
-                        ></i
-                        ></a>
-
-                    <a
-                            style="
-                  margin: auto;
-                  text-decoration: none;
-                  display: flex;
-                  justify-content: center;
-                "
-                            href="#"
-                    ><i
-                                style="color: #00acee; font-size: 25px"
-                                class="fab fa-twitter m-auto"
-                        ></i
-                        ></a>
-
-                    <a
-                            style="
-                  margin: auto;
-                  text-decoration: none;
-                  display: flex;
-                  justify-content: center;
-                "
-                            href="#"
-                    ><i
-                                style="color: #0072b1; font-size: 25px"
-                                class="fab fa-linkedin m-auto"
-                        ></i
-                        ></a>
-
-                    <a
-                            style="
-                  margin: auto;
-                  text-decoration: none;
-                  display: flex;
-                  justify-content: center;
-                "
-                            href="#"
-                    ><i
-                                style="color: #000; font-size: 25px"
-                                class="fab fa-instagram m-auto"
-                        ></i
-                        ></a>
-                </div>
-            </div>
-
-            <div class="powerd pb-5">
-                <p
-                        style="
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                color: #017b8d;
-                font-size: 12px;
-                line-height: 1;
-                margin: 0 0 8px 0;
-              "
-                >
-                    Powered by <a href="http://skycards.lk/"> Sky Cards </a>
-                </p>
-                <p
-                        style="
-              margin-top: 17px;
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                color: #ff8a45;
-                font-size: 10px;
-              "
-                >
-                    Your Digital Business Card Companion <br>
-                    <a href="http://skycards.lk/" style="font-weight: 800;text-transform: uppercase;color: #ff8a45;"> Get yours today </a>
-                </p>
-            </div>
-
-
         </div>
+
+
 
     </div>
 
+    <div class="follow mt-5 pb-5" >
+        <h6 style="line-height: 1;
+            font-family: 'Montserrat', sans-serif;text-align: center;color: #1b9dfd;">Follow me </h6>
+
+        <div class="row " style="margin: 25px auto 0px auto; max-width: 200px">
+
+            <a
+                    style="
+        margin: auto;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+      "
+                    href="#"
+            ><i style="color: #3b5998;font-size: 25px;" class="fab fa-facebook-square m-auto"></i
+                ></a>
+
+            <a
+                    style="
+      margin: auto;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+    "
+                    href="#"
+            ><i style="color: #00acee ;font-size: 25px;" class="fab fa-twitter m-auto"></i
+                ></a>
+
+            <a
+                    style="
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  "
+                    href="#"
+            ><i style="color: #0072b1;font-size: 25px;" class="fab fa-linkedin m-auto"></i
+                ></a>
+
+            <a
+                    style="
+  margin: auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+"
+                    href="#"
+            ><i style="color: #000;font-size: 25px;" class="fab fa-instagram m-auto"></i
+                ></a>
+
+        </div>
+    </div>
+
+    <div class="powerd pb-5">
+        <p style="font-family: 'Montserrat', sans-serif;text-align: center;color: #017B8D;font-size: 12px;line-height: 1;margin: 0 0 8px 0;">Powered by Sky Cards</p>
+        <p style="font-family: 'Montserrat', sans-serif;text-align: center;color: #FF8A45;font-size: 10px;">Your Digital Business Card Companion - it's free get yours today </p>
+    </div>
 </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Contact Me</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea type="text" class="form-control" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="share" class="share d-none" style="width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.90);position: absolute;top: 0;left: 0;z-index: 99999999;overflow-y: scroll;position: fixed;">
+    <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
+        <a style="display: contents;text-decoration: none;" href="whatsapp://send?text=*This%20is%20my%20digital%20business%20card:*%20https://www.skycards.lk/card_preview">
+            <i style="font-size: 50px;color: #fff;" class="fab fa-whatsapp"></i>
+            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Whatsapp</h4>
+        </a>
+    </div>
+
+    <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
+        <a style="display: contents;text-decoration: none;" href="sms:94777009990">
+            <i style="font-size: 50px;color: #fff;" class="far fa-comments"></i>
+            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">SMS</h4>
+        </a>
+    </div>
+
+    <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
+        <a style="display: contents;text-decoration: none;" href="mailto:?subject=Kashun Ramanayake &amp;body=This is my digital business card: https://www.skycards.lk/card_preview">
+            <i style="font-size: 50px;color: #fff;" class="far fa-envelope"></i>
+            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Email</h4>
+        </a>
+    </div>
+
+    <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
+        <a style="display: contents;text-decoration: none;" href="#">
+            <i style="font-size: 50px;color: #fff;" class="fab fa-facebook-f"></i>
+            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Facebook</h4>
+        </a>
+    </div>
+
+    <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
+        <a style="display: contents;text-decoration: none;" href="#">
+            <i style="font-size: 50px;color: #fff;" class="fab fa-twitter"></i>
+            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Twitter</h4>
+        </a>
+    </div>
+
+    <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
+        <a style="display: contents;text-decoration: none;" href="#">
+            <i style="font-size: 50px;color: #fff;" class="fab fa-linkedin-in"></i>
+            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Linkedin</h4>
+        </a>
+    </div>
+
+    <div style="position: absolute;top: 20px;right: 20px;" class="close"><i id="btn-close" style="color: #fff;" class="fas fa-times"></i></div>
+</div>
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+></script>
+
+<script>
+    $(document).ready(function () {
+        var search_status = 0;
+        $("#social").click(function () {
+            $("#share").removeClass("d-none");
+        });
+
+        $("#btn-close").click(function () {
+            $("#share").addClass("d-none");
+        });
+    });
+</script>
+
+
+</body>
+</html>

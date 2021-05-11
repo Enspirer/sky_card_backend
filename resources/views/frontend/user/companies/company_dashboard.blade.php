@@ -36,9 +36,6 @@
                                         <h4>My Business Card</h4><br>
                                         @include('frontend.user.companies.sections.dashboard_business_card')
                                     </div>
-
-
-
                                 @endif
                             </div>
                         </div>
@@ -53,9 +50,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <br><br>
                     </div>
                 </div>

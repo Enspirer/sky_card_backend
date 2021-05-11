@@ -22,17 +22,17 @@
 
                             <div class="form-group mb-2">
                                 <label for="exampleInputEmail1">First Name</label>
-                                <input name="first_name" type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+                                <input name="first_name" type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" value="{{old('first_name')}}">
                             </div>
 
                             <div class="form-group mb-2">
                                 <label for="exampleInputEmail1">Last Name</label>
-                                <input name="last_name" type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+                                <input name="last_name" type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" value="{{old('last_name')}}">
                             </div>
 
                             <div class="form-group mb-2">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input name="email" type="email" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                <input name="email" type="email" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" value="{{old('email')}}">
                             </div>
 
                             <div class="form-group mb-2">

@@ -47,10 +47,25 @@
                                 <div class="card-body">
                                     <form class="" action="{{route('frontend.user.companies.create_business_card.store_business_card')}}" method="post">
                                         {{csrf_field()}}
-                                        <div class="position-relative form-group">
-                                            <label for="exampleEmail" class="">Your Name</label>
-                                            <input name="first_name" id="exampleEmail" placeholder="Your Name" type="text" class="form-control" value="{{auth()->user()->first_name}} {{auth()->user()->last_name}}" required>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleEmail" class="">Your Name</label>
+                                                    <input name="first_name" id="exampleEmail" placeholder="Your Name" type="text" class="form-control" value="{{auth()->user()->first_name}} {{auth()->user()->last_name}}" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <div class="position-relative form-group">
+                                                        <label for="exampleText" class="">Job Role</label>
+                                                        <input name="job_role" id="examplePassword" placeholder="Job Role" type="text" class="form-control" required>
+                                                    </div>
+                                            </div>
                                         </div>
+
+
+
+
+
                                         <div class="position-relative form-group">
                                             <label for="exampleEmail" class="">Address</label>
                                             <input name="address" id="exampleEmail" placeholder="with a Address" type="text" class="form-control" value="{{$companyDetails->address}}" required>
@@ -100,19 +115,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group">
-                                                    <label for="exampleText" class="">Job Role</label>
-                                                    <input name="job_role" id="examplePassword" placeholder="Job Role" type="text" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group">
-                                                    <label for="exampleText" class="">City</label>
-                                                    <input name="city" id="examplePassword" placeholder="City" type="text" class="form-control" required>
-                                                </div>
 
-                                            </div>
                                         </div>
 
 
