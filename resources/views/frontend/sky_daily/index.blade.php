@@ -52,7 +52,7 @@
                         <h1>New Showroom opens at Kottawa today.  Get 25%
                             off on opening day !</h1>
 
-                        <img class="main-image" src="{{url('light_theme/assets/Mask Group 72.png')}}" alt="">
+                        <img class="main-image" src="{{url('light_theme/assets/bn1.png')}}" alt="">
 
                         <p>230 Views | 28 April 2021</p>
                         <div class="row m-0 d-flex justify-content-end">
@@ -76,7 +76,7 @@
                         <h1>New Showroom opens at Kottawa today.  Get 25%
                             off on opening day !</h1>
 
-                        <img class="main-image" src="{{url('light_theme/assets/Mask Group 72.png')}}" alt="">
+                        <img class="main-image" src="{{url('light_theme/assets/bn2.png')}}" alt="">
 
                         <p>230 Views | 28 April 2021</p>
                         <div class="row m-0 d-flex justify-content-end">
@@ -100,7 +100,7 @@
                         <h1>New Showroom opens at Kottawa today.  Get 25%
                             off on opening day !</h1>
 
-                        <img class="main-image" src="{{url('light_theme/assets/Mask Group 72.png')}}" alt="">
+                        <img class="main-image" src="{{url('light_theme/assets/bn3.png')}}" alt="">
 
                         <p>230 Views | 28 April 2021</p>
                         <div class="row m-0 d-flex justify-content-end">
