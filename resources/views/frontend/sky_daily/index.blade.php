@@ -40,10 +40,10 @@
 
                     <div class="card-add card-radious">
                         <div class="row m-0">
-                            <div class="image-round"><img src="{{url('light_theme/assets/JAT-Paints.png')}}" alt=""></div>
+                            <div class="image-round"><img src="{{url('light_theme/assets/logo1.png')}}" alt=""></div>
                             <div class="name-add-company">
-                                <h5>JAT Holdings</h5>
-                                <h6>#jatpaints</h6>
+                                <h5>Food Studio</h5>
+                                <h6>#food-studio</h6>
                             </div>
                             <div class="share-add ml-auto">
                                 <a href="#">Share</a>
@@ -64,10 +64,10 @@
 
                     <div class="card-add card-radious">
                         <div class="row m-0">
-                            <div class="image-round"><img src="{{url('light_theme/assets/JAT-Paints.png')}}" alt=""></div>
+                            <div class="image-round"><img src="{{url('light_theme/assets/logo3.png')}}" alt=""></div>
                             <div class="name-add-company">
-                                <h5>JAT Holdings</h5>
-                                <h6>#jatpaints</h6>
+                                <h5>Lanka Tiles PLC</h5>
+                                <h6>#lankatiles</h6>
                             </div>
                             <div class="share-add ml-auto">
                                 <a href="#">Share</a>
@@ -88,10 +88,10 @@
 
                     <div class="card-add card-radious">
                         <div class="row m-0">
-                            <div class="image-round"><img src="{{url('light_theme/assets/JAT-Paints.png')}}" alt=""></div>
+                            <div class="image-round"><img src="{{url('light_theme/assets/logo2.png')}}" alt=""></div>
                             <div class="name-add-company">
-                                <h5>JAT Holdings</h5>
-                                <h6>#jatpaints</h6>
+                                <h5>Ceylinco Life</h5>
+                                <h6>#ceylinco_life</h6>
                             </div>
                             <div class="share-add ml-auto">
                                 <a href="#">Share</a>
