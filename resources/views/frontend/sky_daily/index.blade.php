@@ -106,7 +106,7 @@
                             <a href="#" class="theam-btn-blue-outline ml-3">Connect</a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
