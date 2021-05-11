@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Top Stories of the day | Latest Business News | Sky News | Sky Daily')
+@section('meta_description','Latest News of the day with daily promotions and special offers. Join the largest websites Network and share your story with members of the network. Connect with professionals.')
 
 @section('content')
     <section id="daily">

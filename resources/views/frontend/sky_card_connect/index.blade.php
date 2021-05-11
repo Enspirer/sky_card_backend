@@ -1,8 +1,10 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Largest Business card Network | My Digital Business Card Holder')
+@section('meta_description','Contact Sky team to learn more about the Sales Leads Management solution | Live Sky Chat | email us on hello@skycards.lk ')
 
 @section('content')
+
     <section id="card-holder">
         <div class="row m-0">
             <div class="left-cards">
@@ -115,7 +117,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">AIA Life</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -135,7 +137,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Benn Consortium</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>Director of Marketing</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -156,7 +158,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Benn Consortium</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -176,7 +178,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Excello</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>Graphic Designer</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -197,7 +199,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Excello PVT Ltd</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -217,7 +219,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Food Studio</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>Indian Foods Chef</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -258,7 +260,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Lanka Tiles</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>HR Manager</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -279,7 +281,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Lanka Tiles PLC</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -299,7 +301,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Kenton Bike</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>Salesman</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -320,7 +322,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Kenton Bike</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -340,7 +342,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Jetwing Travels</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>Project Manager</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -361,7 +363,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Jetwing Travels</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -381,7 +383,7 @@
                                     </div>
                                     <div class="name-and-desegnation ml-3">
                                         <h5>Swisstek Ceylon</h5>
-                                        <h6>Production Manager</h6>
+                                        <h6>Architect Designer</h6>
                                     </div>
                                 </div>
                                 <div class="contact-details mt-4 d-none">
@@ -402,7 +404,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Swisstek Ceylon PLC</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i
@@ -443,7 +445,7 @@
                                 </div>
                                 <div class="row ml-0 mt-3 mr-0">
                                     <div class="company-name">
-                                        <a href="#">Tallentor International</a>
+                                        <a href="#">Union Assurance</a>
                                     </div>
                                     <a id="card-expand" class="ml-auto" href="#">
                                         <i

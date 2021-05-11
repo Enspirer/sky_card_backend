@@ -1,6 +1,8 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Digital Business card | Business card reader app | SkyCards')
+@section('meta_description','Share your Business card Digitally with Skycards. You can also scan paper Business cards and save on to your Smart phone and share on all platforms. Join the largest Business card Network and share your Business cards with top professionals to promote your Business')
+
 
 @section('content')
     {{--@include('frontend.home_page.sections.top_slider')--}}

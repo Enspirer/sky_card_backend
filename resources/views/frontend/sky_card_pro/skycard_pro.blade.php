@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Business card scanner | Digital Business Card | SkyCards Pro'))
+@section('meta_description','Scan and save Business cards into smartphones. Create Digital Business cards and share with Business cards Network. Create your own Digital Business card Holder with My SkyCards Holder.  ')
 
 @section('content')
 

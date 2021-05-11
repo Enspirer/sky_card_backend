@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Sky VIP Members Club | Exclusive Offer | Sky Club'))
+@section('meta_description','Latest News of the day with daily promotions and special offers. Join the largest websites Network and share your story with members of the network. Connect with professionals.')
 
 @section('content')
     <div class="" data-spy="scroll">

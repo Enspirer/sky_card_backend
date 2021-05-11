@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title','Digital Business card | Centralised Business cards Manager | SkyCards 0778669990')
+@section('meta_description','Largest network of websites. Join the network and share your Digital business card with members of professional teams. Create My card Holder to organise your contacts.')
 
 @section('content')
 

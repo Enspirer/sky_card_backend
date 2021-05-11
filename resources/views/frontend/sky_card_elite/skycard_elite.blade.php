@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Centralised Business Cards Management solution | SkyCards Elite')
+@section('meta_description','Centralised Business Cards Management solution for Corporates. Digital Business Cards with CRM for sales team management. Sales funnel and lead generation tool by SkyCards Elite.')
 
 @section('content')
 <section id="elite-header">

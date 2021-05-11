@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+@section('title', 'Free Digital Business card | Centralised Business cards Manager ')
+@section('meta_description','Business card reader. Corporate solution for Sales leads management - Customised CRM.Customised Designs for Corporate packages call us today for Tailor -Made packages on 0778669990')
 
 @section('content')
     <section id="pricing">
