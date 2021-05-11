@@ -475,16 +475,16 @@
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <img
-                                                                    src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                                    src="{{url('light_theme/assets/companylogo/aia.png')}}"
                                                                     class="logo-company"
                                                                     alt=""
                                                                     srcset=""
                                                             />
                                                         </div>
                                                         <div class="col-7">
-                                                            <h1>JAT Holdings</h1>
-                                                            <h5>Fashion</h5>
-                                                            <h6>www.jatholdings.com</h6>
+                                                            <h1>AIA Insurance</h1>
+                                                            <h5>Financial</h5>
+                                                            <h6>www.aialife.com.lk</h6>
                                                         </div>
                                                     </div>
                                                     <a href="#"
@@ -507,48 +507,16 @@
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <img
-                                                                    src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                                    src="{{url('light_theme/assets/companylogo/benn.png')}}"
                                                                     class="logo-company"
                                                                     alt=""
                                                                     srcset=""
                                                             />
                                                         </div>
                                                         <div class="col-7">
-                                                            <h1>JAT Holdings</h1>
-                                                            <h5>Fashion</h5>
-                                                            <h6>www.jatholdings.com</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#"
-                                                    ><img
-                                                                class="plus-img"
-                                                                src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
-                                                                alt=""
-                                                                srcset=""
-                                                        /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-
-                                                    data-animscroll="fade-up"
-                                                    data-animscroll-delay="100"
-                                            >
-                                                <div class="card">
-                                                    <div class="row">
-                                                        <div class="col-5">
-                                                            <img
-                                                                    src="{{url('light_theme/assets/JAT-Paints.png')}}"
-                                                                    class="logo-company"
-                                                                    alt=""
-                                                                    srcset=""
-                                                            />
-                                                        </div>
-                                                        <div class="col-7">
-                                                            <h1>JAT Holdings</h1>
-                                                            <h5>Fashion</h5>
-                                                            <h6>www.jatholdings.com</h6>
+                                                            <h1 style="display: block;width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">Benn Consortium</h1>
+                                                            <h5>Construction</h5>
+                                                            <h6 style="display: block;width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">www.bennconsortium.com</h6>
                                                         </div>
                                                     </div>
                                                     <a href="#"
@@ -572,16 +540,16 @@
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <img
-                                                                    src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                                    src="{{url('light_theme/assets/companylogo/ceylonbeatz.png')}}"
                                                                     class="logo-company"
                                                                     alt=""
                                                                     srcset=""
                                                             />
                                                         </div>
                                                         <div class="col-7">
-                                                            <h1>JAT Holdings</h1>
-                                                            <h5>Fashion</h5>
-                                                            <h6>www.jatholdings.com</h6>
+                                                            <h1 style="">Ceylon Beats</h1>
+                                                            <h5>Website</h5>
+                                                            <h6 style="display: block;width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">www.ceylonbeats.com</h6>
                                                         </div>
                                                     </div>
                                                     <a href="#"
@@ -605,16 +573,16 @@
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <img
-                                                                    src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                                    src="{{url('light_theme/assets/companylogo/chatham.png')}}"
                                                                     class="logo-company"
                                                                     alt=""
                                                                     srcset=""
                                                             />
                                                         </div>
                                                         <div class="col-7">
-                                                            <h1>JAT Holdings</h1>
-                                                            <h5>Fashion</h5>
-                                                            <h6>www.jatholdings.com</h6>
+                                                            <h1 style="display: block;width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis">Chatham Luxury</h1>
+                                                            <h5>Store/Shopping</h5>
+                                                            <h6 style="display: block;width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis">www.chathamluxury.com/</h6>
                                                         </div>
                                                     </div>
                                                     <a href="#"
@@ -638,16 +606,16 @@
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <img
-                                                                    src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                                    src="{{url('light_theme/assets/companylogo/excello.png')}}"
                                                                     class="logo-company"
                                                                     alt=""
                                                                     srcset=""
                                                             />
                                                         </div>
                                                         <div class="col-7">
-                                                            <h1>JAT Holdings</h1>
-                                                            <h5>Fashion</h5>
-                                                            <h6>www.jatholdings.com</h6>
+                                                            <h1>Exello</h1>
+                                                            <h5>Construction</h5>
+                                                            <h6>www.excello.lk/h6>
                                                         </div>
                                                     </div>
                                                     <a href="#"
@@ -682,16 +650,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/aia.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>AIA Insurance</h1>
+                                                    <h5>Financial</h5>
+                                                    <h6>www.aialife.com.lk</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -713,16 +681,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/benn.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>Benn Consortium</h1>
+                                                    <h5>Construction</h5>
+                                                    <h6>www.bennconsortium.com</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -744,16 +712,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/ceylonbeatz.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>Ceylon Beatz</h1>
+                                                    <h5>Online Store</h5>
+                                                    <h6>www.ceylonbeats.lk</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -777,15 +745,46 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/chatham.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
+                                                    <h1>Chatham Luxury Watchers</h1>
+                                                    <h5>Store/Shopping</h5>
+                                                    <h6>www.chathamluxury.com/</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/excello.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>Exello Construction </h1>
+                                                    <h5>Construction</h5>
                                                     <h6>www.jatholdings.com</h6>
                                                 </div>
                                             </div>
@@ -808,16 +807,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/foodstudio.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>Food Studio</h1>
+                                                    <h5>Restaurant/Bar</h5>
+                                                    <h6>www.foodstudio.lk</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -839,16 +838,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/futureworld.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>Future World</h1>
+                                                    <h5>Online Store</h5>
+                                                    <h6>www.futureworld.com.lk</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -870,16 +869,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/hnbassurence.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>HNB Assurance</h1>
+                                                    <h5>Finacial</h5>
+                                                    <h6>www.hnbassurance.com</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -901,16 +900,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/jetwing.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>Jetwings Travels</h1>
+                                                    <h5>Traveling Company</h5>
+                                                    <h6>www.jetwingtravels.com</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -932,16 +931,16 @@
                                             <div class="row">
                                                 <div class="col-5">
                                                     <img
-                                                            src="{{url('light_theme/assets/JAT-Paints.png')}}"
+                                                            src="{{url('light_theme/assets/companylogo/kenton.png')}}"
                                                             class="logo-company"
                                                             alt=""
                                                             srcset=""
                                                     />
                                                 </div>
                                                 <div class="col-7">
-                                                    <h1>JAT Holdings</h1>
-                                                    <h5>Fashion</h5>
-                                                    <h6>www.jatholdings.com</h6>
+                                                    <h1>Kenton</h1>
+                                                    <h5>Store/Shopping</h5>
+                                                    <h6>www.kentonbike.com</h6>
                                                 </div>
                                             </div>
                                             <a href="#"
@@ -953,6 +952,229 @@
                                                 /></a>
                                         </div>
                                     </div>
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/lankatiles.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>Lanka Tiles</h1>
+                                                    <h5>Company/Store</h5>
+                                                    <h6>www.lankatiles.com</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/ceylincolife.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>Ceylinco Life</h1>
+                                                    <h5>Financial</h5>
+                                                    <h6>www.ceylincolife.com</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/softlogicfinance.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>Softlogic Finance</h1>
+                                                    <h5>Financial</h5>
+                                                    <h6>www.softlogicfinance.lk</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/swisstek.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>SwissTek</h1>
+                                                    <h5>Construction </h5>
+                                                    <h6>www.swisstekceylon.com</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/talentor.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>Tallentor International</h1>
+                                                    <h5>Software Company</h5>
+                                                    <h6>www.tallentor.com</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/tswa.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>TSW Architecture</h1>
+                                                    <h5>Construction Company</h5>
+                                                    <h6>www.tswa.lk</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="col-4 mt-4"
+                                            data-animscroll="fade-up"
+                                            data-animscroll-delay="200"
+                                    >
+
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <img
+                                                            src="{{url('light_theme/assets/companylogo/unionassurence.png')}}"
+                                                            class="logo-company"
+                                                            alt=""
+                                                            srcset=""
+                                                    />
+                                                </div>
+                                                <div class="col-7">
+                                                    <h1>Union Assurence</h1>
+                                                    <h5>Financial</h5>
+                                                    <h6>wwww.unionassurance.com</h6>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                            ><img
+                                                        class="plus-img"
+                                                        src="{{url('light_theme/assets/Icon ionic-md-add-circle.svg')}}"
+                                                        alt=""
+                                                        srcset=""
+                                                /></a>
+                                        </div>
+                                    </div>
+
+
 
 
 
