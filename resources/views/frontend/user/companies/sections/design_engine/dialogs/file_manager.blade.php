@@ -7,7 +7,6 @@
                         <ul class="nav nav-justified">
                             <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-0" class="nav-link active show">Library</a></li>
                             <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-1" class="nav-link show">Upload</a></li>
-                            <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-2" class="nav-link">URL</a></li>
                         </ul>
                     </div>
                     <div class="card-body">
@@ -35,6 +34,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <br><br>
+                                <div class="">
+                                    <button onclick="apply_cover_photo()" class=" btn btn-primary pull-right" id="select_this" data-dismiss="modal" style="display: none;margin-right: 4px;margin-left: 4px;">Select This</button>
+                                    <button type="button" class="btn btn-secondary pull-right" onclick="reset_cover_photo()" data-dismiss="modal" style="margin-right: 4px;margin-left: 4px;">Close</button>
+                                </div>
                             </div>
                             <div class="tab-pane show" id="tab-eg7-1" role="tabpanel">
                                 <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
@@ -43,29 +47,37 @@
                                     {{csrf_field()}}
                                     <input type="hidden" value="{{$cardDetaials->id}}" name="card_id">
                                 </form>
+                                <div class=""><br>
+                                    <button onclick="apply_cover_photo()" class=" btn btn-primary pull-right" id="upload_photo" data-dismiss="modal" style="display: none;margin-right: 4px;margin-left: 4px;">Upload Photo</button>
+                                    <button type="button" class="btn btn-secondary pull-right" onclick="reset_cover_photo()" data-dismiss="modal" style="margin-right: 4px;margin-left: 4px;">Close</button>
+                                </div>
                             </div>
-
                             <div class="tab-pane" id="tab-eg7-2" role="tabpanel">
 
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="reset_cover_photo()" data-dismiss="modal">Close</button>
-            </div>
+
         </div>
     </div>
 </div>
 
 <script>
 
-    var myDropzone = new Dropzone("#dropzone", { url: "{{route('frontend.user.companies.upload_card_cover_photo')}}"});
+    var myDropzone = new Dropzone("#dropzone", {
+        url: "{{route('frontend.user.companies.upload_card_cover_photo')}}",
+        maxFilesize: 2, // MB
+    });
 
     myDropzone.on("complete", function(file) {
-        alert('ssfs');
+        $('#upload_photo').show();
+        var all_thumbs = $('.backimage');
+        all_thumbs.css('border-color', 'none');
+        all_thumbs.css('border-style', 'none');
+        all_thumbs.css('border-width', '0px');
+        $('#select_this').hide();
     });
 
 
@@ -84,7 +96,9 @@
                     image_thumb.css('border-style', 'solid');
                     image_thumb.css('border-width', '3px');
                     document.getElementById('frame_1').contentDocument.location.reload(true);
-                    $('#cover_photo_picker').modal('hide');
+                    $('#select_this').show();
+                    $('#upload_photo').hide();
+                    myDropzone.removeAllFiles();
                 });
 
     }
@@ -95,5 +109,9 @@
                 document.getElementById('frame_1').contentDocument.location.reload(true);
                 $('#cover_photo_picker').modal('hide');
             });
+    }
+
+    function apply_cover_photo() {
+        document.getElementById('frame_1').contentDocument.location.reload(true);
     }
 </script>
