@@ -106,34 +106,7 @@
                             <a href="#" class="theam-btn-blue-outline ml-3">Connect</a>
                         </div>
                     </div>
-
-
-                    <div class="card-add card-radious">
-                        <div class="row m-0">
-                            <div class="image-round"><img src="{{url('light_theme/assets/JAT-Paints.png')}}" alt=""></div>
-                            <div class="name-add-company">
-                                <h5>JAT Holdings</h5>
-                                <h6>#jatpaints</h6>
-                            </div>
-                            <div class="share-add ml-auto">
-                                <a href="#">Share</a>
-                            </div>
-                        </div>
-                        <h1>New Showroom opens at Kottawa today.  Get 25%
-                            off on opening day !</h1>
-
-                        <img class="main-image" src="{{url('light_theme/assets/Mask Group 72.png')}}" alt="">
-
-                        <p>230 Views | 28 April 2021</p>
-                        <div class="row m-0 d-flex justify-content-end">
-                            <a href="#" class="theam-btn-blue">View More</a>
-                            <a href="#" class="theam-btn-blue-outline ml-3">Connect</a>
-                        </div>
-                    </div>
-
-
-
-
+                    
                 </div>
             </div>
         </div>
