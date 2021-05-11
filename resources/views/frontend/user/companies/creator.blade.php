@@ -53,7 +53,7 @@
                                         <img src="" alt="" style="display: inline;height: 480px;">
                                     </div>
                                     <div class="controls" style="display: none;">
-                                        <input type="file" name="profile_picture"/>
+                                        <input type="file" onchange="ValidateSize(this)" name="profile_picture"/>
                                     </div>
                                 </div>
                             </div>
@@ -71,6 +71,24 @@
 
 
         @push('after-scripts')
+
+            <script type="text/javascript">
+//                $('#profile_picture').bind('change', function() {
+//
+//                });
+
+                    function ValidateSize(file) {
+//                        var FileSize = file.files[0].size / 1024 / 1024; // in MiB
+//                        alert(FileSize);
+//                        if (FileSize > 2) {
+//                            alert('File size exceeds 2 MiB');
+//                            // $(file).val(''); //for clearing with Jquery
+//                        } else {
+//
+//                        }
+                    }
+            </script>
+
             <script>
                 $(".image-box").click(function(event) {
                     var previewImg = $(this).children("img");
