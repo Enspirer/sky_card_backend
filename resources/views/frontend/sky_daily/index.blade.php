@@ -49,8 +49,8 @@
                                 <a href="#">Share</a>
                             </div>
                         </div>
-                        <h1>New Showroom opens at Kottawa today.  Get 25%
-                            off on opening day !</h1>
+                        <h1>Eat something different everyday with Food Studio!</h1>
+                        <p>With a wide range of international cuisines ranging from Chinese, Japanese, Indian, Singaporean & more to choose from, you can upgrade your meals with us everyday!</p>
 
                         <img class="main-image" src="{{url('light_theme/assets/bn1.png')}}" alt="">
 
@@ -73,8 +73,7 @@
                                 <a href="#">Share</a>
                             </div>
                         </div>
-                        <h1>New Showroom opens at Kottawa today.  Get 25%
-                            off on opening day !</h1>
+                        <h1>The touch of finesse for your space</h1>
 
                         <img class="main-image" src="{{url('light_theme/assets/bn2.png')}}" alt="">
 
@@ -97,8 +96,7 @@
                                 <a href="#">Share</a>
                             </div>
                         </div>
-                        <h1>New Showroom opens at Kottawa today.  Get 25%
-                            off on opening day !</h1>
+                        <h1>Family Savari from Ceylinco Life</h1>
 
                         <img class="main-image" src="{{url('light_theme/assets/bn3.png')}}" alt="">
 
