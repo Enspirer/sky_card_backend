@@ -21,7 +21,9 @@
                     <div class="col-6 pr-5">
 
                         @if(session()->get('flash_success'))
-                            {!! session()->get('flash_success') !!}
+                            <h3 style="text-align: center">Your Inquiry sent</h3>
+                            <div style="background-image: url('{{url('img/frontend/sent.png')}}');height: 170px;background-size: contain;background-repeat: no-repeat;background-position: center;margin-bottom: 20px;"></div>
+                            <p style="font-size: 15px;text-align: center;">{!! session()->get('flash_success') !!}</p>
                         @else
                             <form action="{{route('frontend.contact_us')}}" method="post">
                                 {{csrf_field()}}
