@@ -52,7 +52,7 @@
 
                                 <div class="form-group">
                                     <label>Contact number</label>
-                                    <input type="tel" name="contact_number" class="form-control" placeholder="Contact number" required>
+                                    <input onkeypress="myFunction()" id="phone_numebr" type="text" maxlength="10" minlength="10" name="contact_number" class="form-control" placeholder="Contact number" required>
                                 </div>
 
                                 <div class="form-group">
@@ -135,6 +135,23 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+            var x, text;
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("phone_numebr").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x)) {
+                $('#phone_numebr').val('');
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
 
 @endsection
 
