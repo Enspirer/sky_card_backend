@@ -89,6 +89,7 @@
         $(".sky_temp_last_name").html('{{$name_seperation[1]}}');
         //Phone Number
         $(".sky_temp_phone_number1").html("{{$phone_number->phone_number1}}");
+        $(".sky_temp_phone_number2").html("{{$phone_number->phone_number2}}");
         //Address
         $(".sky_temp_address").html("{{$card_details->address}}");
         //Company Name
