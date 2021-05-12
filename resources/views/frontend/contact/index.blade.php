@@ -4,7 +4,15 @@
 @section('meta_description','Largest network of websites. Join the network and share your Digital business card with members of professional teams. Create My card Holder to organise your contacts.')
 
 @section('content')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+                'sitekey' : '6Ld4kdEaAAAAABuzPuPp_wHcOQQlKGXivtx9b6qa'
+            });
+        };
+    </script>
 
     <section id="contact-header">
         <div class="container pl-5 pr-5">
@@ -51,12 +59,14 @@
                                     <label>Message</label>
                                     <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required>Message</textarea>
                                 </div>
-
+                                <div id="html_element"></div><br><br>
                                 <button type="submit" class="theam-btn-orange-light ml-auto float-right">Submit</button>
                             </form>
                         @endif
 
-
+                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                                    async defer>
+                            </script>
 
 
                     </div>
