@@ -23,30 +23,30 @@
                             {{csrf_field()}}
                             <div class="form-group">
                                 <label>Your name</label>
-                                <input type="text" class="form-control" placeholder="Your name">
+                                <input type="text" name="name" class="form-control" placeholder="Your name">
                             </div>
 
                             <div class="form-group">
                                 <label>Company name </label>
-                                <input type="text" class="form-control" placeholder="Company name">
+                                <input type="text" name="company_name" class="form-control" placeholder="Company name">
                             </div>
 
                             <div class="form-group">
                                 <label>Email address</label>
-                                <input type="email" class="form-control" placeholder="Enter email">
+                                <input type="email" name="email" class="form-control" placeholder="Enter email">
                             </div>
 
                             <div class="form-group">
                                 <label>Contact number</label>
-                                <input type="text" class="form-control" placeholder="Contact number">
+                                <input type="text" name="contact_number" class="form-control" placeholder="Contact number">
                             </div>
 
                             <div class="form-group">
                                 <label>Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Message</textarea>
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3">Message</textarea>
                             </div>
 
-                            <button class="theam-btn-orange-light ml-auto float-right">Submit</button>
+                            <button type="submit" class="theam-btn-orange-light ml-auto float-right">Submit</button>
                         </form>
                     </div>
                 </div>
