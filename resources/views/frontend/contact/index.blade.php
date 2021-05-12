@@ -52,7 +52,7 @@
 
                                 <div class="form-group">
                                     <label>Contact number</label>
-                                    <input type="text" name="contact_number" class="form-control" placeholder="Contact number" required>
+                                    <input type="tel" name="contact_number" class="form-control" placeholder="Contact number" required>
                                 </div>
 
                                 <div class="form-group">
