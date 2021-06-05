@@ -79,6 +79,8 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         //Company Portfolio
         Route::get('companiesq/portfolio/{id}/', [CompanyPortfolioController::class, 'index'])->name('companies.portfolio');
         Route::post('companiesq/portfolio/store', [CompanyPortfolioController::class, 'store'])->name('companies.portfolio_store');
+        Route::get('companiesq/portfolio/delete/{id}', [CompanyPortfolioController::class, 'delete'])->name('companies.portfolio_delete');
+
         Route::get('card-preview/{company_id}/{card_id}/{templete_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
 
 

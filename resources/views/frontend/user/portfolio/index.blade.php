@@ -34,8 +34,8 @@
                     <div class="tab-content">
                         <div class="tab-pane tabs-animation fade active show" id="tab-content-1" role="tabpanel">
                             <div class="row">
-                                <div class="col-md-3">
-                                    <div style="padding: 20px;border-style: dashed;border-color: grey;text-align: center;padding-top: 120px;padding-bottom: 110px;" data-toggle="modal" data-target="#photo_upload">Add Photos</div>
+                                <div class="col-md-4">
+                                    <div style="padding: 30px;border-style: dashed;border-color: grey;text-align: center;padding-top: 120px;padding-bottom: 110px;" data-toggle="modal" data-target="#photo_upload">Add Photos</div>
                                 </div>
                                 @foreach($items as $image_item)
                                     @if($image_item->content_type == 'Images')
@@ -43,19 +43,24 @@
                                             <div class="card" style="">
                                                 <div class="card-image">
                                                     <div style="background-image: url('{{$image_item->photo_link}}');height: 250px;background-size: contain;background-repeat: no-repeat;background-position: center;border-style: groove;"></div>
+                                                    <button data-toggle="modal" data-target="#delete_{{ 'photo_'.$image_item->id}}"  class="btn btn-primary pull-right" style="margin-top: 10px;"><i class="fa fa-trash"></i> </button>
                                                 </div>
 
                                                 <div class="card-body">
                                                     <span class="card-title">{{$image_item->caption}}</span>
-                                                </div><!-- card content -->
+                                                </div>
                                             </div>
                                         </div>
+                                        @push('dialog-push')
+                                            @include('frontend.user.portfolio.dialogs.delete_item',['item_id' => 'photo_'.$image_item->id,'res_id'=>$image_item->id])
+                                        @endpush
                                     @else
 
                                     @endif
                                 @endforeach
                             </div>
                         </div>
+
                         <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-4">
@@ -69,12 +74,16 @@
                                                     <div class="embed-responsive embed-responsive-16by9">
                                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$video_items->youtube_link}}" frameborder="0" allowfullscreen></iframe>
                                                     </div>
+                                                    <button data-toggle="modal" data-target="#delete_{{ 'video_'.$image_item->id}}"  class="btn btn-primary pull-right" style="margin-top: 10px;"><i class="fa fa-trash"></i> </button>
                                                 </div>
 
                                                 <div class="card-body">
                                                     <span class="card-title">{{$video_items->caption}}</span>
                                                 </div><!-- card content -->
                                             </div>
+                                            @push('dialog-push')
+                                                 @include('frontend.user.portfolio.dialogs.delete_item',['item_id' => 'video_'.$video_items->id,'res_id'=>$video_items->id])
+                                            @endpush
                                         </div>
                                     @else
 
@@ -99,8 +108,12 @@
                                                     <h4 style="text-align: center;">{{$website_link->caption}}</h4>
                                                     <a style="text-align: center;" href="{{$website_link->website_links}}">{{$website_link->website_links}}</a>
                                                 </div>
+                                                <button data-toggle="modal" data-target="#delete_{{ 'website_'.$website_link->id}}"  class="btn btn-primary pull-right" style="margin-top: 10px;"><i class="fa fa-trash"></i> </button>
                                             </div>
                                         </div>
+                                        @push('dialog-push')
+                                            @include('frontend.user.portfolio.dialogs.delete_item',['item_id' => 'website_'.$website_link->id,'res_id'=>$video_items->id])
+                                        @endpush
                                     @endif
                                 @endforeach
                             </div>

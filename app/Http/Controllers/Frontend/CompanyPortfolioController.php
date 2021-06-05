@@ -20,6 +20,12 @@ class CompanyPortfolioController extends Controller
         ]);
     }
 
+    public function delete($id)
+    {
+        Porfolio::where('id',$id)->delete();
+        return back();
+    }
+
     public function store(Request $request)
     {
         if($request->content_type == "Videos")
