@@ -60,7 +60,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="" method="post">
+                <form action="{{route('frontend.user.companies.create_leeds')}}" method="post">
                     {{csrf_field()}}
                     @auth
                         <div class="form-group">

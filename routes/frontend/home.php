@@ -74,7 +74,9 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::post('companiesq/business_card_creator/store_business_card', [CompanyController::class, 'store_business_card'])->name('companies.create_business_card.store_business_card');
 
         //Company Inbox
+
         Route::get('companiesq/inbox/{id}/{message_id}/{card_id}', [CompanyInboxController::class, 'index'])->name('companies.inbox');
+        Route::post('companiesq/inbox/create_leed', [CompanyInboxController::class, 'create_leeds'])->name('companies.create_leeds');
 
         //Company Portfolio
         Route::get('companiesq/portfolio/{id}/', [CompanyPortfolioController::class, 'index'])->name('companies.portfolio');

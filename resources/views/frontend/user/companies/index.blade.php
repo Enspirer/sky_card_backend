@@ -60,7 +60,8 @@
                                                            'df_company_id' => $getcompany_df->id,
                                                            'df_company_title' => $getcompany_df->brand_name,
                                                            'df_company_category' => $getcompany_df->category,
-                                                           'df_company_website' => $getcompany_df->website
+                                                           'df_company_website' => $getcompany_df->website,
+                                                           'df_company_logo' => $getcompany_df->logo_img
                                                            ])
                                 @endforeach
                         </div>

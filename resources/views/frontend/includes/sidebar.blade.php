@@ -87,52 +87,6 @@
             @else
 
             @endif
-
-
-
-            <li>
-            <li class="app-sidebar__heading">My Workplace</li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-building" style="padding-right: 10px;color: dimgrey"></i>
-                    Enspirer PVT (LTD)
-                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                </a>
-                <ul>
-                    <li>
-                        <a href="elements-buttons-standard.html">
-                            <i class="metismenu-icon"></i>
-                            View Feeds
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-dropdowns.html">
-                            <i class="metismenu-icon"></i>
-                            Messages
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-badges-labels.html">
-                            <i class="metismenu-icon"></i>
-                            My Published Post
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-cards.html">
-                            <i class="metismenu-icon"></i>
-                            Event
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="app-sidebar__heading">Sky VIP</li>
-            <li>
-                <a href="dashboard-boxes.html">
-                    <i class="metismenu-icon pe-7s-display2"></i>
-                    Dashboard Boxes
-                </a>
-            </li>
         </ul>
     </div>
 </div>

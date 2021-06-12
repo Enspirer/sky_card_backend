@@ -17,6 +17,13 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/cards'))}}" href="{{ route('admin.emailtool.index') }}">
+                    <i class="nav-icon fa fa-mail-bulk"></i>
+                    Email Tool
+                </a>
+            </li>
+
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
                     @lang('menus.backend.sidebar.system')
