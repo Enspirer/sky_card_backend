@@ -12,4 +12,9 @@ class CompanyInboxController extends Controller
         return view('frontend.user.companies.company_inbox');
     }
 
+    public function create_leeds(Request $request)
+    {
+        dd($request);
+    }
+
 }
