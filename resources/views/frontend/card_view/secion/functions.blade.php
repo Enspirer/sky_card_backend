@@ -44,12 +44,17 @@
         </a>
     </div>
 
+
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-        <a class="add-button" style="display: contents;text-decoration: none;" >
-            <i style="font-size: 50px;color: #fff;" class="fab fa-save"></i>
-            <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Add to Home</h4>
-        </a>
+        <div class="add-button">
+            <a class="" style="display: contents;text-decoration: none;" >
+                <i style="font-size: 50px;color: #fff;" class="fab fa-save"></i>
+                <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Add to Home</h4>
+            </a>
+        </div>
     </div>
+
+
 
 
 
