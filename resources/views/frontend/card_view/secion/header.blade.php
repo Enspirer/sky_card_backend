@@ -43,7 +43,9 @@
         // Code to handle install prompt on desktop
 
         let deferredPrompt;
-        const addBtn = document.querySelector('.add-button');
+        const addBtn = document.querySelector('#add-button');
+        console.log('add button test');
+        console.log(addBtn);
         addBtn.style.display = 'none';
 
         window.addEventListener('beforeinstallprompt', (e) => {
