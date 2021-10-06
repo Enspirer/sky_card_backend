@@ -17,12 +17,29 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link {{active_class(Route::is('admin/cards'))}}" href="{{ route('admin.emailtool.index') }}">
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#">
                     <i class="nav-icon fa fa-mail-bulk"></i>
                     Email Tool
                 </a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.emailtool.index') }}">
+                            Bulk Email
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.emailtool.email_orders.index') }}">
+                            Email Orders
+                        </a>
+                    </li>
+                </ul>
             </li>
+
+
 
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">

@@ -18,6 +18,7 @@ use App\Http\Controllers\Frontend\SkyCardProController;
 use App\Http\Controllers\Frontend\PricingController;
 use App\Http\Controllers\Frontend\SkyConnectController;
 use App\Http\Controllers\Frontend\MyCardHolderController;
+use App\Http\Controllers\Frontend\SkyPromoController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -85,8 +86,6 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         Route::get('card-preview/{company_id}/{card_id}/{templete_id}', [CompanyController::class, 'iframe_preview'])->name('companies.iframe_preview');
 
-
-
         Route::post('companiesq/business_card_template', [CompanyController::class, 'business_card_template_save'])->name('companies.business_card_template_save');
         Route::post('companiesq/save_social_media', [CompanyController::class, 'save_social_media'])->name('companies.save_social_media');
         Route::post('companiesq/update_business_card', [CompanyController::class, 'update_card'])->name('companies.update_card');
@@ -96,5 +95,11 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
+        //Sky Promo
+        Route::get('sky-promo',[SkyPromoController::class,'index'])->name('sky_promo.index');
+        Route::post('sky-promo/campaing',[SkyPromoController::class,'store'])->name('sky_promo.store');
+
+
     });
 });

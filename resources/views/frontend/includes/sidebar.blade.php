@@ -32,6 +32,16 @@
                     My Calender
                 </a>
             </li>
+
+            <li>
+                <a href="{{route('frontend.user.sky_promo.index')}}" class="mm{{ Request::segment(1) == 'sky-promo' ? '-active' : null }}">
+                    <i class="fa fa-mail-bulk" style="padding-right: 10px;color: dimgrey"></i>
+                    SkyPromo
+                </a>
+            </li>
+
+
+
             <li class="app-sidebar__heading">My Companies</li>
             <li>
                 <a href="{{route('frontend.user.companies')}}" class="mm{{ Request::segment(1) == 'companies' ? '-active' : null }}">
