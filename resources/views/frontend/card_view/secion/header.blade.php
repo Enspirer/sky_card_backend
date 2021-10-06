@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{url('css/animtrap.css')}}" />
 
     <link rel="stylesheet" href="{{url('css/share.css')}}" />
-    <link rel="manifest" href="{{url('manifest.webmanifest')}}">
+    <link rel="manifest" href="{{route('frontend.get_menifest',$card_details->id)}}">
 
 
 </head>

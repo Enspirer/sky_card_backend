@@ -24,6 +24,9 @@ use App\Http\Controllers\Frontend\SkyPromoController;
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', [HomeController::class, 'index'])->name('index');
+
+Route::get('meta_file/{id}/manifest.webmanifest',[HomeController::class,'get_app_menifest'])->name('get_menifest');
+
 Route::get('/sky-daily', [SkyDailyController::class, 'index'])->name('sky_daily');
 Route::get('/card-explorer', [CardExplorerController::class, 'index'])->name('card_explorer');
 Route::get('/sky-card-club', [SkyCardCloubController::class, 'index'])->name('sky_card_club');
@@ -35,6 +38,8 @@ Route::get('/contact', [ContactController::class, 'index'])->name('sky_card_cont
 Route::post('/contact_controller',[ContactController::class,'send'])->name('contact_us');
 
 Route::get('c/{slug}', [MyCardController::class, 'view_card'])->name('view_card');
+
+Route::get('/pwa-examples/a2hst/{slug}', [MyCardController::class, 'redirect_function_card'])->name('redirect_function_card');
 
 
 Route::get('card_preview', [HomeController::class, 'test_page'])->name('test_page');
