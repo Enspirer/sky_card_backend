@@ -42,7 +42,7 @@ class HomeController extends Controller
           ],
           'name' => $cardDetails->name,
           'short_name' => 'SkyCard',
-          "start_url" => url('/pwa-examples/a2hs',$cardDetails->slug)
+          "start_url" => url('/pwa-examples/a2hst',$cardDetails->slug)
         ];
 
         return json_encode($out_array);
