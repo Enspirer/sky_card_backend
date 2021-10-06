@@ -3,6 +3,7 @@
 
 {!! $tempaltes->card_body !!}
 
+<button class="add-button">Add to home screen</button>
 
 
 
