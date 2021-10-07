@@ -58,9 +58,4 @@ class MyCardController extends Controller
         ]);
 
     }
-
-    public function redirect_function_card($slug)
-    {
-        return redirect()->route('frontend.view_card',$slug);
-    }
 }
