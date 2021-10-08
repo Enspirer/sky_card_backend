@@ -17,6 +17,12 @@ class MyCardHolderController extends Controller
         ]);
     }
 
+    public function temp_page($id)
+    {
+        echo 'hello world';
+    }
+
+
     public function manifest($id)
     {
         $cardDetails = MyCard::where('id',$id)->first();
@@ -36,7 +42,7 @@ class MyCardHolderController extends Controller
             ],
             'name' => $cardDetails->name,
             'short_name' => 'SkyCard',
-            "start_url" =>  "/pwa-examples/a2hs/index.html"
+            "start_url" =>  "/pwa-examples/a2hs/index.html?slug=".$cardDetails->slug
         ];
 
         return json_encode($out_array);
