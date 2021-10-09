@@ -46,7 +46,7 @@
 
 
     <div class="row ml-1 mr-1 mt-3 pl-4 pt-3">
-            <a class="add-button" id="add-button" style="display: contents;text-decoration: none;" >
+            <a class="add-button" id="add-button" style="display: contents !important;text-decoration: none;" >
                 <i style="font-size: 50px;color: #fff;" class="fa fa-mobile"></i>
                 <h4 style="font-family: 'Montserrat', sans-serif;font-size: 30px; color: #fff;margin-left: 15px;margin-top: 5px;">Android</h4>
             </a>
