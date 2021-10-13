@@ -131,6 +131,8 @@
         $(".sky_temp_first_name").html("{{$name_seperation[0]}}");
         //Last Name
         $(".sky_temp_last_name").html('{{$name_seperation[1]}}');
+
+        $(".sky_temp_full_name").html('{{$name_seperation[0]}} {{$name_seperation[1]}}');
         //Phone Number
         $(".sky_temp_phone_number1").html("{{$phone_number->phone_number1}}");
         $(".sky_temp_phone_number2").html("{{$phone_number->phone_number2}}");
@@ -174,7 +176,7 @@
         @endif
 
         //Job Title
-        $(".sky_temp_job_title").html("{{$card_details->job_position}}");
+        $(".sky_temp_job_title").html("{{$card_details->position}}");
 
 
 
